@@ -626,7 +626,7 @@ const AboutUs = () => {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div>
               <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mb-6 sm:mb-8 leading-tight text-gray-800">
-                Ready to Create Your <span className="text-brand-blue-600">Success Story?</span>
+                Let’s architect your future together.  <span className="text-brand-blue-600">Begin your journey?</span>
               </h2>
               <p className="text-base sm:text-xl text-gray-600 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto">
                 Join the thousands of professionals and hundreds of companies who've discovered the transformative power of perfect connections. Let's architect your future together.
