@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/*
+  ============================================================
+  ARIHANT STAFFING — BRAND DESIGN SYSTEM
+  Only two brand colors are used across the entire site:
+    - Blue   (#0099E6) — primary brand color
+    - Orange (#F5911E) — secondary / accent brand color
+  Neutrals (white / black / gray) are used for text & backgrounds only.
+  ============================================================
+*/
+@theme {
+  /* Primary — Brand Blue */
+  --color-brand-blue-50: #F0FAFF;
+  --color-brand-blue-100: #DBF3FF;
+  --color-brand-blue-200: #B2E5FF;
+  --color-brand-blue-300: #7AD3FF;
+  --color-brand-blue-400: #3DBEFF;
+  --color-brand-blue-500: #0099E6;
+  --color-brand-blue-600: #007AB8;
+  --color-brand-blue-700: #005C8A;
+  --color-brand-blue-800: #003D5C;
+  --color-brand-blue-900: #002639;
+  --color-brand-blue-950: #00111A;
+
+  /* Secondary — Brand Orange */
+  --color-brand-orange-50: #FFF8F0;
+  --color-brand-orange-100: #FEEEDC;
+  --color-brand-orange-200: #FDDBB5;
+  --color-brand-orange-300: #FBC17E;
+  --color-brand-orange-400: #FAA443;
+  --color-brand-orange-500: #F5911E;
+  --color-brand-orange-600: #DB7A0A;
+  --color-brand-orange-700: #AF6108;
+  --color-brand-orange-800: #834906;
+  --color-brand-orange-900: #613604;
+  --color-brand-orange-950: #442603;
+}
+
+:root {
+  --brand-blue: #0099E6;
+  --brand-orange: #F5911E;
+}
+
+/* Consistent focus states using brand blue, for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 2px;
+}
+
+/* Selection color follows brand palette */
+::selection {
+  background-color: var(--brand-blue);
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
