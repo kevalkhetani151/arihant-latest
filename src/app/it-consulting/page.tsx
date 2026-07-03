@@ -227,9 +227,11 @@ const ITSolutionsPage = () => {
                   <div className="flex items-center justify-between mb-6">
                     <h3 className="text-xl font-bold text-gray-800">IT Infrastructure Dashboard</h3>
                     <div className="flex space-x-2">
-                      <div className="w-3 h-3 bg-brand-blue-400 rounded-full animate-pulse-slow"></div>
-                      <div className="w-3 h-3 bg-brand-blue-400 rounded-full animate-pulse-slow" style={{animationDelay: '0.5s'}}></div>
-                      <div className="w-3 h-3 bg-brand-blue-400 rounded-full animate-pulse-slow" style={{animationDelay: '1s'}}></div>
+                      <div className="flex space-x-2">
+                      <div className="w-3 h-3 bg-brand-orange-400 rounded-full"></div>
+                      <div className="w-3 h-3 bg-brand-orange-400 rounded-full"></div>
+                      <div className="w-3 h-3 bg-brand-blue-400 rounded-full"></div>
+                    </div>
                     </div>
                   </div>
                   

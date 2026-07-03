@@ -8,7 +8,9 @@ import {
   FaUsersCog,
   FaCode,
   FaLaptopCode,
-  FaNetworkWired
+  FaNetworkWired,
+  FaGraduationCap,
+  FaHeartbeat
 } from 'react-icons/fa';
 
 const Header = () => {
@@ -46,14 +48,14 @@ const Header = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                       
                       {/* RPO Service */}
-                      <Link href="/rpo" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
+                      <Link href="/gcc" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
                         <div className="flex-shrink-0">
                           <div className="w-14 h-14 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center">
                             <FaUserPlus className="text-white text-2xl" />
                           </div>
                         </div>
                         <div className="flex-1">
-                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">Recruitment Process Outsourcing</h4>
+                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">Global Capability Center</h4>
                           <p className="text-gray-300 text-base mt-2">Scale your team with skilled professionals and expand your workforce efficiently</p>
                         </div>
                       </Link>
@@ -98,15 +100,15 @@ const Header = () => {
                       </Link>
 
                       {/* BPO */}
-                      <Link href="/bpo" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
+                      <Link href="/rpo" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
                         <div className="flex-shrink-0">
                           <div className="w-14 h-14 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center">
                             <FaNetworkWired className="text-white text-2xl" />
                           </div>
                         </div>
                         <div className="flex-1">
-                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">Business Process Outsourcing</h4>
-                          <p className="text-gray-300 text-base mt-2">Streamline operations with comprehensive BPO solutions and services</p>
+                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">Recruitment Process Outsourcing</h4>
+                          <p className="text-gray-300 text-base mt-2">Streamline Hiring with Comprehensive RPO Solutions & Services</p>
                         </div>
                       </Link>
 
@@ -122,6 +124,43 @@ const Header = () => {
                           <p className="text-gray-300 text-base mt-2">Scale your team with skilled professionals and expand your workforce efficiently</p>
                         </div>
                       </Link>
+                      {/* Learning & Development Solutions */}
+<Link
+  href="/learning-development-solutions"
+  className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md"
+>
+  <div className="flex-shrink-0">
+    <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center">
+      <FaGraduationCap className="text-white text-2xl" />
+    </div>
+  </div>
+  <div className="flex-1">
+    <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">
+      Learning & Development Solutions
+    </h4>
+    <p className="text-gray-300 text-base mt-2">
+      Upskill your workforce with customized training programs, leadership development, and corporate learning.
+    </p>
+  </div>
+</Link>
+<Link
+  href="/healthcare"
+  className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md"
+>
+  <div className="flex-shrink-0">
+    <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-pink-600 rounded-xl flex items-center justify-center">
+      <FaHeartbeat className="text-white text-2xl" />
+    </div>
+  </div>
+  <div className="flex-1">
+    <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">
+      Healthcare Solutions
+    </h4>
+    <p className="text-gray-300 text-base mt-2">
+      End-to-end healthcare staffing, workforce management, and medical support solutions.
+    </p>
+  </div>
+</Link>
                     </div>
 
                     {/* Bottom CTA */}
@@ -186,8 +225,8 @@ const Header = () => {
         <FaChevronDown className={`transition-transform duration-300 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
       </button>
       <div className={`mt-3 ml-4 space-y-3 ${mobileServicesOpen ? 'block' : 'hidden'}`}>
-        <Link href="/rpo" className="block text-gray-400 hover:text-brand-orange-400 text-sm py-1">
-          Recruitment Process Outsourcing
+        <Link href="/gcc" className="block text-gray-400 hover:text-brand-orange-400 text-sm py-1">
+        Global Capability Center
         </Link>
         <Link href="/hr-solutions" className="block text-gray-400 hover:text-brand-orange-400 text-sm py-1">
           HR Solutions
@@ -198,7 +237,7 @@ const Header = () => {
         <Link href="/web-development" className="block text-gray-400 hover:text-brand-orange-400 text-sm py-1">
           IT Services & Consulting
         </Link>
-        <Link href="/bpo" className="block text-gray-400 hover:text-brand-orange-400 text-sm py-1">
+        <Link href="/rpo" className="block text-gray-400 hover:text-brand-orange-400 text-sm py-1">
           Business Process Outsourcing
         </Link>
         <Link href="/staff-augmentation" className="block text-gray-400 hover:text-brand-orange-400 text-sm py-1">

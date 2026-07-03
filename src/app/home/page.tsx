@@ -1224,8 +1224,8 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
                 className="industry-card glass-card rounded-2xl p-8 text-center hover-lift animate-on-scroll"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-               <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-orange-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg transition-all duration-300 hover:scale-110 hover:rotate-3">
-                {industry.icon}
+                <div className="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg transition-all duration-300 hover:scale-110 hover:rotate-3">
+                  {industry.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-gray-800">{industry.title}</h3>
                 <p className="text-gray-600 mb-4 text-sm">{industry.description}</p>
@@ -1286,9 +1286,9 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
                     className="flex items-start space-x-6 animate-on-scroll hover:translate-x-2 transition-all duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-orange-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110">
-  {feature.icon}
-</div>
+                    <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110`}>
+                      {feature.icon}
+                    </div>
                     <div>
                       <h3 className="text-2xl font-bold mb-3 text-gray-800">
                         {feature.title}

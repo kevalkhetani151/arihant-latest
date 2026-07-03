@@ -14,7 +14,12 @@ import {
   // General Icons
   FaCheckCircle, FaGlobe, FaSmileBeam, FaCogs,
   // Social Icons
-  FaLinkedinIn, FaTwitter, FaGithub
+  FaLinkedinIn, FaTwitter, FaGithub,
+  FaFlask,
+  FaCar,
+  FaTruck,
+  FaSignal,
+  FaBolt
 } from 'react-icons/fa';
 
 import { SiTensorflow, SiKubernetes } from 'react-icons/si';
@@ -225,10 +230,11 @@ const ITSolutionsPage = () => {
                   <div className="flex items-center justify-between mb-6">
                     <h3 className="text-xl font-bold text-gray-800">IT Infrastructure Dashboard</h3>
                     <div className="flex space-x-2">
-                      <div className="w-3 h-3 bg-brand-blue-400 rounded-full animate-pulse-slow"></div>
-                      <div className="w-3 h-3 bg-brand-blue-400 rounded-full animate-pulse-slow" style={{animationDelay: '0.5s'}}></div>
-                      <div className="w-3 h-3 bg-brand-blue-400 rounded-full animate-pulse-slow" style={{animationDelay: '1s'}}></div>
-                    </div>
+                      <div className="flex space-x-2">
+                      <div className="w-3 h-3 bg-brand-orange-400 rounded-full"></div>
+                      <div className="w-3 h-3 bg-brand-orange-400 rounded-full"></div>
+                      <div className="w-3 h-3 bg-brand-blue-400 rounded-full"></div>
+                    </div>                    </div>
                   </div>
                   
                   <div className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-blue-50 rounded-xl border border-brand-blue-100 animate-float">
@@ -724,7 +730,7 @@ const ITSolutionsPage = () => {
 </section>
 
       {/* Industries We Serve */}
-     <section className="py-20 bg-white">
+  <section className="py-20 bg-white">
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16">
       <h2 className="text-4xl lg:text-5xl font-black mb-6 animate-on-scroll text-gray-800">
@@ -736,49 +742,27 @@ const ITSolutionsPage = () => {
     </div>
 
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-      
-      <div className="text-center animate-on-scroll">
-        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaUniversity className="text-2xl text-white" />
+      {[
+        { name: "BFSI", icon: <FaUniversity /> },
+        { name: "Healthcare", icon: <FaHeartbeat /> },
+        { name: "Pharma & Life Sciences", icon: <FaFlask /> },
+        { name: "Manufacturing", icon: <FaIndustry /> },
+        { name: "Engineering & R&D", icon: <FaCogs /> },
+        { name: "Automotive", icon: <FaCar /> },
+        { name: "Retail & E-commerce", icon: <FaShoppingCart /> },
+        { name: "Logistics & Supply Chain", icon: <FaTruck /> },
+        { name: "Telecom", icon: <FaSignal /> },
+        { name: "Energy & Utilities", icon: <FaBolt /> },
+        { name: "EdTech", icon: <FaGraduationCap /> },
+        { name: "Technology", icon: <FaLaptopCode /> },
+      ].map((industry, index) => (
+        <div key={index} className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <span className="text-2xl text-white">{industry.icon}</span>
+          </div>
+          <h4 className="font-semibold text-gray-800">{industry.name}</h4>
         </div>
-        <h4 className="font-semibold text-gray-800">Banking & Finance</h4>
-      </div>
-      
-      <div className="text-center animate-on-scroll">
-        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaHeartbeat className="text-2xl text-white" />
-        </div>
-        <h4 className="font-semibold text-gray-800">Healthcare</h4>
-      </div>
-      
-      <div className="text-center animate-on-scroll">
-        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaShoppingCart className="text-2xl text-white" />
-        </div>
-        <h4 className="font-semibold text-gray-800">E-commerce</h4>
-      </div>
-      
-      <div className="text-center animate-on-scroll">
-        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaIndustry className="text-2xl text-white" />
-        </div>
-        <h4 className="font-semibold text-gray-800">Manufacturing</h4>
-      </div>
-      
-      <div className="text-center animate-on-scroll">
-        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaGraduationCap className="text-2xl text-white" />
-        </div>
-        <h4 className="font-semibold text-gray-800">Education</h4>
-      </div>
-      
-      <div className="text-center animate-on-scroll">
-        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaBuilding className="text-2xl text-white" />
-        </div>
-        <h4 className="font-semibold text-gray-800">Real Estate</h4>
-      </div>
-      
+      ))}
     </div>
   </div>
 </section>

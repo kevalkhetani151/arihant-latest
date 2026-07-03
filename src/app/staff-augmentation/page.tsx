@@ -37,7 +37,8 @@ import {
   FaStore,
   FaUniversity,
   FaShoppingBasket,
-  FaFlask
+  FaFlask,
+  FaShoppingBag
 } from 'react-icons/fa';
 import Header from '../header/page';
 import Footer from '../footer/page';
@@ -206,7 +207,7 @@ const StaffAugmentation = () => {
               {/* Key Stats */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-8 animate-on-scroll">
                 <div className="text-center">
-                  <div className="text-4xl font-black gradient-text">500+</div>
+                  <div className="text-4xl font-black gradient-text">2M+</div>
                   <div className="text-sm text-gray-600 font-medium">Skilled Professionals</div>
                 </div>
                 <div className="text-center">
@@ -272,6 +273,20 @@ const StaffAugmentation = () => {
                     </div>
                     <div className="text-brand-blue-500 font-bold text-lg">180+ Certified</div>
                   </div>
+
+
+                  <div className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-blue-50 rounded-xl border border-brand-blue-100 animate-float-delay-2">
+  <div className="flex items-center space-x-3">
+    <div className="w-12 h-12 bg-brand-blue-500 rounded-full flex items-center justify-center">
+      <FaBrain className="text-white" />
+    </div>
+    <div>
+      <div className="font-bold text-gray-800">AI/ML Experts</div>
+      <div className="text-sm text-gray-600">LLMs, Computer Vision & NLP</div>
+    </div>
+  </div>
+  <div className="text-brand-blue-500 font-bold text-lg">150+ Certified</div>
+</div>
                 </div>
                 
                 {/* Floating Elements */}
@@ -388,30 +403,32 @@ const StaffAugmentation = () => {
 
       {/* Project Management */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-        <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaTasks className="text-3xl text-white" />
-        </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">Project Management</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Certified project managers and scrum masters to ensure successful project delivery and team coordination.</p>
-        <ul className="space-y-3 mb-6">
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">PMP & Agile Certified Managers</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Scrum Masters & Product Owners</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Technical Program Managers</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Delivery & Operations Managers</span>
-          </li>
-        </ul>
-      </div>
+  <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
+    <FaHeartbeat className="text-3xl text-white" />
+  </div>
+  <h3 className="text-2xl font-bold mb-4 text-gray-800">Healthcare Talent</h3>
+  <p className="text-gray-600 mb-6 leading-relaxed">
+    Healthcare professionals who deliver quality patient care, clinical excellence, and operational efficiency across hospitals, clinics, healthcare organizations, and allied health services.
+  </p>
+  <ul className="space-y-3 mb-6">
+    <li className="flex items-start space-x-3">
+      <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+      <span className="text-gray-700">Registered Nurses, LPNs & CNAs</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+      <span className="text-gray-700">Physicians, Specialists & Allied Healthcare Professionals</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+      <span className="text-gray-700">Medical Coders, Billers & RCM Professionals</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+      <span className="text-gray-700">Clinical Managers & Hospital Administrators</span>
+    </li>
+  </ul>
+</div>
 
       {/* Digital Marketing */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -468,31 +485,33 @@ const StaffAugmentation = () => {
       </div> */}
 
       {/* Quality Assurance */}
-      <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 md:col-span-2 lg:col-span-1">
-        <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaShieldAlt className="text-3xl text-white" />
-        </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">Quality Assurance</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">QA professionals who ensure software quality through comprehensive testing and quality assurance processes.</p>
-        <ul className="space-y-3 mb-6">
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Manual & Automation Test Engineers</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Performance & Security Testing Specialists</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Mobile & Web Application Testers</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">QA Leads & Test Managers</span>
-          </li>
-        </ul>
-      </div>
+     <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 md:col-span-2 lg:col-span-1">
+  <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
+    <FaShoppingBag className="text-3xl text-white" />
+  </div>
+  <h3 className="text-2xl font-bold mb-4 text-gray-800">FMCG Talent</h3>
+  <p className="text-gray-600 mb-6 leading-relaxed">
+    FMCG professionals who drive manufacturing, supply chain, sales, distribution, and business growth across consumer goods organizations.
+  </p>
+  <ul className="space-y-3 mb-6">
+    <li className="flex items-start space-x-3">
+      <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+      <span className="text-gray-700">Sales & Business Development Executives</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+      <span className="text-gray-700">Supply Chain, Logistics & Procurement Professionals</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+      <span className="text-gray-700">Production, Quality Assurance & Plant Operations Engineers</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+      <span className="text-gray-700">Brand Managers, Category Managers & Marketing Specialists</span>
+    </li>
+  </ul>
+</div>
 
     </div>
   </div>

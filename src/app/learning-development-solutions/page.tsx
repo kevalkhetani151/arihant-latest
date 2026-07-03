@@ -6,7 +6,8 @@ import {
   // Service Icons
   FaUserPlus, FaUsersCog, FaCode, FaLaptopCode, FaNetworkWired, FaUsers, FaCrown, 
   FaRobot, FaGlobe, FaPuzzlePiece, FaFilter, FaSearch, FaTrophy, FaChartLine,
-  FaAward, FaCogs, FaIndustry, FaShoppingCart, FaHeartbeat,
+  FaAward, FaCogs, FaIndustry, FaShoppingCart, FaHeartbeat, FaChalkboardTeacher,
+  FaComments, FaGraduationCap, FaHandshake,
   // Social Icons
   FaLinkedinIn, FaTwitter, FaFacebookF,
   // Check & Status Icons
@@ -26,7 +27,7 @@ import Header from '../header/page';
 import Footer from '../footer/page';
 import Link from 'next/link';
 
-const RPOServicesPage = () => {
+const LearningDevelopmentPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
@@ -180,7 +181,7 @@ const RPOServicesPage = () => {
       {/* Navigation */}
       <Header />
 
-      {/* RPO Banner Section */}
+      {/* L&D Banner Section */}
       <section className="relative pt-24 pb-20 bg-gradient-to-br from-brand-blue-50 via-brand-blue-50 to-brand-blue-50 overflow-hidden">
         <div className="banner-shape banner-shape-1"></div>
         <div className="banner-shape banner-shape-2"></div>
@@ -189,45 +190,43 @@ const RPOServicesPage = () => {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
-              <div className="inline-flex items-center space-x-3 bg-brand-blue-100 text-brand-blue-700 px-6 py-3 rounded-full text-sm font-semibold animate-on-scroll">
-
-              </div>
+            <div className="space-y-6">
+             
               
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight animate-on-scroll">
-                Transform Your
-                <span className="gradient-text block">Hiring Process</span>
-                with Expert RPO
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight animate-on-scroll">
+                Empowering People.
+                <span className="gradient-text block">Strengthening Organizations.</span>
+                Building Future Leaders.
               </h1>
               
-              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed animate-on-scroll">
-                Accelerate your talent acquisition with our end-to-end RPO solutions. We provide dedicated teams, cutting-edge technology, and strategic expertise to scale your hiring and build high-performing organizations faster than ever.
+              <p className="text-base lg:text-lg text-gray-600 leading-relaxed animate-on-scroll">
+                We help organizations, professionals, and students unlock their potential through customized learning experiences, leadership development, coaching, and workforce readiness programs. Our practical, industry-focused training enables individuals and teams to perform with confidence in today's evolving business environment.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
-                <button className="gradient-health text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-xl flex items-center space-x-2">
-                  <span>Start Your RPO Journey</span>
-                  <FaArrowRight />
+              <div className="flex flex-col sm:flex-row gap-3 animate-on-scroll">
+                <button className="gradient-health text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2">
+                  <span>Explore Our Programs</span>
+                  <FaArrowRight className="text-xs" />
                 </button>
-                <button className="border-2 border-brand-blue-300 text-brand-blue-700 px-10 py-4 rounded-full font-bold hover:bg-brand-blue-50 transition-colors duration-300 flex items-center space-x-2">
-                  <FaFileDownload />
-                  <span>Download RPO Guide</span>
+                <button className="border-2 border-brand-blue-300 text-brand-blue-700 px-6 py-3 rounded-full font-bold text-sm hover:bg-brand-blue-50 transition-colors duration-300 flex items-center justify-center space-x-2">
+                  <FaFileDownload className="text-xs" />
+                  <span>Download L&D Brochure</span>
                 </button>
               </div>
               
-              {/* Key RPO Stats */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-8 animate-on-scroll">
+              {/* Key L&D Stats */}
+              <div className="grid grid-cols-3 gap-4 pt-6 animate-on-scroll">
                 <div className="text-center">
-                  <div className="text-4xl font-black gradient-text">85%</div>
-                  <div className="text-sm text-gray-600 font-medium">Faster Hiring</div>
+                  <div className="text-2xl lg:text-3xl font-black gradient-text">500+</div>
+                  <div className="text-xs text-gray-600 font-medium">Programs Delivered</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-black gradient-text">74%</div>
-                  <div className="text-sm text-gray-600 font-medium">Cost Reduction</div>
+                  <div className="text-2xl lg:text-3xl font-black gradient-text">10K+</div>
+                  <div className="text-xs text-gray-600 font-medium">Professionals Trained</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-black gradient-text">98%</div>
-                  <div className="text-sm text-gray-600 font-medium">Client Satisfaction</div>
+                  <div className="text-2xl lg:text-3xl font-black gradient-text">95%</div>
+                  <div className="text-xs text-gray-600 font-medium">Satisfaction Rate</div>
                 </div>
               </div>
             </div>
@@ -235,10 +234,10 @@ const RPOServicesPage = () => {
             {/* Right Visual */}
             <div className="relative animate-on-scroll">
               <div className="relative bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
-                {/* RPO Dashboard Mock */}
+                {/* Learning Impact Dashboard Mock */}
                 <div className="space-y-6">
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-xl font-bold text-gray-800">RPO Dashboard</h3>
+                    <h3 className="text-xl font-bold text-gray-800">Learning Impact Dashboard</h3>
                     <div className="flex space-x-2">
                       <div className="w-3 h-3 bg-brand-blue-400 rounded-full animate-pulse-slow"></div>
                       <div className="w-3 h-3 bg-brand-blue-400 rounded-full animate-pulse-slow" style={{animationDelay: '0.5s'}}></div>
@@ -249,11 +248,11 @@ const RPOServicesPage = () => {
                   <div className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-blue-50 rounded-xl border border-brand-blue-100 animate-float">
                     <div className="flex items-center space-x-3">
                       <div className="w-12 h-12 bg-brand-blue-500 rounded-full flex items-center justify-center">
-                        <FaUsers className="text-white" />
+                        <FaChalkboardTeacher className="text-white" />
                       </div>
                       <div>
-                        <div className="font-bold text-gray-800">Expert Professionals</div>
-                        <div className="text-sm text-gray-600">25 candidates sourced this week with 25+ Team Members</div>
+                        <div className="font-bold text-gray-800">Leadership Cohort</div>
+                        <div className="text-sm text-gray-600">24 first-time managers enrolled</div>
                       </div>
                     </div>
                     <div className="text-brand-blue-500 font-bold text-lg">Active</div>
@@ -265,11 +264,11 @@ const RPOServicesPage = () => {
                         <FaChartLine className="text-white" />
                       </div>
                       <div>
-                        <div className="font-bold text-gray-800">Time-to-Fill Reduced</div>
-                        <div className="text-sm text-gray-600">From 45 to 18 days average</div>
+                        <div className="font-bold text-gray-800">Skill Assessment Scores</div>
+                        <div className="text-sm text-gray-600">Up from 68% to 92% post-training</div>
                       </div>
                     </div>
-                    <div className="text-brand-blue-500 font-bold text-lg">60%</div>
+                    <div className="text-brand-blue-500 font-bold text-lg">92%</div>
                   </div>
                   
                   <div className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-orange-50 rounded-xl border border-brand-blue-100 animate-float" style={{animationDelay: '1s'}}>
@@ -278,17 +277,17 @@ const RPOServicesPage = () => {
                         <FaTrophy className="text-white" />
                       </div>
                       <div>
-                        <div className="font-bold text-gray-800">Quality Hires</div>
-                        <div className="text-sm text-gray-600">96% pass probation period</div>
+                        <div className="font-bold text-gray-800">Employee Engagement</div>
+                        <div className="text-sm text-gray-600">Up 35% after coaching program</div>
                       </div>
                     </div>
-                    <div className="text-brand-blue-500 font-bold text-lg">Excellent</div>
+                    <div className="text-brand-blue-500 font-bold text-lg">+35%</div>
                   </div>
                 </div>
                 
-                {/* Floating RPO Elements */}
+                {/* Floating L&D Elements */}
                 <div className="absolute -top-6 -right-6 w-12 h-12 bg-brand-blue-500 rounded-full opacity-60 animate-bounce-slow flex items-center justify-center">
-                  <FaSearch className="text-white" />
+                  <FaGraduationCap className="text-white" />
                 </div>
                 <div className="absolute -bottom-6 -left-6 w-8 h-8 bg-brand-blue-500 rounded-full opacity-60 animate-pulse-slow"></div>
                 <div className="absolute top-1/2 -right-8 w-6 h-6 bg-brand-blue-500 rounded-full opacity-60 animate-heartbeat"></div>
@@ -305,178 +304,205 @@ const RPOServicesPage = () => {
         </div>
       </section>
 
-      {/* Our RPO Services */}
+      {/* Our L&D Services */}
      <section className="py-20 bg-white">
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16">
       <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-        Complete <span className="text-brand-blue-600">RPO Solutions Suite</span>
+        Complete <span className="text-brand-blue-600">Learning & Development Suite</span>
       </h2>
       <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-        From strategic talent acquisition to executive search, we provide comprehensive recruitment process outsourcing that transforms your hiring capabilities and drives exceptional business results.
+        From boardroom-ready leadership programs to campus-to-corporate career readiness, our practical, outcome-driven training equips people at every stage of their professional journey.
       </p>
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      {/* End-to-End RPO */}
+      {/* Corporate Learning & Development */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
           <FaUsersCog className="text-3xl text-white" />
         </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">End-to-End RPO</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Complete recruitment outsourcing including strategy development, sourcing, screening, interviewing, and onboarding with dedicated account management.</p>
+        <h3 className="text-2xl font-bold mb-4 text-gray-800">Corporate Learning & Development</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">We partner with startups, SMEs, and multinational organizations to build high-performing teams through customized training solutions.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Strategic workforce planning</span>
+            <span className="text-gray-700">Leadership development</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Full-cycle recruitment management</span>
+            <span className="text-gray-700">First-time manager training</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Dedicated RPO team assignment</span>
+            <span className="text-gray-700">Executive coaching</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Real-time analytics & reporting</span>
+            <span className="text-gray-700">Change management</span>
           </li>
         </ul>
       </div>
 
-      {/* Selective RPO */}
+      {/* Sales & Customer Excellence */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaFilter className="text-3xl text-white" />
+          <FaTrophy className="text-3xl text-white" />
         </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">Selective RPO</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Targeted recruitment for specific roles, departments, or geographic locations with flexible engagement models and scalable solutions.</p>
+        <h3 className="text-2xl font-bold mb-4 text-gray-800">Sales & Customer Excellence</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">Equip your sales and service teams with practical skills that drive measurable business outcomes and stronger customer relationships.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">High-volume hiring campaigns</span>
+            <span className="text-gray-700">Consultative & B2B selling</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Specialized role recruitment</span>
+            <span className="text-gray-700">Key account management</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Geographic expansion support</span>
+            <span className="text-gray-700">Customer service excellence</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Project-based engagements</span>
+            <span className="text-gray-700">Negotiation skills</span>
           </li>
         </ul>
       </div>
 
-      {/* Executive Search RPO */}
+      {/* Hiring & Talent Development */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaCrown className="text-3xl text-white" />
+          <FaUserPlus className="text-3xl text-white" />
         </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">Executive Search RPO</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Senior-level executive recruitment with comprehensive assessment, market intelligence, competitive analysis, and succession planning support.</p>
+        <h3 className="text-2xl font-bold mb-4 text-gray-800">Hiring & Talent Development</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">Helping organizations attract, develop, and retain exceptional talent through structured hiring and growth frameworks.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">C-suite & VP level searches</span>
+            <span className="text-gray-700">Competency-based interviewing</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Leadership assessment tools</span>
+            <span className="text-gray-700">Assessment centers</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Market intelligence research</span>
+            <span className="text-gray-700">Succession planning</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Succession planning support</span>
+            <span className="text-gray-700">High-potential employee development</span>
           </li>
         </ul>
       </div>
 
-      {/* Technology-Enabled RPO */}
+      {/* Industry-Specific Training */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaRobot className="text-3xl text-white" />
+          <FaIndustry className="text-3xl text-white" />
         </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">AI-Powered RPO</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Next-generation recruitment leveraging AI-driven sourcing, automated screening, predictive analytics, and machine learning for optimal candidate matching.</p>
+        <h3 className="text-2xl font-bold mb-4 text-gray-800">Industry-Specific Training</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">Customized learning solutions built around the real-world demands of your sector, from compliance to customer-facing skills.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">AI candidate matching algorithms</span>
+            <span className="text-gray-700">Healthcare & pharmaceuticals</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Automated screening workflows</span>
+            <span className="text-gray-700">Banking & financial services</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Predictive hiring analytics</span>
+            <span className="text-gray-700">Manufacturing & logistics</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Real-time talent intelligence</span>
+            <span className="text-gray-700">Retail & e-commerce</span>
           </li>
         </ul>
       </div>
 
-      {/* Global RPO */}
+      {/* Professional Skills Development */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaGlobe className="text-3xl text-white" />
+          <FaLaptopCode className="text-3xl text-white" />
         </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">Global RPO</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Multi-country recruitment with local market expertise, compliance management, cultural alignment, and standardized global processes for international expansion.</p>
+        <h3 className="text-2xl font-bold mb-4 text-gray-800">Professional Skills Development</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">Future-ready skills that keep today's workforce sharp, adaptable, and ready to solve real business problems.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Multi-country operations</span>
+            <span className="text-gray-700">Business communication</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Local compliance expertise</span>
+            <span className="text-gray-700">Advanced Excel & business analytics</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Cultural assessment tools</span>
+            <span className="text-gray-700">Critical thinking & problem solving</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Standardized global processes</span>
+            <span className="text-gray-700">Project management</span>
           </li>
         </ul>
       </div>
 
-      {/* Hybrid RPO */}
+      {/* Student Career Development */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaPuzzlePiece className="text-3xl text-white" />
+          <FaGraduationCap className="text-3xl text-white" />
         </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">Hybrid RPO Model</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Flexible combination of internal recruiting teams and external RPO support for optimal cost-effectiveness, enhanced control, and scalable operations.</p>
+        <h3 className="text-2xl font-bold mb-4 text-gray-800">Student Career Development</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">Bridging the gap between education and employment with hands-on preparation for the world of work.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Blended team approach</span>
+            <span className="text-gray-700">Career counselling & planning</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Scalable support model</span>
+            <span className="text-gray-700">Resume building & LinkedIn optimization</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Knowledge transfer programs</span>
+            <span className="text-gray-700">Mock interviews & group discussions</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Flexible engagement terms</span>
+            <span className="text-gray-700">Campus-to-corporate readiness</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Coaching & Mentoring */}
+      <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
+          <FaHandshake className="text-3xl text-white" />
+        </div>
+        <h3 className="text-2xl font-bold mb-4 text-gray-800">Coaching & Mentoring</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">Personalized, one-on-one coaching for professionals, managers, entrepreneurs, and students at every career stage.</p>
+        <ul className="space-y-3 mb-6">
+          <li className="flex items-start space-x-3">
+            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+            <span className="text-gray-700">Leadership & executive coaching</span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+            <span className="text-gray-700">Career & performance coaching</span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+            <span className="text-gray-700">Business coaching for entrepreneurs</span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+            <span className="text-gray-700">Student mentorship</span>
           </li>
         </ul>
       </div>
@@ -490,10 +516,10 @@ const RPOServicesPage = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-              <span className="gradient-text">Industry-Specific</span> RPO Expertise
+              <span className="gradient-text">Industries</span> We Serve
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-              We provide specialized RPO services across multiple industries with deep domain knowledge and industry-specific recruitment expertise to meet your unique business challenges.
+              Our training programs are built around real workplace scenarios across a wide range of industries, from healthcare to technology to financial services.
             </p>
           </div>
 
@@ -504,8 +530,8 @@ const RPOServicesPage = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                 <FaLaptopCode className="text-2xl text-white" />
               </div>
-              <h4 className="font-bold text-gray-800">Technology</h4>
-              <p className="text-sm text-gray-600">Software, AI, Cloud</p>
+              <h4 className="font-bold text-gray-800">Information Technology</h4>
+              <p className="text-sm text-gray-600">Software, IT Services</p>
             </div>
             
            <div className="text-center animate-on-scroll">
@@ -520,8 +546,8 @@ const RPOServicesPage = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                 <FaChartLine className="text-2xl text-white" />
               </div>
-              <h4 className="font-bold text-gray-800">Finance</h4>
-              <p className="text-sm text-gray-600">Banking, FinTech</p>
+              <h4 className="font-bold text-gray-800">Banking & Finance</h4>
+              <p className="text-sm text-gray-600">BFSI, Insurance</p>
             </div>
             
             <div className="text-center animate-on-scroll">
@@ -529,53 +555,53 @@ const RPOServicesPage = () => {
                 <FaIndustry className="text-2xl text-white" />
               </div>
               <h4 className="font-bold text-gray-800">Manufacturing</h4>
-              <p className="text-sm text-gray-600">Automotive, Aerospace</p>
+              <p className="text-sm text-gray-600">Engineering, Logistics</p>
             </div>
             
             <div className="text-center animate-on-scroll">
               <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
                 <FaShoppingCart className="text-2xl text-white" />
               </div>
-              <h4 className="font-bold text-gray-800">Retail</h4>
-              <p className="text-sm text-gray-600">E-commerce, Consumer</p>
+              <h4 className="font-bold text-gray-800">Retail & Hospitality</h4>
+              <p className="text-sm text-gray-600">E-commerce, BPO</p>
             </div>
             
           </div>
 
           {/* All Industries Available */}
           <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
-            <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Industry Coverage & Success Metrics</h3>
+            <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Reach & Program Impact</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">800+</div>
-                <div className="text-sm text-gray-600">Tech Professionals Placed</div>
+                <div className="text-2xl font-bold gradient-text">15+</div>
+                <div className="text-sm text-gray-600">Industries Served</div>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">200+</div>
-                <div className="text-sm text-gray-600">Healthcare Specialists</div>
+                <div className="text-2xl font-bold gradient-text">10,000+</div>
+                <div className="text-sm text-gray-600">Professionals Trained</div>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">250+</div>
-                <div className="text-sm text-gray-600">Finance Professionals</div>
+                <div className="text-2xl font-bold gradient-text">500+</div>
+                <div className="text-sm text-gray-600">Corporate Programs</div>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">71+</div>
-                <div className="text-sm text-gray-600">Executive Placements</div>
+                <div className="text-2xl font-bold gradient-text">50+</div>
+                <div className="text-sm text-gray-600">Certified Trainers</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Our RPO */}
+      {/* Why Choose Us */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-              Why Choose <span className="gradient-text">Arihant RPO Services?</span>
+              Why Choose <span className="gradient-text">Arihant Learning & Development?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-              Our proven methodology, advanced technology platform, and dedicated expert teams deliver measurable results that transform your hiring capabilities and drive exceptional business outcomes.
+              Customized programs, experienced trainers, and a delivery model built around real learning outcomes, not just hours in a classroom.
             </p>
           </div>
 
@@ -585,24 +611,24 @@ const RPOServicesPage = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <FaAward className="text-2xl text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">Proven RPO Expertise</h3>
-              <p className="text-gray-600">5+ years of recruitment process outsourcing experience with enterprise-level clients and complex global hiring challenges across all industries.</p>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">Customized Learning Solutions</h3>
+              <p className="text-gray-600">Every program is tailored to your organization's goals, culture, and skill gaps, not delivered off a generic template.</p>
             </div>
             
             <div className="animate-on-scroll bg-gradient-to-br from-brand-blue-50 to-brand-blue-50 border border-brand-blue-200 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300">
               <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <FaChartLine className="text-2xl text-white" />
+                <FaChalkboardTeacher className="text-2xl text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">85% Faster Hiring</h3>
-              <p className="text-gray-600">Industry-leading time-to-fill reduction with thousands of successful placements and consistently high client satisfaction scores across all engagement models.</p>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">Experienced Industry Trainers</h3>
+              <p className="text-gray-600">Interactive, practical workshops led by trainers with real industry experience, delivered online, onsite, or hybrid.</p>
             </div>
             
             <div className="animate-on-scroll bg-gradient-to-br from-brand-blue-50 to-brand-blue-50 border border-brand-blue-200 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300">
   <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-md">
-    <FaCogs className="text-2xl text-white" />
+    <FaChartLine className="text-2xl text-white" />
   </div>
-  <h3 className="text-2xl font-bold mb-4 text-gray-800">Advanced Technology Stack</h3>
-  <p className="text-gray-600">AI-powered sourcing platform, automated workflows, predictive analytics, and cutting-edge recruitment technology for superior candidate matching and process efficiency.</p>
+  <h3 className="text-2xl font-bold mb-4 text-gray-800">Measurable Outcomes</h3>
+  <p className="text-gray-600">Clear learning metrics and post-training coaching support ensure skills actually translate into on-the-job performance.</p>
 </div>
             
           </div>
@@ -611,46 +637,46 @@ const RPOServicesPage = () => {
           <div className="bg-gradient-to-br from-gray-50 to-brand-blue-50 rounded-3xl shadow-xl p-12 animate-on-scroll">
             <div className="text-center mb-12">
               <h3 className="text-3xl lg:text-4xl font-black mb-4 text-gray-800">
-                Proven <span className="gradient-text">RPO Success Record</span>
+                Our <span className="gradient-text">Mission</span>
               </h3>
-              <p className="text-lg text-gray-600">Our RPO services deliver quantifiable improvements in hiring efficiency, quality, and cost-effectiveness for organizations worldwide</p>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">To empower individuals and organizations through practical learning, transformational leadership, and continuous professional development.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">1321+</div>
-                <div className="text-gray-600 font-semibold">Successful Placements</div>
+                <div className="text-5xl font-black gradient-text mb-2">500+</div>
+                <div className="text-gray-600 font-semibold">Programs Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">65%</div>
-                <div className="text-gray-600 font-semibold">Time-to-Fill Reduction</div>
+                <div className="text-5xl font-black gradient-text mb-2">10K+</div>
+                <div className="text-gray-600 font-semibold">Professionals Trained</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">74%</div>
-                <div className="text-gray-600 font-semibold">Cost Per Hire Savings</div>
+                <div className="text-5xl font-black gradient-text mb-2">95%</div>
+                <div className="text-gray-600 font-semibold">Satisfaction Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">98%</div>
-                <div className="text-gray-600 font-semibold">Client Retention Rate</div>
+                <div className="text-5xl font-black gradient-text mb-2">85%</div>
+                <div className="text-gray-600 font-semibold">Repeat & Referral Clients</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* RPO Process */}
+      {/* Our Approach */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-brand-blue-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-              Our <span className="gradient-text">RPO Implementation Process</span>
+              Our <span className="gradient-text">Learning Delivery Approach</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-              A proven 4-step methodology that ensures seamless transition, rapid deployment, optimal results, and continuous improvement throughout our strategic partnership.
+              A structured five-step process that turns a learning need into lasting behavior change, on the floor, not just in the workshop.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             
             <div className="text-center animate-on-scroll">
               <div className="relative mb-8">
@@ -659,8 +685,8 @@ const RPOServicesPage = () => {
                 </div>
                 <div className="absolute -top-2 -right-2 w-6 h-6 bg-brand-blue-400 rounded-full animate-heartbeat"></div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Discovery & Strategy Development</h3>
-              <p className="text-gray-600 leading-relaxed">Comprehensive assessment of hiring needs, current processes, organizational culture, and strategic objectives to design optimal RPO solution architecture.</p>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Assess</h3>
+              <p className="text-gray-600 leading-relaxed">We run a learning needs analysis to pinpoint real skill gaps, not assumed ones, across roles and teams.</p>
             </div>
             
             <div className="text-center animate-on-scroll">
@@ -670,19 +696,19 @@ const RPOServicesPage = () => {
                 </div>
                 <div className="absolute -top-2 -right-2 w-6 h-6 bg-brand-blue-400 rounded-full animate-bounce-slow"></div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Team Setup & Technology Integration</h3>
-              <p className="text-gray-600 leading-relaxed">Deployment of dedicated recruitment specialists with advanced technology platform integration and seamless process alignment for immediate operational efficiency.</p>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Design</h3>
+              <p className="text-gray-600 leading-relaxed">Programs are custom-built around your industry, audience, and business context, not pulled off a shelf.</p>
             </div>
             
             <div className="text-center animate-on-scroll">
               <div className="relative mb-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-orange-600 rounded-2xl flex items-center justify-center mx-auto hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-white">03</span>
-                </div>
+               <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto hover:scale-110 transition-transform duration-300 shadow-md">
+  <span className="text-2xl font-bold text-white">03</span>
+</div>
                 <div className="absolute -top-2 -right-2 w-6 h-6 bg-brand-blue-400 rounded-full animate-pulse-slow"></div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Launch & Full-Scale Execution</h3>
-              <p className="text-gray-600 leading-relaxed">Complete recruitment operations activation with active candidate sourcing, screening, interviewing, and comprehensive hiring process management at scale.</p>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Deliver</h3>
+              <p className="text-gray-600 leading-relaxed">Interactive, practical sessions delivered online, onsite, or hybrid by trainers with real industry background.</p>
             </div>
             
             <div className="text-center animate-on-scroll">
@@ -692,8 +718,19 @@ const RPOServicesPage = () => {
                 </div>
                <div className="absolute -top-2 -right-2 w-6 h-6 bg-brand-blue-400 rounded-full animate-pulse-slow"></div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Performance & Continuous Optimization</h3>
-              <p className="text-gray-600 leading-relaxed">Real-time performance monitoring with advanced analytics, KPI tracking, regular optimization reviews, and strategic enhancements for sustained excellence.</p>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Reinforce</h3>
+              <p className="text-gray-600 leading-relaxed">Post-training coaching and follow-up touchpoints help learning stick well beyond the last session.</p>
+            </div>
+
+            <div className="text-center animate-on-scroll">
+              <div className="relative mb-8">
+                <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto hover:scale-110 transition-transform duration-300">
+                  <span className="text-2xl font-bold text-white">05</span>
+                </div>
+               <div className="absolute -top-2 -right-2 w-6 h-6 bg-brand-blue-400 rounded-full animate-heartbeat"></div>
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Grow</h3>
+              <p className="text-gray-600 leading-relaxed">We track outcomes over time and evolve the program as your people and business needs grow.</p>
             </div>
             
           </div>
@@ -705,10 +742,10 @@ const RPOServicesPage = () => {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="animate-on-scroll">
             <h2 className="text-4xl lg:text-6xl font-black mb-8">
-              Ready to <span className="text-brand-orange-300">Transform</span> Your Hiring?
+              Learning Today. <span className="text-brand-orange-300">Leading</span> Tomorrow.
             </h2>
             <p className="text-xl mb-12 leading-relaxed opacity-90">
-              Partner with our RPO experts to build a world-class talent acquisition function that scales with your business growth. We'll transform your hiring capabilities from day one and deliver exceptional results that drive sustainable success.
+              Partner with our L&D team to build a workforce that's confident, capable, and ready for what's next, from first-time managers to future executives.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link href='/contact'>
@@ -731,4 +768,4 @@ const RPOServicesPage = () => {
   );
 };
 
-export default RPOServicesPage;
+export default LearningDevelopmentPage;
