@@ -1224,8 +1224,8 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
                 className="industry-card glass-card rounded-2xl p-8 text-center hover-lift animate-on-scroll"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg transition-all duration-300 hover:scale-110 hover:rotate-3">
-                  {industry.icon}
+               <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-orange-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg transition-all duration-300 hover:scale-110 hover:rotate-3">
+                {industry.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-gray-800">{industry.title}</h3>
                 <p className="text-gray-600 mb-4 text-sm">{industry.description}</p>
@@ -1286,9 +1286,9 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
                     className="flex items-start space-x-6 animate-on-scroll hover:translate-x-2 transition-all duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110`}>
-                      {feature.icon}
-                    </div>
+                    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-orange-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110">
+  {feature.icon}
+</div>
                     <div>
                       <h3 className="text-2xl font-bold mb-3 text-gray-800">
                         {feature.title}
@@ -1302,14 +1302,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
               </div>
 
               {/* Enhanced Call to Action */}
-              <div className="flex justify-center">
-                <Link href='contact'>
-                <button className="gradient-bg text-white px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-xl flex items-center space-x-3">
-                  <FaCalendar className="text-xl" />
-                  <span>Contact Us</span>
-                </button>
-                </Link>
-              </div>
+             
             </div>
 
             {/* Enhanced Right Content (Stats) */}
@@ -1318,7 +1311,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
                 <div className="space-y-8">
                   <div className="about-stat glass-card rounded-3xl p-8 text-center hover-lift">
                     <div className="text-5xl font-black gradient-text mb-3">
-                      15+
+                      14+
                     </div>
                     <div className="text-gray-600 font-semibold">
                       Years Of Excellence
@@ -1331,7 +1324,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
                       50+
                     </div>
                     <div className="text-gray-600 font-semibold">
-                      Enterprise Clients
+                     Expert Team Members
                     </div>
                     <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
                   </div>
@@ -1339,7 +1332,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
 
                 <div className="space-y-8 mt-12">
                   <div className="about-stat glass-card rounded-3xl p-8 text-center hover-lift">
-                    <div className="text-5xl font-black gradient-text mb-3">500+</div>
+                    <div className="text-5xl font-black gradient-text mb-3">2M+</div>
                     <div className="text-gray-600 font-semibold">
                       Successful Placements
                     </div>
@@ -1390,10 +1383,10 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
 
             <div className="text-center stats-item animate-on-scroll" style={{ animationDelay: '0.2s' }}>
               <div className="text-5xl sm:text-6xl lg:text-8xl font-black mb-6">
-                <AnimatedCounter target="150" suffix="+" />
+                <AnimatedCounter target="50" suffix="+" />
               </div>
               <div className="text-2xl font-bold text-brand-blue-100 mb-2">
-                Enterprise Companies
+                Enterprise Clients
               </div>
 
             </div>
@@ -1422,117 +1415,45 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
       </section>
 
       {/* NEW SECTION: The Experts Behind Your Success */}
-      <section className="py-32 bg-gradient-to-br from-gray-50 to-brand-blue-50">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Section Header */}
-          <div className="text-center mb-20 animate-on-scroll">
-            <div className="inline-flex items-center px-6 py-3 bg-brand-orange-100 rounded-full text-brand-orange-600 font-bold text-sm mb-6 shadow-lg">
-              <FaUsers className="mr-2" />
-              Meet Our Team
-              <FaAward className="ml-2 text-brand-orange-500" />
-            </div>
-            <h2 className="text-5xl lg:text-6xl font-black mb-8">
-              The <span className="gradient-text">Experts</span> Behind Your Success
-            </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-             Our team of industry veterans and recruitment experts work tirelessly to deliver exceptional results for every client.
-            </p>
-          </div>
+      
 
-          {/* Team Members Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            {teamMembers.map((member, index) => (
-              <div
-                key={member.name}
-                className="team-member glass-card rounded-3xl p-8 text-center hover-lift animate-on-scroll"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                {/* Avatar */}
-                <div className="relative mb-6">
-                  <div className={`team-avatar w-24 h-24 bg-gradient-to-br ${member.gradient} rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto shadow-xl`}>
-                    {member.initials}
-                  </div>
-                  {/* Status indicator */}
-                  <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-brand-blue-500 rounded-full border-4 border-white flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
-                  </div>
-                </div>
+     <section className="py-32 bg-white relative overflow-hidden">
+  {/* Floating Background Effects */}
+  <div className="absolute inset-0 opacity-10">
+    <div className="floating-animation absolute top-20 left-20 w-96 h-96 morphing-shape bg-blue-500 blur-3xl"></div>
+    <div
+      className="floating-animation absolute bottom-20 right-20 w-80 h-80 morphing-shape bg-orange-400 blur-3xl"
+      style={{ animationDelay: "-3s" }}
+    ></div>
+  </div>
 
-                {/* Member Info */}
-                <h3 className="text-2xl font-bold mb-2 text-gray-800">{member.name}</h3>
-                <p className="text-lg text-brand-blue-600 font-semibold mb-4">{member.position}</p>
-                <p className="text-gray-600 text-base leading-relaxed mb-6">
-                  {member.description}
-                </p>
+  {/* Content */}
+  <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
+    <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black mb-8 text-gray-900">
+      Ready to Transform Your <br />
+      <span className="text-brand-orange-500">Hiring Process?</span>
+    </h2>
 
-                {/* Social Links */}
-                <div className="flex justify-center space-x-4">
-                  <a
-                    href={member.linkedin}
-                    className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center hover:bg-brand-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
-                    title="LinkedIn"
-                  >
-                    <FaLinkedinIn className="text-lg" />
-                  </a>
-                  <a
-                    href={`mailto:${member.email}`}
-                    className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center hover:bg-brand-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
-                    title="Email"
-                  >
-                    <FaEnvelope className="text-lg" />
-                  </a>
-                </div>
+    <p className="text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+     Join 200+ end clients and healthcare facilities that trust Arihant Staffing for their workforce needs. Experience the future of AI-powered recruitment and staffing.
+    </p>
 
-                {/* Expertise Badge */}
-                <div className="mt-6 inline-flex items-center px-4 py-2 bg-gradient-to-r from-brand-blue-100 to-brand-blue-100 rounded-full text-sm font-semibold text-gray-700">
-                  <FaTrophy className="w-4 h-4 mr-2 text-brand-orange-500" />
-                  Industry Expert
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    {/* Buttons */}
+    <div className="flex flex-col sm:flex-row gap-8 justify-center mb-12">
+      <Link href="/contact">
+        <button className="bg-brand-blue-600 text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-brand-blue-700 hover:scale-105 transition-all duration-300 shadow-2xl">
+          <i className="fas fa-calendar mr-3"></i>
+          Contact Us
+        </button>
+      </Link>
 
-      <section className="py-32 gradient-bg text-white relative overflow-hidden">
-        {/* Floating Background Effects */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="floating-animation absolute top-20 left-20 w-96 h-96 morphing-shape bg-white blur-3xl"></div>
-          <div
-            className="floating-animation absolute bottom-20 right-20 w-80 h-80 morphing-shape bg-brand-orange-300 blur-3xl"
-            style={{ animationDelay: "-3s" }}
-          ></div>
-        </div>
-
-        {/* Content */}
-        <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
-          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black mb-8">
-            Ready to Transform Your <br />
-            <span className="text-brand-orange-300">Hiring Process?</span>
-          </h2>
-
-          <p className="text-2xl text-brand-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Join 200+ companies that trust Arihant Staffing for their staffing
-            needs. Experience the future of recruitment with our AI-powered
-            platform.
-          </p>
-
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-8 justify-center mb-12">
-            <Link href='/contact'>
-            <button className="bg-white text-brand-blue-600 px-12 py-6 rounded-full font-bold text-xl hover:scale-105 transition-transform duration-300 shadow-2xl">
-              <i className="fas fa-calendar mr-3"></i>
-              Contact Us
-            </button>
-            </Link>
-
-            <button className="border-3 border-white text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-white hover:text-brand-blue-600 transition-all duration-300">
-              <i className="fas fa-phone mr-3"></i>
-              Call : +1 973-891-7576
-            </button>
-          </div>
-        </div>
-      </section>
+      <button className="border-2 border-brand-blue-600 text-brand-blue-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-brand-blue-600 hover:text-white transition-all duration-300">
+        <i className="fas fa-phone mr-3"></i>
+        Call : +1 973-891-7576
+      </button>
+    </div>
+  </div>
+</section>
       
       <Footer/>
     </div>
