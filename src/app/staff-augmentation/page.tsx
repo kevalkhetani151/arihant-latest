@@ -38,7 +38,10 @@ import {
   FaUniversity,
   FaShoppingBasket,
   FaFlask,
-  FaShoppingBag
+  FaShoppingBag,
+  FaBroadcastTower,
+  FaBolt,
+  FaCar
 } from 'react-icons/fa';
 import Header from '../header/page';
 import Footer from '../footer/page';
@@ -208,7 +211,7 @@ const StaffAugmentation = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-8 animate-on-scroll">
                 <div className="text-center">
                   <div className="text-4xl font-black gradient-text">2M+</div>
-                  <div className="text-sm text-gray-600 font-medium">Skilled Professionals</div>
+                  <div className="text-sm text-gray-600 font-medium">Active Database</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-black gradient-text">48h</div>
@@ -681,12 +684,7 @@ const StaffAugmentation = () => {
   </div>
 
   {/* FMCG */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaShoppingBasket className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">FMCG</h4>
-  </div>
+ 
   
   {/* Healthcare */}
   <div className="text-center animate-on-scroll">
@@ -701,7 +699,7 @@ const StaffAugmentation = () => {
     <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
       <FaFlask className="text-2xl text-white" />
     </div>
-    <h4 className="font-semibold text-gray-800">Pharma</h4>
+    <h4 className="font-semibold text-gray-800">Pharma & Life Sciences</h4>
   </div>
 
   {/* Engineering */}
@@ -709,7 +707,7 @@ const StaffAugmentation = () => {
     <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
       <FaCogs className="text-2xl text-white" />
     </div>
-    <h4 className="font-semibold text-gray-800">Engineering</h4>
+    <h4 className="font-semibold text-gray-800">Engineering & R&D</h4>
   </div>
   
   {/* Manufacturing */}
@@ -733,32 +731,41 @@ const StaffAugmentation = () => {
     <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
       <FaShoppingCart className="text-2xl text-white" />
     </div>
-    <h4 className="font-semibold text-gray-800">E-commerce</h4>
+    <h4 className="font-semibold text-gray-800">Retail & E-commerce</h4>
   </div>
 
   {/* Retail */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaStore className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Retail</h4>
-  </div>
+  
 
   {/* Real Estate */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaBuilding  className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Real Estate</h4>
-  </div>
+  
 
   {/* Logistics */}
   <div className="text-center animate-on-scroll">
     <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
       <FaTruck className="text-2xl text-white" />
     </div>
-    <h4 className="font-semibold text-gray-800">Logistics</h4>
+    <h4 className="font-semibold text-gray-800">Logistics & Supply Chain</h4>
   </div>
+  <div className="text-center animate-on-scroll">
+  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+    <FaBroadcastTower className="text-2xl text-white" />
+  </div>
+  <h4 className="font-semibold text-gray-800">Telecom</h4>
+</div>
+
+<div className="text-center animate-on-scroll">
+  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+    <FaBolt className="text-2xl text-white" />
+  </div>
+  <h4 className="font-semibold text-gray-800">Energy & Utilities</h4>
+</div>
+<div className="text-center animate-on-scroll">
+  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+    <FaCar className="text-2xl text-white" />
+  </div>
+  <h4 className="font-semibold text-gray-800">Automotive</h4>
+</div>
   
 </div>
   </div>

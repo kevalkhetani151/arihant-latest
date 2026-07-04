@@ -622,7 +622,7 @@ const RPOServicesPage = () => {
                 <div className="text-gray-600 font-semibold">Successful Placements</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">65%</div>
+                <div className="text-5xl font-black gradient-text mb-2">60%</div>
                 <div className="text-gray-600 font-semibold">Time-to-Fill Reduction</div>
               </div>
               <div className="text-center">

@@ -1334,7 +1334,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
                   <div className="about-stat glass-card rounded-3xl p-8 text-center hover-lift">
                     <div className="text-5xl font-black gradient-text mb-3">2M+</div>
                     <div className="text-gray-600 font-semibold">
-                      Successful Placements
+                      Active Database
                     </div>
                     <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
                   </div>
@@ -1386,7 +1386,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
                 <AnimatedCounter target="50" suffix="+" />
               </div>
               <div className="text-2xl font-bold text-brand-blue-100 mb-2">
-                Enterprise Clients
+                Expert Team Members
               </div>
 
             </div>

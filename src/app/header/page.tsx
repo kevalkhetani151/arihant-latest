@@ -33,6 +33,10 @@ const Header = () => {
               <Link href="/home" className="nav-link text-gray-300 hover:text-brand-orange-400 font-semibold transition-all duration-300 hover:scale-110">
                 Home
               </Link>
+
+              <Link href="/gcc" className="nav-link text-gray-300 hover:text-brand-orange-400 font-semibold transition-all duration-300 hover:scale-110">
+                 Global capability center
+              </Link>
               
               {/* Services Dropdown */}
               <div className="relative group">
@@ -47,21 +51,18 @@ const Header = () => {
                     {/* Services Grid */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                       
-                      {/* RPO Service */}
-                      <Link href="/gcc" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
+                        <Link href="/staff-augmentation" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
                         <div className="flex-shrink-0">
                           <div className="w-14 h-14 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center">
                             <FaUserPlus className="text-white text-2xl" />
                           </div>
                         </div>
                         <div className="flex-1">
-                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">Global Capability Center</h4>
+                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">Staff Augmentation</h4>
                           <p className="text-gray-300 text-base mt-2">Scale your team with skilled professionals and expand your workforce efficiently</p>
                         </div>
                       </Link>
-
-                      {/* HR Solutions */}
-                      <Link href="/hr-solutions" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
+                       <Link href="/hr-solutions" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
                         <div className="flex-shrink-0">
                           <div className="w-14 h-14 bg-gradient-to-br from-brand-blue-500 to-brand-orange-600 rounded-xl flex items-center justify-center">
                             <FaUsersCog className="text-white text-2xl" />
@@ -72,6 +73,35 @@ const Header = () => {
                           <p className="text-gray-300 text-base mt-2">Complete human resource management and strategic HR consulting services</p>
                         </div>
                       </Link>
+
+                        <Link href="/rpo" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
+                        <div className="flex-shrink-0">
+                          <div className="w-14 h-14 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center">
+                            <FaNetworkWired className="text-white text-2xl" />
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">Recruitment Process Outsourcing</h4>
+                          <p className="text-gray-300 text-base mt-2">Streamline Hiring with Comprehensive RPO Solutions & Services</p>
+                        </div>
+                      </Link>
+                       <Link href="/web-development" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
+                        <div className="flex-shrink-0">
+                          <div className="w-14 h-14 bg-gradient-to-br from-brand-orange-500 to-brand-orange-600 rounded-xl flex items-center justify-center">
+                            <FaLaptopCode className="text-white text-2xl" />
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">IT Services & Consulting</h4>
+                          <p className="text-gray-300 text-base mt-2">Technology solutions and strategic IT consulting for business growth</p>
+                        </div>
+                      </Link>
+                      {/* RPO Service */}
+                     
+                      
+
+                      {/* HR Solutions */}
+                     
 
                       {/* Web Development */}
                       {/* <Link href="/web-development" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
@@ -87,45 +117,8 @@ const Header = () => {
                       </Link> */}
 
                       {/* IT Services */}
-                      <Link href="/web-development" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
-                        <div className="flex-shrink-0">
-                          <div className="w-14 h-14 bg-gradient-to-br from-brand-orange-500 to-brand-orange-600 rounded-xl flex items-center justify-center">
-                            <FaLaptopCode className="text-white text-2xl" />
-                          </div>
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">IT Services & Consulting</h4>
-                          <p className="text-gray-300 text-base mt-2">Technology solutions and strategic IT consulting for business growth</p>
-                        </div>
-                      </Link>
-
-                      {/* BPO */}
-                      <Link href="/rpo" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
-                        <div className="flex-shrink-0">
-                          <div className="w-14 h-14 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center">
-                            <FaNetworkWired className="text-white text-2xl" />
-                          </div>
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">Recruitment Process Outsourcing</h4>
-                          <p className="text-gray-300 text-base mt-2">Streamline Hiring with Comprehensive RPO Solutions & Services</p>
-                        </div>
-                      </Link>
-
-                      {/* Staff Augmentation */}
-                      <Link href="/staff-augmentation" className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md">
-                        <div className="flex-shrink-0">
-                          <div className="w-14 h-14 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center">
-                            <FaUserPlus className="text-white text-2xl" />
-                          </div>
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="text-white font-bold text-xl group-hover:text-brand-blue-400">Staff Augmentation</h4>
-                          <p className="text-gray-300 text-base mt-2">Scale your team with skilled professionals and expand your workforce efficiently</p>
-                        </div>
-                      </Link>
-                      {/* Learning & Development Solutions */}
-<Link
+                      
+                      <Link
   href="/learning-development-solutions"
   className="service-item flex items-start space-x-4 p-6 rounded-xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-brand-blue-400 hover:shadow-md"
 >
@@ -161,6 +154,14 @@ const Header = () => {
     </p>
   </div>
 </Link>
+
+                      {/* BPO */}
+                    
+
+                      {/* Staff Augmentation */}
+                    
+                      {/* Learning & Development Solutions */}
+
                     </div>
 
                     {/* Bottom CTA */}

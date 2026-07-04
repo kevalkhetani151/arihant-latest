@@ -19,7 +19,9 @@ import {
   FaCar,
   FaTruck,
   FaSignal,
-  FaBolt
+  FaBolt,
+  FaSalesforce,
+  FaCubes
 } from 'react-icons/fa';
 
 import { SiTensorflow, SiKubernetes } from 'react-icons/si';
@@ -208,7 +210,7 @@ const ITSolutionsPage = () => {
               {/* Key Tech Stats */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-8 animate-on-scroll">
                 <div className="text-center">
-                  <div className="text-4xl font-black gradient-text">40+</div>
+                  <div className="text-4xl font-black gradient-text">10+</div>
                   <div className="text-sm text-gray-600 font-medium">Projects Delivered</div>
                 </div>
                 <div className="text-center">
@@ -336,30 +338,33 @@ const ITSolutionsPage = () => {
           </li>
         </ul>
       </div>
-
-      {/* Cybersecurity */}
+{/* Data Analytics & GenAI */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaShieldAlt className="text-3xl text-white" />
+          <FaChartBar className="text-3xl text-white" />
         </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">Cybersecurity Solutions</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Advanced cybersecurity frameworks protecting your digital assets with multi-layered security protocols and threat intelligence.</p>
+        <h3 className="text-2xl font-bold mb-4 text-gray-800">Data Analytics & Generative AI</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">Transform raw data into actionable insights with advanced analytics, machine learning, generative AI, and artificial intelligence solutions.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Advanced threat detection & response</span>
+            <span className="text-gray-700">Business intelligence dashboards</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Zero Trust security architecture</span>
+            <span className="text-gray-700">Machine learning models</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Security audits & compliance</span>
+            <span className="text-gray-700">Predictive analytics</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Incident response & recovery</span>
+            <span className="text-gray-700">Data warehouse & ETL solutions</span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
+            <span className="text-gray-700">Generative AI Applications</span>
           </li>
         </ul>
       </div>
@@ -391,33 +396,29 @@ const ITSolutionsPage = () => {
         </ul>
       </div>
 
-      {/* Data Analytics & GenAI */}
+      {/* Cybersecurity */}
       <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaChartBar className="text-3xl text-white" />
+          <FaShieldAlt className="text-3xl text-white" />
         </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">Data Analytics & Generative AI</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Transform raw data into actionable insights with advanced analytics, machine learning, generative AI, and artificial intelligence solutions.</p>
+        <h3 className="text-2xl font-bold mb-4 text-gray-800">Cybersecurity Solutions</h3>
+        <p className="text-gray-600 mb-6 leading-relaxed">Advanced cybersecurity frameworks protecting your digital assets with multi-layered security protocols and threat intelligence.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Business intelligence dashboards</span>
+            <span className="text-gray-700">Advanced threat detection & response</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Machine learning models</span>
+            <span className="text-gray-700">Zero Trust security architecture</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Predictive analytics</span>
+            <span className="text-gray-700">Security audits & compliance</span>
           </li>
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Data warehouse & ETL solutions</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Generative AI Applications</span>
+            <span className="text-gray-700">Incident response & recovery</span>
           </li>
         </ul>
       </div>
@@ -488,11 +489,11 @@ const ITSolutionsPage = () => {
         Our <span className="text-brand-blue-600">Technology Stack</span>
       </h2>
       <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-        We Leverage Cutting-Edge Technologies And Industry Best Practices To Deliver Robust, Scalable, And Future-Ready Solutions
+        We leverage cutting-edge technologies and industry best practices to deliver robust, scalable, and future-ready solutions. Our expertise is not limited to the technology stack listed below.
       </p>
     </div>
 
-    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
 
       {/* React */}
       <div className="text-center animate-on-scroll">
@@ -500,14 +501,6 @@ const ITSolutionsPage = () => {
           <FaReact className="text-2xl text-white" />
         </div>
         <h4 className="font-semibold text-gray-800">React.js</h4>
-      </div>
-
-      {/* Node.js */}
-      <div className="text-center animate-on-scroll">
-        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaNodeJs className="text-2xl text-white" />
-        </div>
-        <h4 className="font-semibold text-gray-800">Node.js</h4>
       </div>
 
       {/* Python */}
@@ -526,12 +519,52 @@ const ITSolutionsPage = () => {
         <h4 className="font-semibold text-gray-800">Java</h4>
       </div>
 
+      {/* Gen AI */}
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaRobot className="text-2xl text-white" />
+        </div>
+        <h4 className="font-semibold text-gray-800">Gen AI</h4>
+      </div>
+
+      {/* Machine Learning */}
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaBrain className="text-2xl text-white" />
+        </div>
+        <h4 className="font-semibold text-gray-800">Machine Learning</h4>
+      </div>
+
+      {/* Node.js */}
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaNodeJs className="text-2xl text-white" />
+        </div>
+        <h4 className="font-semibold text-gray-800">Node.js</h4>
+      </div>
+
       {/* AWS */}
       <div className="text-center animate-on-scroll">
         <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
           <FaAws className="text-2xl text-white" />
         </div>
         <h4 className="font-semibold text-gray-800">AWS</h4>
+      </div>
+
+      {/* Azure */}
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaCloud className="text-2xl text-white" />
+        </div>
+        <h4 className="font-semibold text-gray-800">Azure</h4>
+      </div>
+
+      {/* Database */}
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaDatabase className="text-2xl text-white" />
+        </div>
+        <h4 className="font-semibold text-gray-800">Database</h4>
       </div>
 
       {/* Docker */}
@@ -542,36 +575,20 @@ const ITSolutionsPage = () => {
         <h4 className="font-semibold text-gray-800">Docker</h4>
       </div>
 
-      {/* Database */}
+      {/* Salesforce */}
       <div className="text-center animate-on-scroll">
         <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaDatabase className="text-2xl text-white" />
+          <FaSalesforce className="text-2xl text-white" />
         </div>
-        <h4 className="font-semibold text-gray-800">Databases</h4>
+        <h4 className="font-semibold text-gray-800">Salesforce</h4>
       </div>
 
-      {/* Generative AI */}
+      {/* SAP */}
       <div className="text-center animate-on-scroll">
         <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaRobot className="text-2xl text-white" />
+          <FaCubes className="text-2xl text-white" />
         </div>
-        <h4 className="font-semibold text-gray-800">Generative AI</h4>
-      </div>
-
-      {/* TensorFlow */}
-      <div className="text-center animate-on-scroll">
-        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaBrain className="text-2xl text-white" />
-        </div>
-        <h4 className="font-semibold text-gray-800">TensorFlow</h4>
-      </div>
-
-      {/* Kubernetes */}
-      <div className="text-center animate-on-scroll">
-        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-          <FaNetworkWired className="text-2xl text-white" />
-        </div>
-        <h4 className="font-semibold text-gray-800">Kubernetes</h4>
+        <h4 className="font-semibold text-gray-800">SAP</h4>
       </div>
 
       {/* .NET */}
