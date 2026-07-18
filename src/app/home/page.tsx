@@ -889,9 +889,9 @@ const HeroSection = () => {
   }, []);
 
   return (
-   <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[60vh] md:h-[70vh] lg:h-[75vh] w-full overflow-hidden">
       <Image
-        src="/hero-section.png"
+        src="/hero-section2.jpeg"
         alt="Hero"
         fill
         priority
@@ -1134,9 +1134,9 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
       <Header />
 
       {/* --- REPLACED HERO SECTION START --- */}
-
+      <div className="mt-24">
      <HeroSection/>
-     
+     </div>
       {/* --- REPLACED HERO SECTION END --- */}
 
       {/* Enhanced Process Section */}

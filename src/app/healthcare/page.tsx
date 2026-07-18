@@ -217,21 +217,7 @@ const HealthcareStaffingPage = () => {
                 </button>
               </div>
               
-              {/* Key Stats */}
-              <div className="grid grid-cols-3 gap-4 pt-6 animate-on-scroll">
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-black gradient-text">50</div>
-                  <div className="text-xs text-gray-600 font-medium">States Covered</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-black gradient-text">40+</div>
-                  <div className="text-xs text-gray-600 font-medium">Specialties Placed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-black gradient-text">24/7</div>
-                  <div className="text-xs text-gray-600 font-medium">Clinician Support</div>
-                </div>
-              </div>
+             
             </div>
             
             {/* Right Visual */}
@@ -255,7 +241,7 @@ const HealthcareStaffingPage = () => {
                       </div>
                       <div>
                         <div className="font-bold text-gray-800">ICU Travel RN Openings</div>
-                        <div className="text-sm text-gray-600">32 assignments open this week</div>
+                      
                       </div>
                     </div>
                     <div className="text-brand-blue-500 font-bold text-lg">Active</div>
@@ -268,7 +254,7 @@ const HealthcareStaffingPage = () => {
                       </div>
                       <div>
                         <div className="font-bold text-gray-800">Time-to-Placement</div>
-                        <div className="text-sm text-gray-600">Average of 9 days to offer</div>
+                        
                       </div>
                     </div>
                     <div className="text-brand-blue-500 font-bold text-lg">Fast</div>
@@ -281,7 +267,7 @@ const HealthcareStaffingPage = () => {
                       </div>
                       <div>
                         <div className="font-bold text-gray-800">Clinician Retention</div>
-                        <div className="text-sm text-gray-600">92% completion of assignment</div>
+                        
                       </div>
                     </div>
                     <div className="text-brand-blue-500 font-bold text-lg">92%</div>
@@ -596,24 +582,36 @@ const HealthcareStaffingPage = () => {
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">Consistent, measurable results across nursing, allied health, clinical, and biomedical placements for healthcare organizations nationwide.</p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">10K+</div>
-                <div className="text-gray-600 font-semibold">Professionals Placed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">50</div>
-                <div className="text-gray-600 font-semibold">States Covered</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">9 Days</div>
-                <div className="text-gray-600 font-semibold">Average Time-to-Placement</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">92%</div>
-                <div className="text-gray-600 font-semibold">Assignment Completion Rate</div>
-              </div>
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+  <div className="text-center">
+    <div className="text-5xl font-black gradient-text mb-2">
+      50
+    </div>
+    <div className="text-gray-600 font-semibold">
+      States Covered
+    </div>
+  </div>
+
+  <div className="text-center">
+    <div className="text-3xl lg:text-4xl font-black gradient-text mb-2 leading-tight">
+      24 × 7 Days
+    </div>
+    <div className="text-gray-600 font-semibold">
+      Average Time-to-Placement
+    </div>
+  </div>
+
+  <div className="text-center">
+    <div className="text-5xl font-black gradient-text mb-2">
+      92%
+    </div>
+    <div className="text-gray-600 font-semibold">
+      Assignment Completion Rate
+    </div>
+  </div>
+
+</div>
           </div>
         </div>
       </section>

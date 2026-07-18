@@ -216,20 +216,7 @@ const GCCServicesPage = () => {
               </div>
               
               {/* Key GCC Stats */}
-              <div className="grid grid-cols-3 gap-4 pt-6 animate-on-scroll">
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-black gradient-text">70%</div>
-                  <div className="text-xs text-gray-600 font-medium">Faster Center Launch</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-black gradient-text">60%</div>
-                  <div className="text-xs text-gray-600 font-medium">Cost Optimization</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-black gradient-text">95%</div>
-                  <div className="text-xs text-gray-600 font-medium">Client Retention</div>
-                </div>
-              </div>
+             
             </div>
             
             {/* Right Visual */}
@@ -544,7 +531,7 @@ const GCCServicesPage = () => {
           </div>
 
           {/* All Industries Available */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
+          {/* <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
             <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Industry Coverage & Success Metrics</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="p-4 bg-gray-50 rounded-lg">
@@ -564,7 +551,7 @@ const GCCServicesPage = () => {
                 <div className="text-sm text-gray-600">Capability Centers Launched</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -619,7 +606,7 @@ const GCCServicesPage = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">50+</div>
+                <div className="text-5xl font-black gradient-text mb-2">225+</div>
                 <div className="text-gray-600 font-semibold">Capability Centers Launched</div>
               </div>
               <div className="text-center">
@@ -627,7 +614,7 @@ const GCCServicesPage = () => {
                 <div className="text-gray-600 font-semibold">Faster Center Launch</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">60%</div>
+                <div className="text-5xl font-black gradient-text mb-2">65%</div>
                 <div className="text-gray-600 font-semibold">Cost Optimization</div>
               </div>
               <div className="text-center">

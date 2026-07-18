@@ -634,7 +634,7 @@ const LearningDevelopmentPage = () => {
           </div>
 
           {/* Success Metrics */}
-          <div className="bg-gradient-to-br from-gray-50 to-brand-blue-50 rounded-3xl shadow-xl p-12 animate-on-scroll">
+          {/* <div className="bg-gradient-to-br from-gray-50 to-brand-blue-50 rounded-3xl shadow-xl p-12 animate-on-scroll">
             <div className="text-center mb-12">
               <h3 className="text-3xl lg:text-4xl font-black mb-4 text-gray-800">
                 Our <span className="gradient-text">Mission</span>
@@ -660,7 +660,7 @@ const LearningDevelopmentPage = () => {
                 <div className="text-gray-600 font-semibold">Repeat & Referral Clients</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
