@@ -18,6 +18,7 @@ import {
 import Header from '../header/page';
 import Footer from '../footer/page';
 import Link from 'next/link';
+import { CoreValuesSection } from '../home/page';
 
 const AboutUs = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -642,6 +643,7 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
+        <CoreValuesSection/>
         
         <Footer/>
       </div>
