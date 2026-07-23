@@ -34,6 +34,7 @@ import {
 import Header from "../header/page";
 import Footer from "../footer/page";
 import Image from "next/image";
+import PremiumStaffingHero from "../dummy/page";
 
 // --- DATA CONSTANTS ---
 
@@ -1134,8 +1135,9 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
       <Header />
 
       {/* --- REPLACED HERO SECTION START --- */}
-      <div className="mt-24">
-     <HeroSection/>
+      <div className="mt-8">
+     {/* <HeroSection/> */}
+     <PremiumStaffingHero/>
      </div>
       {/* --- REPLACED HERO SECTION END --- */}
 
@@ -1435,7 +1437,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
     </h2>
 
     <p className="text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-     Join 200+ end clients and healthcare facilities that trust Arihant Staffing for their workforce needs. Experience the future of AI-powered recruitment and staffing.
+     Join 150+ end clients and healthcare facilities that trust Arihant Staffing for their workforce needs. Experience the future of AI-powered recruitment and staffing.
     </p>
 
     {/* Buttons */}
@@ -1447,10 +1449,6 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
         </button>
       </Link>
 
-      <button className="border-2 border-brand-blue-600 text-brand-blue-600 px-12 py-6 rounded-full font-bold text-xl hover:bg-brand-blue-600 hover:text-white transition-all duration-300">
-        <i className="fas fa-phone mr-3"></i>
-        Call : +1 973-891-7576
-      </button>
     </div>
   </div>
 </section>

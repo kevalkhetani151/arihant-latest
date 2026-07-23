@@ -1,280 +1,184 @@
-"use client"
+"use client";
 import React from 'react';
+import Link from 'next/link';
 import {
-  FaPhone,
-  FaEnvelope,
-  FaLinkedinIn,
-  FaTwitter,
-  FaFacebookF,
-  FaInstagram,
-  FaMapMarkerAlt,
-  FaArrowRight,
-  FaShieldAlt,
-  FaUserPlus,
-  FaUsersCog,
-  FaCode,
-  FaLaptopCode,
-  FaNetworkWired,
-  FaClock,
-  FaHeadset,
-  FaGlobe,
-  FaAward
-} from 'react-icons/fa';
+  Phone,
+  Mail,
+  MapPin,
+  Linkedin,
+  Twitter,
+  Facebook,
+  Instagram,
+  UserPlus,
+  Users,
+  Network,
+  Laptop,
+  GraduationCap,
+  Activity,
+  ArrowUpRight,
+  Heart
+} from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-brand-orange-500 to-brand-orange-600 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-br from-brand-blue-500 to-brand-orange-600 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-full blur-2xl"></div>
+    <footer className="bg-gray-950 text-gray-300 relative overflow-hidden border-t border-gray-800/60 font-sans">
+      {/* Background Blurs */}
+      <div className="absolute inset-0 pointer-events-none opacity-20">
+        <div className="absolute top-0 left-10 w-96 h-96 bg-gradient-to-br from-brand-orange-500/30 to-amber-500/0 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-0 right-10 w-[30rem] h-[30rem] bg-gradient-to-br from-brand-blue-500/30 to-indigo-500/0 rounded-full blur-[140px]"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 pt-20 pb-12 relative z-10">
         {/* Main Footer Content */}
-        <div className="grid lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-16">
           
           {/* Company Info - Takes 2 columns */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-3">
-              <img src="/logo.png" alt="Arihant Staffing Logo" className="h-22 w-64 object-contain" />
-              {/* <span className="text-3xl font-black bg-gradient-to-r from-brand-orange-400 to-brand-orange-500 bg-clip-text text-transparent">
-                Arihant Staffing
-              </span> */}
+              <img 
+                src="/logo.png" 
+                alt="Arihant Staffing Logo" 
+                className="h-16 w-auto object-contain brightness-110" 
+              />
             </div>
-            
-            {/* <p className="text-gray-300 leading-relaxed text-lg max-w-md">
-              Revolutionizing recruitment through AI-powered matching and human expertise. 
-              Connecting exceptional talent with visionary companies worldwide since 2008.
-            </p> */}
 
-            {/* Key Stats */}
-          
+            <p className="text-gray-400 leading-relaxed text-sm max-w-sm">
+              Empowering organizations through AI-driven staffing, custom HR solutions, healthcare workforce management, and strategic IT consulting across global markets.
+            </p>
 
             {/* Social Links */}
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-brand-orange-600 hover:to-brand-orange-600 transition-all duration-300 transform hover:scale-110 group"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedinIn className="text-lg group-hover:text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-brand-blue-500 hover:to-brand-blue-600 transition-all duration-300 transform hover:scale-110 group"
-                aria-label="Twitter"
-              >
-                <FaTwitter className="text-lg group-hover:text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-brand-blue-600 hover:to-brand-blue-700 transition-all duration-300 transform hover:scale-110 group"
-                aria-label="Facebook"
-              >
-                <FaFacebookF className="text-lg group-hover:text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-brand-orange-500 hover:to-brand-orange-500 transition-all duration-300 transform hover:scale-110 group"
-                aria-label="Instagram"
-              >
-                <FaInstagram className="text-lg group-hover:text-white" />
-              </a>
+            <div className="flex items-center space-x-3 pt-2">
+              {[
+                { icon: Linkedin, label: 'LinkedIn', href: '#', hoverBg: 'hover:bg-blue-600' },
+                { icon: Twitter, label: 'Twitter', href: '#', hoverBg: 'hover:bg-sky-500' },
+                { icon: Facebook, label: 'Facebook', href: '#', hoverBg: 'hover:bg-blue-700' },
+                { icon: Instagram, label: 'Instagram', href: '#', hoverBg: 'hover:bg-pink-600' },
+              ].map((social, idx) => (
+                <a
+                  key={idx}
+                  href={social.href}
+                  aria-label={social.label}
+                  className={`w-10 h-10 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white ${social.hoverBg} hover:border-transparent transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg`}
+                >
+                  <social.icon className="w-4 h-4 stroke-[2]" />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Our Services */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 text-white flex items-center">
-              <div className="w-2 h-6 bg-gradient-to-b from-brand-orange-400 to-brand-orange-500 rounded-full mr-3"></div>
-              Our Services
+          {/* Our Services - Matched exactly with Dropdown */}
+          <div className="lg:col-span-1">
+            <h3 className="text-base font-semibold text-white mb-6 flex items-center space-x-2 tracking-wide uppercase text-xs">
+              <span className="w-1.5 h-4 bg-brand-orange-500 rounded-full"></span>
+              <span>Our Services</span>
             </h3>
-            <ul className="space-y-4 text-gray-300">
-              <li>
-                <a
-                  href="rpo"
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaUserPlus className="w-4 h-4 mr-3 text-brand-blue-400 group-hover:text-brand-blue-300" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">RPO Solutions</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/hr-solutions"
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaUsersCog className="w-4 h-4 mr-3 text-brand-blue-400 group-hover:text-brand-blue-300" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">HR Solutions</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="it-consultant"
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaCode className="w-4 h-4 mr-3 text-brand-blue-400 group-hover:text-brand-blue-300" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">Web Development</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="it-consultant"
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaLaptopCode className="w-4 h-4 mr-3 text-brand-orange-400 group-hover:text-brand-orange-300" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">IT Consulting</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="bpo"
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaNetworkWired className="w-4 h-4 mr-3 text-brand-blue-400 group-hover:text-brand-blue-300" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">BPO Services</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/staff-augmentation"
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaUserPlus className="w-4 h-4 mr-3 text-brand-blue-400 group-hover:text-brand-blue-300" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">Staff Augmentation</span>
-                </a>
-              </li>
+            <ul className="space-y-3.5 text-sm">
+              {[
+                { name: 'Staff Augmentation', href: '/staff-augmentation', icon: UserPlus },
+                { name: 'HR Solutions', href: '/hr-solutions', icon: Users },
+                { name: 'RPO Solutions', href: '/rpo', icon: Network },
+                { name: 'IT Services & Consulting', href: '/web-development', icon: Laptop },
+                { name: 'Learning & Development', href: '/learning-development-solutions', icon: GraduationCap },
+                { name: 'Healthcare Solutions', href: '/healthcare', icon: Activity },
+              ].map((service, idx) => (
+                <li key={idx}>
+                  <Link
+                    href={service.href}
+                    className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center group"
+                  >
+                    <service.icon className="w-4 h-4 mr-2.5 text-brand-blue-400 group-hover:text-brand-orange-400 transition-colors duration-200 flex-shrink-0" />
+                    <span className="group-hover:translate-x-1 transition-transform duration-200">{service.name}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Industries */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 text-white flex items-center">
-              <div className="w-2 h-6 bg-gradient-to-b from-brand-blue-400 to-brand-orange-500 rounded-full mr-3"></div>
-              Industries
+          {/* All Industries - Spans 2 columns to cleanly show all 12 */}
+          <div className="lg:col-span-2">
+            <h3 className="text-base font-semibold text-white mb-6 flex items-center space-x-2 tracking-wide uppercase text-xs">
+              <span className="w-1.5 h-4 bg-brand-blue-500 rounded-full"></span>
+              <span>Industries We Serve</span>
             </h3>
-            <ul className="space-y-4 text-gray-300">
-              <li>
-                <p
-                 
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaArrowRight className="w-3 h-3 mr-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-brand-orange-400" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">Technology</span>
-                </p>
-              </li>
-              <li>
-                <p
-                 
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaArrowRight className="w-3 h-3 mr-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-brand-orange-400" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">Healthcare</span>
-                </p>
-              </li>
-              <li>
-                <p
-                 
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaArrowRight className="w-3 h-3 mr-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-brand-orange-400" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">Finance</span>
-                </p>
-              </li>
-              <li>
-                <p
-                
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaArrowRight className="w-3 h-3 mr-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-brand-orange-400" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">Manufacturing</span>
-                </p>
-              </li>
-              <li>
-                <p
-                 
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaArrowRight className="w-3 h-3 mr-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-brand-orange-400" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">E-commerce</span>
-                </p>
-              </li>
-              <li>
-                <p
-                
-                  className="hover:text-white transition-colors duration-300 flex items-center group"
-                >
-                  <FaArrowRight className="w-3 h-3 mr-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-brand-orange-400" />
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">Clean Energy</span>
-                </p>
-              </li>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3.5 text-sm">
+              {[
+                'Technology',
+                'BFSI',
+                'Healthcare',
+                'Pharma & Life Sciences',
+                'Engineering & R&D',
+                'Manufacturing',
+                'Ed-Tech',
+                'Retail & E-commerce',
+                'Logistics & Supply Chain',
+                'Telecom',
+                'Energy & Utilities',
+                'Automotive'
+              ].map((industry, idx) => (
+                <li key={idx}>
+                  <div className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center group cursor-pointer">
+                    <ArrowUpRight className="w-3.5 h-3.5 mr-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all duration-200 text-brand-orange-400 flex-shrink-0" />
+                    <span className="group-hover:translate-x-1 transition-transform duration-200">{industry}</span>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact & Support */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 text-white flex items-center">
-              <div className="w-2 h-6 bg-gradient-to-b from-brand-blue-400 to-brand-blue-500 rounded-full mr-3"></div>
-              Contact & Support
-            </h3>
-            
-            {/* Contact Info */}
-            <div className="space-y-4 text-gray-300 mb-8">
-              <div className="flex items-center space-x-3 group">
-               
-                <div>
-                  <a href="tel:+15551234567" className="hover:text-white transition-colors font-semibold">
-                    +1 973-891-7576
-                  </a>
-                  <div className="text-sm text-gray-400">24/7 Support Line</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3 group">
-               
-                <div>
-                  <a href="mailto:info@arihanthcs.com" className="hover:text-white transition-colors font-semibold">
-                   info@arihanthcs.com
-                  </a>
-                  <div className="text-sm text-gray-400">General Inquiries</div>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3 group">
-               
-                <div>
-                  <div className="hover:text-white transition-colors font-semibold">
-                    123 Innovation Drive
-                  </div>
-                  <div className="text-sm text-gray-400">San Francisco, CA 94105</div>
-                </div>
-              </div>
-            </div>
+        <div className="lg:col-span-1">
+  <h3 className="text-base font-semibold text-white mb-6 flex items-center space-x-2 tracking-wide uppercase text-xs">
+    <span className="w-1.5 h-4 bg-gradient-to-b from-brand-orange-400 to-brand-blue-500 rounded-full"></span>
+    <span>Contact Us</span>
+  </h3>
 
-            {/* Quick Links */}
-        
-          </div>
+  <div className="space-y-4 text-sm">
+    {/* Phone */}
+    <div className="flex items-start space-x-3 group">
+      <div className="p-2 bg-gray-900 border border-gray-800 rounded-lg group-hover:border-brand-blue-500/50 transition-colors flex-shrink-0">
+        <Phone className="w-4 h-4 text-brand-blue-400" />
+      </div>
+      <div>
+        <a
+          href="tel:+917487960042"
+          className="text-white font-medium hover:text-brand-orange-400 transition-colors block"
+        >
+          +91 7487-960042
+        </a>
+        <span className="text-xs text-gray-500">India Support</span>
+      </div>
+    </div>
+
+    {/* Email */}
+    <div className="flex items-start space-x-3 group">
+      <div className="p-2 bg-gray-900 border border-gray-800 rounded-lg group-hover:border-brand-blue-500/50 transition-colors flex-shrink-0">
+        <Mail className="w-4 h-4 text-brand-blue-400" />
+      </div>
+      <div>
+        <a
+          href="mailto:info@artifytechsolution.com"
+          className="text-white font-medium hover:text-brand-orange-400 transition-colors block"
+        >
+          info@artifytechsolution.com
+        </a>
+        <span className="text-xs text-gray-500">General Inquiries</span>
+      </div>
+    </div>
+
+    {/* Address */}
+    
+  </div>
+</div>
+
         </div>
 
-        {/* Newsletter Signup */}
-      
         {/* Bottom Footer */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-          <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400 text-sm">
-            <p>&copy; 2025 Arihant Staffing AI Inc. All rights reserved.</p>
-            <div className="flex items-center space-x-4">
-              <span className="flex items-center">
-                Made with 
-                <span className="text-brand-orange-500 mx-1 animate-pulse"></span> 
-                in Gandhinagar
-              </span>
-            </div>
-          </div>
+        <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-xs text-gray-500">
+          <p>&copy; {new Date().getFullYear()} Arihant Staffing  Inc. All rights reserved.</p>
           
-          
+         
         </div>
+
       </div>
     </footer>
   );

@@ -12,7 +12,12 @@ import {
   // Social Icons
   FaLinkedinIn, FaTwitter, FaFacebookF,
   // Check & Status Icons
-  FaCheckCircle, FaRocket, FaBounce
+  FaCheckCircle, FaRocket, FaBounce,
+  FaCar,
+  FaBolt,
+  FaBroadcastTower,
+  FaTruck,
+  FaUniversity
 } from 'react-icons/fa';
 
 import {
@@ -197,14 +202,20 @@ const HealthcareStaffingPage = () => {
               </div>
               
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight animate-on-scroll">
-                Connecting Talent.
+               Connecting Healthcare Professionals
                 <span className="gradient-text block">Powering Care.</span>
-                Nationwide.
+                 Empowering Better Patient Care. Nationwide.
               </h1>
               
-              <p className="text-base lg:text-lg text-gray-600 leading-relaxed animate-on-scroll">
-                We connect credentialed healthcare, allied health, clinical, scientific, and biomedical professionals with facilities across the United States. Our specialists take the time to understand your needs, whether you're a clinician looking for the right assignment or a facility building out your care team, and make the right match.
-              </p>
+             <p className="text-base lg:text-lg text-gray-600 leading-relaxed text-justify">
+  We connect highly qualified healthcare, allied health, clinical research,
+  life sciences, and biomedical professionals with hospitals, healthcare
+  systems, laboratories, pharmaceutical organizations, and medical device
+  companies across the United States. Whether you're a healthcare professional
+  seeking your next opportunity or a healthcare organization building a
+  high-performing workforce, our specialized recruiters deliver the right
+  talent with speed, quality, and compliance.
+</p>
               
               <div className="flex flex-col sm:flex-row gap-3 animate-on-scroll">
                 <button className="gradient-health text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2">
@@ -301,7 +312,7 @@ const HealthcareStaffingPage = () => {
         Complete <span className="text-brand-blue-600">Healthcare Staffing Coverage</span>
       </h2>
       <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-        From bedside nursing to biomedical engineering, we place credentialed professionals across the full continuum of healthcare, allied health, clinical research, and medical device roles.
+        From bedside patient care to clinical research and biomedical engineering, Arihant Staffing delivers specialized healthcare talent across every stage of the healthcare ecosystem.
       </p>
     </div>
 
@@ -313,7 +324,7 @@ const HealthcareStaffingPage = () => {
           <FaUserNurse className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Travel Nursing</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Registered Nurses, Nurse Practitioners, LPNs/LVNs, Social Workers, Medical Assistants, and CNAs placed in facilities nationwide, matched by specialists who take the time to understand what you need.</p>
+        <p className="text-gray-600 mb-6 leading-relaxed">We provide experienced travel nurses for short-term, long-term, rapid response, seasonal, and crisis assignments across the United States.</p>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -509,7 +520,7 @@ const HealthcareStaffingPage = () => {
           </div>
 
           {/* Full Coverage Metrics */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
+          {/* <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
             <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Nationwide Reach & Placement Impact</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="p-4 bg-gray-50 rounded-lg">
@@ -529,7 +540,7 @@ const HealthcareStaffingPage = () => {
                 <div className="text-sm text-gray-600">Biomedical Engineers</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -551,8 +562,8 @@ const HealthcareStaffingPage = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <FaAward className="text-2xl text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">Recognized Industry Leader</h3>
-              <p className="text-gray-600">A trusted staffing partner for enterprise healthcare systems, with a track record built on consistent, quality placements at scale.</p>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">Specialized Healthcare Recruiting</h3>
+              <p className="text-gray-600">Our recruiters focus exclusively on healthcare staffing, enabling faster placements and stronger candidate matches.</p>
             </div>
             
             <div className="animate-on-scroll bg-gradient-to-br from-brand-blue-50 to-brand-blue-50 border border-brand-blue-200 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300">
@@ -595,7 +606,7 @@ const HealthcareStaffingPage = () => {
 
   <div className="text-center">
     <div className="text-3xl lg:text-4xl font-black gradient-text mb-2 leading-tight">
-      24 × 7 Days
+       72 hours
     </div>
     <div className="text-gray-600 font-semibold">
       Average Time-to-Placement
@@ -686,6 +697,123 @@ const HealthcareStaffingPage = () => {
             </div>
             
           </div>
+        </div>
+      </section>
+
+       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-black mb-6 animate-on-scroll text-gray-800">
+              Industries We <span className="text-brand-blue-600">Serve</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-on-scroll">
+              Our staff augmentation solutions are tailored to meet the unique needs of various industries.
+            </p>
+          </div>
+      
+         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            
+        {/* Technology */}
+        <div className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <FaLaptopCode className="text-2xl text-white" />
+          </div>
+          <h4 className="font-semibold text-gray-800">Technology</h4>
+        </div>
+        
+        {/* BFSI */}
+        <div className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <FaUniversity className="text-2xl text-white" />
+          </div>
+          <h4 className="font-semibold text-gray-800">BFSI</h4>
+        </div>
+      
+        {/* FMCG */}
+       
+        
+        {/* Healthcare */}
+        <div className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <FaHeartbeat className="text-2xl text-white" />
+          </div>
+          <h4 className="font-semibold text-gray-800">Healthcare</h4>
+        </div>
+      
+        {/* Pharma */}
+        <div className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <FaFlask className="text-2xl text-white" />
+          </div>
+          <h4 className="font-semibold text-gray-800">Pharma & Life Sciences</h4>
+        </div>
+      
+        {/* Engineering */}
+        <div className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <FaCogs className="text-2xl text-white" />
+          </div>
+          <h4 className="font-semibold text-gray-800">Engineering & R&D</h4>
+        </div>
+        
+        {/* Manufacturing */}
+        <div className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <FaIndustry className="text-2xl text-white" />
+          </div>
+          <h4 className="font-semibold text-gray-800">Manufacturing</h4>
+        </div>
+        
+        {/* Ed-Tech */}
+        <div className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <FaGraduationCap className="text-2xl text-white" />
+          </div>
+          <h4 className="font-semibold text-gray-800">Ed-Tech</h4>
+        </div>
+        
+        {/* E-commerce */}
+        <div className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <FaShoppingCart className="text-2xl text-white" />
+          </div>
+          <h4 className="font-semibold text-gray-800">Retail & E-commerce</h4>
+        </div>
+      
+        {/* Retail */}
+        
+      
+        {/* Real Estate */}
+        
+      
+        {/* Logistics */}
+        <div className="text-center animate-on-scroll">
+          <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+            <FaTruck className="text-2xl text-white" />
+          </div>
+          <h4 className="font-semibold text-gray-800">Logistics & Supply Chain</h4>
+        </div>
+        <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaBroadcastTower className="text-2xl text-white" />
+        </div>
+        <h4 className="font-semibold text-gray-800">Telecom</h4>
+      </div>
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaBolt className="text-2xl text-white" />
+        </div>
+        <h4 className="font-semibold text-gray-800">Energy & Utilities</h4>
+      </div>
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaCar className="text-2xl text-white" />
+        </div>
+        <h4 className="font-semibold text-gray-800">Automotive</h4>
+      </div>
+        
+      </div>
         </div>
       </section>
 

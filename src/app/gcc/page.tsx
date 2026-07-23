@@ -181,7 +181,7 @@ const GCCServicesPage = () => {
       <Header />
 
       {/* GCC Banner Section */}
-      <section className="relative pt-24 pb-20 bg-gradient-to-br from-brand-blue-50 via-brand-blue-50 to-brand-blue-50 overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-brand-blue-50 via-brand-blue-50 to-brand-blue-50 overflow-hidden">
         <div className="banner-shape banner-shape-1"></div>
         <div className="banner-shape banner-shape-2"></div>
         <div className="banner-shape banner-shape-3"></div>
@@ -201,12 +201,12 @@ const GCCServicesPage = () => {
               </h1>
               
               <p className="text-base lg:text-lg text-gray-600 leading-relaxed animate-on-scroll">
-                Move beyond outsourcing and stand up a captive team that's truly yours. We design, build, and operate Global Capability Centers that give you dedicated talent, direct control, and enterprise-grade delivery from day one.
+               Build a fully owned Global Capability Center (GCC) with dedicated teams, scalable operations, and complete strategic control. From market assessment and entity setup to talent acquisition and ongoing operations, we help you establish a future-ready global center.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 animate-on-scroll">
                 <button className="gradient-health text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2">
-                  <span>Start Your GCC Journey</span>
+                  <span>Talk to a GCC Expert</span>
                   <FaArrowRight className="text-xs" />
                 </button>
                 <button className="border-2 border-brand-blue-300 text-brand-blue-700 px-6 py-3 rounded-full font-bold text-sm hover:bg-brand-blue-50 transition-colors duration-300 flex items-center justify-center space-x-2">
@@ -234,44 +234,68 @@ const GCCServicesPage = () => {
                     </div>                    </div>
                   </div>
                   
-                  <div className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-blue-50 rounded-xl border border-brand-blue-100 animate-float">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-brand-blue-500 rounded-full flex items-center justify-center">
-                        <FaUsers className="text-white" />
-                      </div>
-                      <div>
-                        <div className="font-bold text-gray-800">Engineering Talent Pod</div>
-                        <div className="text-sm text-gray-600">18 specialists onboarded this month</div>
-                      </div>
-                    </div>
-                    <div className="text-brand-blue-500 font-bold text-lg">Active</div>
-                  </div>
-                  
-                  <div className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-blue-50 rounded-xl border border-brand-blue-100 animate-float" style={{animationDelay: '0.5s'}}>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-brand-blue-500 rounded-full flex items-center justify-center">
-                        <FaChartLine className="text-white" />
-                      </div>
-                      <div>
-                        <div className="font-bold text-gray-800">Time-to-Launch Reduced</div>
-                        <div className="text-sm text-gray-600">From 9 months to under 3</div>
-                      </div>
-                    </div>
-                    <div className="text-brand-blue-500 font-bold text-lg">70%</div>
-                  </div>
-                  
-                  <div className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-orange-50 rounded-xl border border-brand-blue-100 animate-float" style={{animationDelay: '1s'}}>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-brand-blue-500 rounded-full flex items-center justify-center">
-                        <FaTrophy className="text-white" />
-                      </div>
-                      <div>
-                        <div className="font-bold text-gray-800">Team Retention</div>
-                        <div className="text-sm text-gray-600">95% first-year retention rate</div>
-                      </div>
-                    </div>
-                    <div className="text-brand-blue-500 font-bold text-lg">Excellent</div>
-                  </div>
+                 <div className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-blue-50 rounded-xl border border-brand-blue-100 animate-float">
+  <div className="flex items-center space-x-3">
+    <div className="w-12 h-12 bg-brand-blue-500 rounded-full flex items-center justify-center">
+      <FaUsers className="text-white" />
+    </div>
+    <div>
+      <div className="font-bold text-gray-800">
+        Dedicated Talent Pods
+      </div>
+      <div className="text-sm text-gray-600">
+        Engineering • Finance • AI • Operations
+      </div>
+    </div>
+  </div>
+  <div className="text-brand-blue-500 font-bold text-lg">
+    4+
+  </div>
+</div>
+
+<div
+  className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-blue-50 rounded-xl border border-brand-blue-100 animate-float"
+  style={{ animationDelay: "0.5s" }}
+>
+  <div className="flex items-center space-x-3">
+    <div className="w-12 h-12 bg-brand-blue-500 rounded-full flex items-center justify-center">
+      <FaChartLine className="text-white" />
+    </div>
+    <div>
+      <div className="font-bold text-gray-800">
+        Average GCC Launch
+      </div>
+      <div className="text-sm text-gray-600">
+        Operational team setup in under 90 days
+      </div>
+    </div>
+  </div>
+  <div className="text-brand-blue-500 font-bold text-lg">
+    &lt; 90 Days
+  </div>
+</div>
+
+<div
+  className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-orange-50 rounded-xl border border-brand-blue-100 animate-float"
+  style={{ animationDelay: "1s" }}
+>
+  <div className="flex items-center space-x-3">
+    <div className="w-12 h-12 bg-brand-blue-500 rounded-full flex items-center justify-center">
+      <FaTrophy className="text-white" />
+    </div>
+    <div>
+      <div className="font-bold text-gray-800">
+        First-Year Employee Retention
+      </div>
+      <div className="text-sm text-gray-600">
+        Long-term workforce stability across GCC teams
+      </div>
+    </div>
+  </div>
+  <div className="text-brand-blue-500 font-bold text-lg">
+    95%
+  </div>
+</div>
                 </div>
                 
                 {/* Floating GCC Elements */}
@@ -313,7 +337,7 @@ const GCCServicesPage = () => {
           <FaUsersCog className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">End-to-End GCC Setup</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Complete center formation covering entity structuring, site selection, talent strategy, and operational readiness, backed by a dedicated setup team from kickoff to launch.</p>
+        <p className="text-gray-600 mb-6 leading-relaxed">We provide end-to-end Global Capability Center setup, including business case development, location strategy, legal entity formation, infrastructure planning, talent acquisition, governance, compliance, and operational readiness.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
