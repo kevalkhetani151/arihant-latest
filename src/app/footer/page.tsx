@@ -134,20 +134,39 @@ const Footer = () => {
 
   <div className="space-y-4 text-sm">
     {/* Phone */}
-    <div className="flex items-start space-x-3 group">
-      <div className="p-2 bg-gray-900 border border-gray-800 rounded-lg group-hover:border-brand-blue-500/50 transition-colors flex-shrink-0">
-        <Phone className="w-4 h-4 text-brand-blue-400" />
-      </div>
-      <div>
-        <a
-          href="tel:+917487960042"
-          className="text-white font-medium hover:text-brand-orange-400 transition-colors block"
-        >
-          +91 7487-960042
-        </a>
-        <span className="text-xs text-gray-500">India Support</span>
-      </div>
+   <div className="space-y-4">
+  {/* India Support */}
+  <div className="flex items-start space-x-3 group">
+    <div className="p-2 bg-gray-900 border border-gray-800 rounded-lg group-hover:border-brand-blue-500/50 transition-colors flex-shrink-0">
+      <Phone className="w-4 h-4 text-brand-blue-400" />
     </div>
+    <div>
+      <a
+        href="tel:+917487960042"
+        className="text-white font-medium hover:text-brand-orange-400 transition-colors block"
+      >
+        +91 7487-960042
+      </a>
+      <span className="text-xs text-gray-500">India Support</span>
+    </div>
+  </div>
+
+  {/* US Support */}
+  <div className="flex items-start space-x-3 group">
+    <div className="p-2 bg-gray-900 border border-gray-800 rounded-lg group-hover:border-brand-blue-500/50 transition-colors flex-shrink-0">
+      <Phone className="w-4 h-4 text-brand-blue-400" />
+    </div>
+    <div>
+      <a
+        href="tel:+1 (469) 606-9505"
+        className="text-white font-medium hover:text-brand-orange-400 transition-colors block"
+      >
+       +1 (469) 606-9505
+      </a>
+      <span className="text-xs text-gray-500">US Support</span>
+    </div>
+  </div>
+</div>
 
     {/* Email */}
     <div className="flex items-start space-x-3 group">
@@ -156,10 +175,10 @@ const Footer = () => {
       </div>
       <div>
         <a
-          href="mailto:info@artifytechsolution.com"
+          href="mailto:info@arihantstaffing.com"
           className="text-white font-medium hover:text-brand-orange-400 transition-colors block"
         >
-          info@artifytechsolution.com
+          info@arihantstaffing.com
         </a>
         <span className="text-xs text-gray-500">General Inquiries</span>
       </div>

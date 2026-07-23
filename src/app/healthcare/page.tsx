@@ -203,29 +203,24 @@ const HealthcareStaffingPage = () => {
               
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight animate-on-scroll">
                Connecting Healthcare Professionals
-                <span className="gradient-text block">Powering Care.</span>
+               
                  Empowering Better Patient Care. Nationwide.
               </h1>
               
              <p className="text-base lg:text-lg text-gray-600 leading-relaxed text-justify">
-  We connect highly qualified healthcare, allied health, clinical research,
-  life sciences, and biomedical professionals with hospitals, healthcare
-  systems, laboratories, pharmaceutical organizations, and medical device
-  companies across the United States. Whether you're a healthcare professional
-  seeking your next opportunity or a healthcare organization building a
-  high-performing workforce, our specialized recruiters deliver the right
-  talent with speed, quality, and compliance.
+We connect highly qualified healthcare, allied health, clinical research, life sciences, and biomedical professionals with hospitals, healthcare systems, laboratories, pharmaceutical organizations, and medical device companies across the United States.
+Whether you're a healthcare professional seeking your next opportunity or a healthcare organization building a high-performing workforce, our specialized recruiters deliver the right talent with speed, quality, and compliance.
 </p>
               
               <div className="flex flex-col sm:flex-row gap-3 animate-on-scroll">
-                <button className="gradient-health text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2">
-                  <span>Browse Open Positions</span>
-                  <FaArrowRight className="text-xs" />
-                </button>
-                <button className="border-2 border-brand-blue-300 text-brand-blue-700 px-6 py-3 rounded-full font-bold text-sm hover:bg-brand-blue-50 transition-colors duration-300 flex items-center justify-center space-x-2">
-                  <FaFileDownload className="text-xs" />
-                  <span>Request Staffing Support</span>
-                </button>
+                <Link
+  href="/contact"
+  className="border-2 border-brand-blue-300 text-brand-blue-700 px-6 py-3 rounded-full font-bold text-sm hover:bg-brand-blue-50 transition-colors duration-300 flex items-center justify-center space-x-2"
+>
+  <FaFileDownload className="text-xs" />
+  <span>Request Staffing Support</span>
+</Link>
+               
               </div>
               
              

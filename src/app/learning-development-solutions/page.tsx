@@ -24,6 +24,7 @@ import {
   // Material Design Icons for additional variety
   MdDashboard, MdPeople, MdBarChart, MdSettings, MdNotifications, MdMail
 } from 'react-icons/md';
+import { useRouter } from "next/navigation";
 
 import {
   // Bootstrap Icons for even more options
@@ -36,6 +37,7 @@ import Link from 'next/link';
 const LearningDevelopmentPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     // Intersection Observer for scroll animations
@@ -210,14 +212,14 @@ const LearningDevelopmentPage = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 animate-on-scroll">
-                <button className="gradient-health text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2">
-                  <span>Explore Our Programs</span>
-                  <FaArrowRight className="text-xs" />
-                </button>
-                <button className="border-2 border-brand-blue-300 text-brand-blue-700 px-6 py-3 rounded-full font-bold text-sm hover:bg-brand-blue-50 transition-colors duration-300 flex items-center justify-center space-x-2">
-                  <FaFileDownload className="text-xs" />
-                  <span>Download L&D Brochure</span>
-                </button>
+               <button
+      onClick={() => router.push("/contact")}
+      className="gradient-health text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2"
+    >
+      <span>Explore Our Programs</span>
+      <FaArrowRight className="text-xs" />
+    </button>
+                
               </div>
               
               {/* Key L&D Stats */}

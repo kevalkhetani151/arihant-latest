@@ -32,10 +32,12 @@ import {
 import Header from '../header/page';
 import Footer from '../footer/page';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const RPOServicesPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     // Intersection Observer for scroll animations
@@ -212,14 +214,14 @@ const RPOServicesPage = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
-                <button className="gradient-health text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-xl flex items-center space-x-2">
-                  <span>Start Your RPO Journey</span>
-                  <FaArrowRight />
-                </button>
-                <button className="border-2 border-brand-blue-300 text-brand-blue-700 px-10 py-4 rounded-full font-bold hover:bg-brand-blue-50 transition-colors duration-300 flex items-center space-x-2">
-                  <FaFileDownload />
-                  <span>Download RPO Guide</span>
-                </button>
+                <button
+      onClick={() => router.push("/contact")}
+      className="gradient-health text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2"
+    >
+      <span>Start Your RPO Journey</span>
+      <FaArrowRight />
+    </button>
+               
               </div>
               
               {/* Key RPO Stats */}

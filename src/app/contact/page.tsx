@@ -888,7 +888,7 @@ const ContactUs = () => {
   </div>
 
   <h4 className="font-black text-gray-900 text-2xl mb-4">
-    USA Headquarters
+    USA Headquarter
   </h4>
 
   <div className="space-y-1 text-gray-600 mb-6">

@@ -421,9 +421,9 @@ const ShootingStar = () => {
           background: ${styles.black};
           color: #fff;
           font-family: 'Manrope', sans-serif;
-          font-size: 0.9rem;
+          font-size: 0.85rem;
           font-weight: 700;
-          padding: 0.85rem 1.8rem;
+          padding: 0.8rem 1.7rem;
           border: 2px solid ${styles.black};
           border-radius: 100px;
           cursor: pointer;
@@ -439,9 +439,9 @@ const ShootingStar = () => {
           background: transparent;
           color: ${styles.black};
           font-family: 'Manrope', sans-serif;
-          font-size: 0.9rem;
+          font-size: 0.85rem;
           font-weight: 700;
-          padding: 0.85rem 1.8rem;
+          padding: 0.8rem 1.7rem;
           border: 2px solid ${styles.border};
           border-radius: 100px;
           cursor: pointer;
@@ -548,7 +548,7 @@ const ShootingStar = () => {
           }
 
           .hero-h1 {
-            font-size: clamp(2rem, 9vw, 2.8rem) !important;
+            font-size: clamp(1.75rem, 8vw, 2.4rem) !important;
           }
 
           .img-stack {
@@ -608,7 +608,7 @@ const ShootingStar = () => {
             gap: 6,
             background: "#F0FAFF",
             color: styles.indigo,
-            fontSize: "0.72rem",
+            fontSize: "0.7rem",
             fontWeight: 700,
             letterSpacing: "0.05em",
             padding: "0.35rem 0.9rem",
@@ -624,10 +624,10 @@ const ShootingStar = () => {
         <h1
           className="hero-h1"
           style={{
-            fontSize: "clamp(2.4rem, 4.5vw, 3.75rem)",
+            fontSize: "clamp(2rem, 3.6vw, 3rem)",
             fontWeight: 800,
             letterSpacing: "-0.04em",
-            lineHeight: 1.08,
+            lineHeight: 1.1,
             marginBottom: "1.25rem",
           }}
         >
@@ -638,7 +638,7 @@ const ShootingStar = () => {
 
         <p
           style={{
-            fontSize: "1rem",
+            fontSize: "0.95rem",
             color: styles.grayMid,
             lineHeight: 1.7,
             maxWidth: 430,
@@ -708,7 +708,7 @@ const ShootingStar = () => {
                 <div style={{ display: "flex", flexDirection: "column" }}>
                   <span
                     style={{
-                      fontSize: s.label ? "1rem" : "1.05rem",
+                      fontSize: s.label ? "0.95rem" : "1rem",
                       fontWeight: 800,
                     }}
                   >
@@ -718,7 +718,7 @@ const ShootingStar = () => {
                   {s.label && (
                     <span
                       style={{
-                        fontSize: "0.75rem",
+                        fontSize: "0.72rem",
                         color: styles.grayMid,
                       }}
                     >
@@ -1152,11 +1152,11 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
         Our Process
       </div>
 
-      <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+      <h2 className="text-3xl lg:text-4xl font-bold mb-5 text-gray-900">
         How We <span className="text-brand-blue-600">Deliver Excellence</span>
       </h2>
 
-      <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      <p className="text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
         Our proven 5-step process combines technology with human expertise to deliver exceptional results efficiently.
       </p>
     </div>
@@ -1169,7 +1169,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
           className="text-center border border-gray-200 rounded-2xl p-6 bg-white shadow-sm"
         >
           <div className="relative mb-6 flex justify-center">
-            <div className="w-20 h-20 bg-brand-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+            <div className="w-16 h-16 bg-brand-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
               {step.number}
             </div>
 
@@ -1178,7 +1178,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
             </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-3 text-gray-800">
+          <h3 className="text-base font-semibold mb-3 text-gray-800">
             {step.title}
           </h3>
 
@@ -1192,7 +1192,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
     {/* CTA */}
     <div className="text-center mt-16">
       <Link href="/about">
-        <button className="bg-brand-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-base hover:bg-brand-blue-700 transition">
+        <button className="bg-brand-blue-600 text-white px-7 py-3 rounded-xl font-semibold text-sm hover:bg-brand-blue-700 transition">
           See Our Process
         </button>
       </Link>
@@ -1200,19 +1200,19 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
   </div>
 </section>
       {/* Enhanced Industries Section */}
-      <section id="industries" className="py-32 bg-gradient-to-br from-brand-blue-50 to-brand-blue-50">
+      <section id="industries" className="py-24 bg-gradient-to-br from-brand-blue-50 to-brand-blue-50">
         <div className="max-w-7xl mx-auto px-6">
           {/* Enhanced Section Header */}
-          <div className="text-center mb-20 animate-on-scroll">
-            <div className="inline-flex items-center px-6 py-3 bg-brand-blue-100 rounded-full text-brand-blue-600 font-bold text-sm mb-6 shadow-lg">
+          <div className="text-center mb-16 animate-on-scroll">
+            <div className="inline-flex items-center px-5 py-2 bg-brand-blue-100 rounded-full text-brand-blue-600 font-bold text-sm mb-5 shadow-lg">
               <FaIndustry className="mr-2" />
               Industry Expertise
               <FaTrophy className="ml-2 text-brand-orange-500" />
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black mb-8">
+            <h2 className="text-3xl lg:text-4xl font-black mb-5">
               <span className="gradient-text">Expert</span> Across Multiple Domains
             </h2>
-           <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+           <p className="text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
   Our deep industry experience and specialized recruitment team deliver targeted
   solutions for every domain.
 </p>
@@ -1226,11 +1226,11 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
                 className="industry-card glass-card rounded-2xl p-8 text-center hover-lift animate-on-scroll"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg transition-all duration-300 hover:scale-110 hover:rotate-3">
+                <div className="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg transition-all duration-300 hover:scale-110 hover:rotate-3">
                   {industry.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-800">{industry.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm">{industry.description}</p>
+                <h3 className="text-lg font-bold mb-3 text-gray-800">{industry.title}</h3>
+                <p className="text-gray-600 mb-2 text-sm leading-relaxed">{industry.description}</p>
                
               </div>
             ))}
@@ -1239,63 +1239,63 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
       </section>
 
       {/* Enhanced About Section */}
-      <section id="about" className="py-32 bg-white">
+      <section id="about" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Enhanced Left Content */}
-            <div className="space-y-10 animate-on-scroll">
+            <div className="space-y-8 animate-on-scroll">
               <div>
-                <div className="inline-flex items-center px-6 py-3 bg-brand-blue-100 rounded-full text-brand-blue-600 font-bold text-sm mb-6 shadow-lg">
+                <div className="inline-flex items-center px-5 py-2 bg-brand-blue-100 rounded-full text-brand-blue-600 font-bold text-sm mb-5 shadow-lg">
                   <FaAward className="mr-2" />
                   About Arihant Staffing
                   <MdVerified className="ml-2 text-lg" />
                 </div>
-                <h2 className="text-5xl lg:text-6xl font-black mb-8">
+                <h2 className="text-3xl lg:text-4xl font-black mb-6">
                   Why <span className="gradient-text">Leading Companies</span> Trust Us
                 </h2>
-                <p className="text-2xl text-gray-600 leading-relaxed mb-8">
+                <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
                     Led by two Co-Founders with 14+ years of industry expertise. We combine deep market knowledge with a consultative approach to deliver exceptional talent solutions.
 
                 </p>
-                <p className="text-2xl text-gray-600 leading-relaxed mb-8">
+                <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
                   Our focus is on quality, speed, and precision across every engagement.
                   Partner with us to build high-performing teams that drive lasting business success.
 
                 </p>
               </div>
 
-              <div className="space-y-8">
+              <div className="space-y-7">
                 {/* Enhanced Feature Items */}
                 {[
                   {
-                    icon: <FaBriefcase className="text-white text-xl" />,
+                    icon: <FaBriefcase className="text-white text-lg" />,
                     title: 'Deep Industry Expertise',
                     color: 'from-brand-blue-400 to-brand-blue-600'
                   },
                   {
-                    icon: <FaUsers className="text-white text-xl" />,
+                    icon: <FaUsers className="text-white text-lg" />,
                     title: 'Vast Talent Network',
                     color: 'from-brand-orange-400 to-brand-orange-600'
                   },
                   {
-                    icon: <FaHandshake className="text-white text-xl" />,
+                    icon: <FaHandshake className="text-white text-lg" />,
                     title: 'Proven Reliability',
                     color: 'from-brand-blue-500 to-brand-blue-700'
                   }
                 ].map((feature, index) => (
                   <div 
                     key={index}
-                    className="flex items-start space-x-6 animate-on-scroll hover:translate-x-2 transition-all duration-300"
+                    className="flex items-start space-x-5 animate-on-scroll hover:translate-x-2 transition-all duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110`}>
+                    <div className={`w-12 h-12 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110`}>
                       {feature.icon}
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold mb-3 text-gray-800">
+                      <h3 className="text-lg font-bold mb-2 text-gray-800">
                         {feature.title}
                       </h3>
-                      <p className="text-gray-600 text-lg leading-relaxed">
+                      <p className="text-gray-600 text-sm leading-relaxed">
                         {feature.description}
                       </p>
                     </div>
@@ -1309,33 +1309,33 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
 
             {/* Enhanced Right Content (Stats) */}
             <div className="relative animate-on-scroll">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="space-y-8">
-                  <div className="about-stat glass-card rounded-3xl p-8 text-center hover-lift">
-                    <div className="text-5xl font-black gradient-text mb-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="space-y-6">
+                  <div className="about-stat glass-card rounded-3xl p-7 text-center hover-lift">
+                    <div className="text-3xl lg:text-4xl font-black gradient-text mb-2">
                       14+
                     </div>
-                    <div className="text-gray-600 font-semibold">
+                    <div className="text-gray-600 font-semibold text-sm">
                       Years Of Excellence
                     </div>
                     <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
                   </div>
 
-                  <div className="about-stat glass-card rounded-3xl p-8 text-center hover-lift">
-                    <div className="text-5xl font-black gradient-text mb-3">
+                  <div className="about-stat glass-card rounded-3xl p-7 text-center hover-lift">
+                    <div className="text-3xl lg:text-4xl font-black gradient-text mb-2">
                       50+
                     </div>
-                    <div className="text-gray-600 font-semibold">
+                    <div className="text-gray-600 font-semibold text-sm">
                      Expert Team Members
                     </div>
                     <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
                   </div>
                 </div>
 
-                <div className="space-y-8 mt-12">
-                  <div className="about-stat glass-card rounded-3xl p-8 text-center hover-lift">
-                    <div className="text-5xl font-black gradient-text mb-3">2M+</div>
-                    <div className="text-gray-600 font-semibold">
+                <div className="space-y-6 mt-10">
+                  <div className="about-stat glass-card rounded-3xl p-7 text-center hover-lift">
+                    <div className="text-3xl lg:text-4xl font-black gradient-text mb-2">2M+</div>
+                    <div className="text-gray-600 font-semibold text-sm">
                       Active Database
                     </div>
                     <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
@@ -1344,8 +1344,8 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
               </div>
 
               {/* Floating Award Badge */}
-              <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-brand-orange-400 to-brand-orange-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
-                <FaRocket className="text-white text-2xl" />
+              <div className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-brand-orange-400 to-brand-orange-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                <FaRocket className="text-white text-xl" />
               </div>
             </div>
           </div>
@@ -1353,7 +1353,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
       </section>
 
       {/* Results That Speak Volumes Section */}
-      <section className="py-32 stats-section text-white relative overflow-hidden">
+      <section className="py-24 stats-section text-white relative overflow-hidden">
         {/* Background Animation */}
         <div className="absolute inset-0 opacity-10">
           <div className="floating-animation absolute top-20 right-20 w-96 h-96 morphing-shape bg-white blur-3xl"></div>
@@ -1362,52 +1362,52 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Section Header */}
-          <div className="text-center mb-20 animate-on-scroll">
-            <h2 className="text-5xl lg:text-6xl font-black mb-8">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl lg:text-4xl font-black mb-5">
               Results That <span className="text-brand-orange-300">Speak Volumes</span>
             </h2>
-            <p className="text-2xl text-brand-blue-100 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base lg:text-lg text-brand-blue-100 max-w-3xl mx-auto leading-relaxed">
              Our track record of success demonstrates our commitment to delivering exceptional recruitment outcomes that transform businesses.
             </p>
           </div>
 
           {/* Stats Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
             <div className="text-center stats-item animate-on-scroll" style={{ animationDelay: '0.1s' }}>
-              <div className="text-5xl sm:text-6xl lg:text-8xl font-black mb-6">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4">
                 <AnimatedCounter target="500" suffix="+" />
               </div>
-              <div className="text-2xl font-bold text-brand-blue-100 mb-2">
+              <div className="text-base lg:text-lg font-bold text-brand-blue-100 mb-2">
                 Successful Placements
               </div>
             
             </div>
 
             <div className="text-center stats-item animate-on-scroll" style={{ animationDelay: '0.2s' }}>
-              <div className="text-5xl sm:text-6xl lg:text-8xl font-black mb-6">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4">
                 <AnimatedCounter target="50" suffix="+" />
               </div>
-              <div className="text-2xl font-bold text-brand-blue-100 mb-2">
+              <div className="text-base lg:text-lg font-bold text-brand-blue-100 mb-2">
                 Expert Team Members
               </div>
 
             </div>
 
             <div className="text-center stats-item animate-on-scroll" style={{ animationDelay: '0.3s' }}>
-              <div className="text-5xl sm:text-6xl lg:text-8xl font-black mb-6">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4">
                 <AnimatedCounter target="24" suffix="hrs" />
               </div>
-              <div className="text-2xl font-bold text-brand-blue-100 mb-2">
+              <div className="text-base lg:text-lg font-bold text-brand-blue-100 mb-2">
                 Average Match Time
               </div>
             
             </div>
 
             <div className="text-center stats-item animate-on-scroll" style={{ animationDelay: '0.4s' }}>
-              <div className="text-5xl sm:text-6xl lg:text-8xl font-black mb-6">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4">
                 <AnimatedCounter target="98.5" suffix="%" />
               </div>
-              <div className="text-2xl font-bold text-brand-blue-100 mb-2">
+              <div className="text-base lg:text-lg font-bold text-brand-blue-100 mb-2">
                 Client Retention Rate
               </div>
               
@@ -1419,7 +1419,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
       {/* NEW SECTION: The Experts Behind Your Success */}
       
 
-     <section className="py-32 bg-white relative overflow-hidden">
+     <section className="py-24 bg-white relative overflow-hidden">
   {/* Floating Background Effects */}
   <div className="absolute inset-0 opacity-10">
     <div className="floating-animation absolute top-20 left-20 w-96 h-96 morphing-shape bg-blue-500 blur-3xl"></div>
@@ -1431,19 +1431,19 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
 
   {/* Content */}
   <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
-    <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black mb-8 text-gray-900">
+    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 text-gray-900">
       Ready to Transform Your <br />
       <span className="text-brand-orange-500">Hiring Process?</span>
     </h2>
 
-    <p className="text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+    <p className="text-base lg:text-lg text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
      Join 150+ end clients and healthcare facilities that trust Arihant Staffing for their workforce needs. Experience the future of AI-powered recruitment and staffing.
     </p>
 
     {/* Buttons */}
-    <div className="flex flex-col sm:flex-row gap-8 justify-center mb-12">
+    <div className="flex flex-col sm:flex-row gap-6 justify-center mb-10">
       <Link href="/contact">
-        <button className="bg-brand-blue-600 text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-brand-blue-700 hover:scale-105 transition-all duration-300 shadow-2xl">
+        <button className="bg-brand-blue-600 text-white px-8 py-4 rounded-full font-bold text-base hover:bg-brand-blue-700 hover:scale-105 transition-all duration-300 shadow-2xl">
           <i className="fas fa-calendar mr-3"></i>
           Contact Us
         </button>

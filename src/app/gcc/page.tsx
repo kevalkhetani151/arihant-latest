@@ -25,10 +25,12 @@ import {
 import Header from '../header/page';
 import Footer from '../footer/page';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const GCCServicesPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     // Intersection Observer for scroll animations
@@ -205,14 +207,14 @@ const GCCServicesPage = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 animate-on-scroll">
-                <button className="gradient-health text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2">
-                  <span>Talk to a GCC Expert</span>
-                  <FaArrowRight className="text-xs" />
-                </button>
-                <button className="border-2 border-brand-blue-300 text-brand-blue-700 px-6 py-3 rounded-full font-bold text-sm hover:bg-brand-blue-50 transition-colors duration-300 flex items-center justify-center space-x-2">
-                  <FaFileDownload className="text-xs" />
-                  <span>Download GCC Playbook</span>
-                </button>
+                <button
+      onClick={() => router.push("/contact")}
+      className="gradient-health text-white px-6 py-3 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2"
+    >
+      <span>Talk to a GCC Expert</span>
+      <FaArrowRight className="text-xs" />
+    </button>
+                
               </div>
               
               {/* Key GCC Stats */}
