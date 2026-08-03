@@ -73,21 +73,7 @@ export default function PremiumStaffingHero() {
         <div className="pointer-events-auto max-w-3xl">
           
           {/* Refined Eyebrow Badge */}
-          <motion.div
-            className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 shadow-lg backdrop-blur-sm"
-            style={{ filter: "url(#glass-effect)" }}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500"></span>
-            </span>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/90">
-              10,000+ Placements
-            </span>
-          </motion.div>
+          
 
           {/* Elevated Headline mixing Sans and Italic Serif */}
           <motion.h1
@@ -132,18 +118,7 @@ export default function PremiumStaffingHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
-            <Link href="/contact" className="w-full sm:w-auto">
-              <motion.button
-                className="group flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-orange-500 px-8 py-4 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] sm:w-auto"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                Contact Us
-                <motion.span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </motion.span>
-              </motion.button>
-            </Link>
+           
           </motion.div>
         </div>
       </main>
@@ -198,7 +173,7 @@ export default function PremiumStaffingHero() {
             </defs>
             <text className="fill-white/70 text-[10.5px] font-semibold uppercase tracking-[0.15em]">
               <textPath href="#textCircle" startOffset="0%">
-                Vantage Staffing • Est. 2014 • Premium Talent •
+                Arihant Staffing . 2020 • Premium Talent •
               </textPath>
             </text>
           </motion.svg>

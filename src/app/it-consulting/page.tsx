@@ -871,29 +871,7 @@ const ITSolutionsPage = () => {
             </div>
             
             {/* Contact Info */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="flex items-center justify-center space-x-3">
-                <FaPhone className="text-2xl text-brand-orange-300" />
-                <div>
-                  <div className="font-semibold">Call Our IT Team</div>
-                  <div className="opacity-80">+1 (555) 123-4567</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center space-x-3">
-                <FaEnvelope className="text-2xl text-brand-orange-300" />
-                <div>
-                  <div className="font-semibold">Email Us</div>
-                  <div className="opacity-80">it@arihantstaffing.com</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center space-x-3">
-                <FaCalendar className="text-2xl text-brand-orange-300" />
-                <div>
-                  <div className="font-semibold">Schedule Demo</div>
-                  <div className="opacity-80">Book Online</div>
-                </div>
-              </div>
-            </div>
+         
           </div>
         </div>
       </section>

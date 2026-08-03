@@ -458,86 +458,63 @@ Whether you're a healthcare professional seeking your next opportunity or a heal
 </section>
 
       {/* Facilities We Serve */}
-      <section className="py-20 medical-grid">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-              <span className="gradient-text">Facilities</span> We Serve
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-              We staff across the full care continuum, placing professionals in facility types that range from acute care hospitals to community-based clinics.
-            </p>
-          </div>
+     <section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
+        Healthcare Facilities <span className="gradient-text">We Serve</span>
+      </h2>
+      <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
+        We staff across the full care continuum, placing professionals in facility types that range from acute care hospitals to community-based clinics.
+      </p>
+    </div>
 
-          {/* Popular Facility Types */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaHospital className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Acute Care Centers</h4>
-              <p className="text-sm text-gray-600">Hospitals, Trauma Centers</p>
-            </div>
-            
-           <div className="text-center animate-on-scroll">
-  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-    <FaBed className="text-2xl text-white" />
-  </div>
-  <h4 className="font-bold text-gray-800">Skilled Nursing & LTC</h4>
-  <p className="text-sm text-gray-600">SNF, Long-Term Care</p>
-</div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaHeartbeat className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Rehabilitation</h4>
-              <p className="text-sm text-gray-600">Rehab & Behavioral Health</p>
-            </div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaAmbulance className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Urgent Care</h4>
-              <p className="text-sm text-gray-600">Urgent & Community Care</p>
-            </div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaUsers className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Home Health</h4>
-              <p className="text-sm text-gray-600">Home & Community Health</p>
-            </div>
-            
-          </div>
-
-          {/* Full Coverage Metrics */}
-          {/* <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
-            <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Nationwide Reach & Placement Impact</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">8,000+</div>
-                <div className="text-sm text-gray-600">Clinicians Placed</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">1,200+</div>
-                <div className="text-sm text-gray-600">Allied Health Professionals</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">600+</div>
-                <div className="text-sm text-gray-600">Clinical & Scientific Consultants</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">300+</div>
-                <div className="text-sm text-gray-600">Biomedical Engineers</div>
-              </div>
-            </div>
-          </div> */}
+    {/* Popular Facility Types */}
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
+          <FaHospital className="text-2xl text-white" />
         </div>
-      </section>
+        <h4 className="font-bold text-gray-800">Acute Care Centers</h4>
+        <p className="text-sm text-gray-600">Hospitals, Trauma Centers</p>
+      </div>
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaBed className="text-2xl text-white" />
+        </div>
+        <h4 className="font-bold text-gray-800">Skilled Nursing & LTC</h4>
+        <p className="text-sm text-gray-600">SNF, Long-Term Care</p>
+      </div>
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
+          <FaHeartbeat className="text-2xl text-white" />
+        </div>
+        <h4 className="font-bold text-gray-800">Rehabilitation</h4>
+        <p className="text-sm text-gray-600">Rehab & Behavioral Health</p>
+      </div>
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
+          <FaAmbulance className="text-2xl text-white" />
+        </div>
+        <h4 className="font-bold text-gray-800">Urgent Care</h4>
+        <p className="text-sm text-gray-600">Urgent & Community Care</p>
+      </div>
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
+          <FaUsers className="text-2xl text-white" />
+        </div>
+        <h4 className="font-bold text-gray-800">Home Health</h4>
+        <p className="text-sm text-gray-600">Home & Community Health</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
       {/* Why Choose Us */}
       <section className="py-20 bg-white">
@@ -695,6 +672,7 @@ Whether you're a healthcare professional seeking your next opportunity or a heal
         </div>
       </section>
 
+            {/* Industries We Serve */}
        <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -811,6 +789,8 @@ Whether you're a healthcare professional seeking your next opportunity or a heal
       </div>
         </div>
       </section>
+
+     
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-brand-blue-600 via-brand-blue-600 to-brand-blue-600 text-white">

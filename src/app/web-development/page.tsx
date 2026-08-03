@@ -483,7 +483,7 @@ const ITSolutionsPage = () => {
 </section>
 
       {/* Technology Stack */}
-   <section className="py-20 bg-white tech-grid">
+ <section className="py-20 bg-white">
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16">
       <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
@@ -494,7 +494,7 @@ const ITSolutionsPage = () => {
       </p>
     </div>
 
-   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
 
       {/* React */}
       <div className="text-center animate-on-scroll">
@@ -885,29 +885,7 @@ const ITSolutionsPage = () => {
             </div>
             
             {/* Contact Info */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="flex items-center justify-center space-x-3">
-                <FaPhone className="text-2xl text-brand-orange-300" />
-                <div>
-                  <div className="font-semibold">Call Our IT Team</div>
-                  <div className="opacity-80">+1 (555) 123-4567</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center space-x-3">
-                <FaEnvelope className="text-2xl text-brand-orange-300" />
-                <div>
-                  <div className="font-semibold">Email Us</div>
-                  <div className="opacity-80">it@arihantstaffing.com</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center space-x-3">
-                <FaCalendar className="text-2xl text-brand-orange-300" />
-                <div>
-                  <div className="font-semibold">Schedule Demo</div>
-                  <div className="opacity-80">Book Online</div>
-                </div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </section>

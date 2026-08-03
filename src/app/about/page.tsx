@@ -448,7 +448,7 @@ const AboutUs = () => {
                 </div>
                 <h3 className="text-xl sm:text-2xl font-black mb-3 sm:mb-4 text-gray-800">Values</h3>
                 <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-                  Authenticity, Excellence, Innovation, and Partnership. We build transparent relationships and deliver exceptional results.
+                  Driven by Ethics, Quality, Proactive Execution, Innovation, and Responsiveness, we deliver trusted talent solutions while fostering long-term partnerships built on transparency, accountability, and excellence.
                 </p>
                 <div className="mt-4 sm:mt-6 flex justify-center">
                   <div className="w-16 h-1 bg-brand-blue-500 rounded-full"></div>

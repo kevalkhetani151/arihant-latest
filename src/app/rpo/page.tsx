@@ -495,86 +495,86 @@ const RPOServicesPage = () => {
 </section>
 
       {/* Industry Coverage */}
-      <section className="py-20 medical-grid">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-              <span className="gradient-text">Industry-Specific</span> RPO Expertise
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-              We provide specialized RPO services across multiple industries with deep domain knowledge and industry-specific recruitment expertise to meet your unique business challenges.
-            </p>
-          </div>
+   <section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
+        <span className="gradient-text">Industry-Specific</span> RPO Expertise
+      </h2>
+      <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
+        We provide specialized RPO services across multiple industries with deep domain knowledge and industry-specific recruitment expertise to meet your unique business challenges.
+      </p>
+    </div>
 
-          {/* Popular Industries */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaLaptopCode className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Technology</h4>
-              <p className="text-sm text-gray-600">Software, AI, Cloud</p>
-            </div>
-            
-           <div className="text-center animate-on-scroll">
-  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-    <FaHeartbeat className="text-2xl text-white" />
-  </div>
-  <h4 className="font-bold text-gray-800">Healthcare</h4>
-  <p className="text-sm text-gray-600">Medical, Pharma</p>
-</div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaChartLine className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Finance</h4>
-              <p className="text-sm text-gray-600">Banking, FinTech</p>
-            </div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaIndustry className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Manufacturing</h4>
-              <p className="text-sm text-gray-600">Automotive, Aerospace</p>
-            </div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaShoppingCart className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Retail</h4>
-              <p className="text-sm text-gray-600">E-commerce, Consumer</p>
-            </div>
-            
-          </div>
-
-          {/* All Industries Available */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
-            <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Industry Coverage & Success Metrics</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">800+</div>
-                <div className="text-sm text-gray-600">Tech Professionals Placed</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">200+</div>
-                <div className="text-sm text-gray-600">Healthcare Specialists</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">250+</div>
-                <div className="text-sm text-gray-600">Finance Professionals</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">71+</div>
-                <div className="text-sm text-gray-600">Executive Placements</div>
-              </div>
-            </div>
-          </div>
+    {/* Popular Industries */}
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
+          <FaLaptopCode className="text-2xl text-white" />
         </div>
-      </section>
+        <h4 className="font-bold text-gray-800">Technology</h4>
+        <p className="text-sm text-gray-600">Software, AI, Cloud</p>
+      </div>
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+          <FaHeartbeat className="text-2xl text-white" />
+        </div>
+        <h4 className="font-bold text-gray-800">Healthcare</h4>
+        <p className="text-sm text-gray-600">Medical, Pharma</p>
+      </div>
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
+          <FaChartLine className="text-2xl text-white" />
+        </div>
+        <h4 className="font-bold text-gray-800">Finance</h4>
+        <p className="text-sm text-gray-600">Banking, FinTech</p>
+      </div>
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
+          <FaIndustry className="text-2xl text-white" />
+        </div>
+        <h4 className="font-bold text-gray-800">Manufacturing</h4>
+        <p className="text-sm text-gray-600">Automotive, Aerospace</p>
+      </div>
+      
+      <div className="text-center animate-on-scroll">
+        <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
+          <FaShoppingCart className="text-2xl text-white" />
+        </div>
+        <h4 className="font-bold text-gray-800">Retail</h4>
+        <p className="text-sm text-gray-600">E-commerce, Consumer</p>
+      </div>
+      
+    </div>
+
+    {/* All Industries Available */}
+    <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
+      <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Industry Coverage & Success Metrics</h3>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="text-2xl font-bold gradient-text">800+</div>
+          <div className="text-sm text-gray-600">Tech Professionals Placed</div>
+        </div>
+        <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="text-2xl font-bold gradient-text">200+</div>
+          <div className="text-sm text-gray-600">Healthcare Specialists</div>
+        </div>
+        <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="text-2xl font-bold gradient-text">250+</div>
+          <div className="text-sm text-gray-600">Finance Professionals</div>
+        </div>
+        <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="text-2xl font-bold gradient-text">71+</div>
+          <div className="text-sm text-gray-600">Executive Placements</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Why Choose Our RPO */}
       <section className="py-20 bg-white">

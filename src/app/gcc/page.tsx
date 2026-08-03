@@ -10,7 +10,13 @@ import {
   // Social Icons
   FaLinkedinIn, FaTwitter, FaFacebookF,
   // Check & Status Icons
-  FaCheckCircle, FaRocket, FaBounce
+  FaCheckCircle, FaRocket, FaBounce,
+  FaBroadcastTower,
+  FaBolt,
+  FaCar,
+  FaTruck,
+  FaGraduationCap,
+  FaFlask
 } from 'react-icons/fa';
 
 import {
@@ -88,6 +94,21 @@ const GCCServicesPage = () => {
     setMobileMenuOpen(false);
     setMobileServicesOpen(false);
   };
+
+  const industries = [
+    { name: 'Technology', subtitle: 'Software, AI, Cloud', icon: FaLaptopCode },
+    { name: 'BFSI', subtitle: 'Banking, FinTech', icon: FaChartLine },
+    { name: 'Healthcare', subtitle: 'Medical, Care', icon: FaHeartbeat },
+    { name: 'Pharma & Life Sciences', subtitle: 'Research, Biotech', icon: FaFlask },
+    { name: 'Engineering & R&D', subtitle: 'Design, Innovation', icon: FaCogs },
+    { name: 'Manufacturing', subtitle: 'Production, Aerospace', icon: FaIndustry },
+    { name: 'Ed-Tech', subtitle: 'Learning Platforms', icon: FaGraduationCap },
+    { name: 'Retail & E-commerce', subtitle: 'Consumer, Online', icon: FaShoppingCart },
+    { name: 'Logistics & Supply Chain', subtitle: 'Transport, Warehousing', icon: FaTruck },
+    { name: 'Telecom', subtitle: 'Networks, Comms', icon: FaBroadcastTower },
+    { name: 'Energy & Utilities', subtitle: 'Power, Renewables', icon: FaBolt },
+    { name: 'Automotive', subtitle: 'Mobility, EV', icon: FaCar }
+  ];
 
   return (
     <div className="bg-white min-h-screen text-gray-800">
@@ -500,86 +521,62 @@ const GCCServicesPage = () => {
 </section>
 
       {/* Industry Coverage */}
-      <section className="py-20 medical-grid">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-              <span className="gradient-text">Industry-Specific</span> GCC Expertise
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-              We build Global Capability Centers across multiple industries, bringing deep domain knowledge to every function we stand up so your center speaks the language of your business from day one.
-            </p>
-          </div>
-
-          {/* Popular Industries */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaLaptopCode className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Technology</h4>
-              <p className="text-sm text-gray-600">Software, AI, Cloud</p>
-            </div>
-            
-           <div className="text-center animate-on-scroll">
-  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-    <FaHeartbeat className="text-2xl text-white" />
-  </div>
-  <h4 className="font-bold text-gray-800">Healthcare</h4>
-  <p className="text-sm text-gray-600">Medical, Pharma</p>
-</div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaChartLine className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Finance</h4>
-              <p className="text-sm text-gray-600">Banking, FinTech</p>
-            </div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaIndustry className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Manufacturing</h4>
-              <p className="text-sm text-gray-600">Automotive, Aerospace</p>
-            </div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaShoppingCart className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Retail</h4>
-              <p className="text-sm text-gray-600">E-commerce, Consumer</p>
-            </div>
-            
-          </div>
-
-          {/* All Industries Available */}
-          {/* <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
-            <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Industry Coverage & Success Metrics</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">4,000+</div>
-                <div className="text-sm text-gray-600">Tech Professionals Onboarded</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">2,500+</div>
-                <div className="text-sm text-gray-600">Healthcare Specialists</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">2,200+</div>
-                <div className="text-sm text-gray-600">Finance Professionals</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">50+</div>
-                <div className="text-sm text-gray-600">Capability Centers Launched</div>
-              </div>
-            </div>
-          </div> */}
+   <section className="py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
+            <span className="gradient-text">Industry-Specific</span> GCC Expertise
+          </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
+            We build Global Capability Centers across multiple industries, bringing deep domain knowledge to every function we stand up so your center speaks the language of your business from day one.
+          </p>
         </div>
-      </section>
+
+        {/* All Industries Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 mb-12">
+          {industries.map((industry, index) => {
+            const Icon = industry.icon;
+            return (
+              <div key={index} className="text-center animate-on-scroll group cursor-pointer">
+                <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md group-hover:shadow-lg">
+                  <Icon className="text-2xl text-white" />
+                </div>
+                <h4 className="font-bold text-gray-800 transition-colors duration-200 group-hover:text-brand-blue-600">
+                  {industry.name}
+                </h4>
+                <p className="text-sm text-gray-500 mt-1">{industry.subtitle}</p>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Success Metrics (Optional / Commented Out) */}
+        {/* <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
+          <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Industry Coverage & Success Metrics</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <div className="text-2xl font-bold gradient-text">4,000+</div>
+              <div className="text-sm text-gray-600">Tech Professionals Onboarded</div>
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <div className="text-2xl font-bold gradient-text">2,500+</div>
+              <div className="text-sm text-gray-600">Healthcare Specialists</div>
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <div className="text-2xl font-bold gradient-text">2,200+</div>
+              <div className="text-sm text-gray-600">Finance Professionals</div>
+            </div>
+            <div className="p-4 bg-gray-50 rounded-lg">
+              <div className="text-2xl font-bold gradient-text">50+</div>
+              <div className="text-sm text-gray-600">Capability Centers Launched</div>
+            </div>
+          </div>
+        </div> */}
+        
+      </div>
+    </section>
 
       {/* Why Choose Our GCC Services */}
       <section className="py-20 bg-white">
@@ -622,33 +619,7 @@ const GCCServicesPage = () => {
           </div>
 
           {/* Success Metrics */}
-          <div className="bg-gradient-to-br from-gray-50 to-brand-blue-50 rounded-3xl shadow-xl p-12 animate-on-scroll">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl lg:text-4xl font-black mb-4 text-gray-800">
-                Proven <span className="gradient-text">GCC Track Record</span>
-              </h3>
-              <p className="text-lg text-gray-600">Our Global Capability Center engagements deliver measurable gains in speed, quality, and cost-efficiency for organizations expanding worldwide</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">225+</div>
-                <div className="text-gray-600 font-semibold">Capability Centers Launched</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">70%</div>
-                <div className="text-gray-600 font-semibold">Faster Center Launch</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">65%</div>
-                <div className="text-gray-600 font-semibold">Cost Optimization</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-black gradient-text mb-2">95%</div>
-                <div className="text-gray-600 font-semibold">Client Retention Rate</div>
-              </div>
-            </div>
-          </div>
+        
         </div>
       </section>
 

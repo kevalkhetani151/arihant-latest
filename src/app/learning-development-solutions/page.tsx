@@ -190,7 +190,7 @@ const LearningDevelopmentPage = () => {
       <Header />
 
       {/* L&D Banner Section */}
-      <section className="relative pt-24 pb-20 bg-gradient-to-br from-brand-blue-50 via-brand-blue-50 to-brand-blue-50 overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-brand-blue-50 via-brand-blue-50 to-brand-blue-50 overflow-hidden">
         <div className="banner-shape banner-shape-1"></div>
         <div className="banner-shape banner-shape-2"></div>
         <div className="banner-shape banner-shape-3"></div>
@@ -223,20 +223,7 @@ const LearningDevelopmentPage = () => {
               </div>
               
               {/* Key L&D Stats */}
-              <div className="grid grid-cols-3 gap-4 pt-6 animate-on-scroll">
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-black gradient-text">500+</div>
-                  <div className="text-xs text-gray-600 font-medium">Programs Delivered</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-black gradient-text">10K+</div>
-                  <div className="text-xs text-gray-600 font-medium">Professionals Trained</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl lg:text-3xl font-black gradient-text">95%</div>
-                  <div className="text-xs text-gray-600 font-medium">Satisfaction Rate</div>
-                </div>
-              </div>
+           
             </div>
             
             {/* Right Visual */}
@@ -489,117 +476,14 @@ const LearningDevelopmentPage = () => {
       </div>
 
       {/* Coaching & Mentoring */}
-      <div className="service-card animate-on-scroll bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-        <div className="w-20 h-20 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <FaHandshake className="text-3xl text-white" />
-        </div>
-        <h3 className="text-2xl font-bold mb-4 text-gray-800">Coaching & Mentoring</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Personalized, one-on-one coaching for professionals, managers, entrepreneurs, and students at every career stage.</p>
-        <ul className="space-y-3 mb-6">
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Leadership & executive coaching</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Career & performance coaching</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Business coaching for entrepreneurs</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
-            <span className="text-gray-700">Student mentorship</span>
-          </li>
-        </ul>
-      </div>
+     
 
     </div>
   </div>
 </section>
 
       {/* Industry Coverage */}
-      <section className="py-20 medical-grid">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-              <span className="gradient-text">Industries</span> We Serve
-            </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-              Our training programs are built around real workplace scenarios across a wide range of industries, from healthcare to technology to financial services.
-            </p>
-          </div>
-
-          {/* Popular Industries */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaLaptopCode className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Information Technology</h4>
-              <p className="text-sm text-gray-600">Software, IT Services</p>
-            </div>
-            
-           <div className="text-center animate-on-scroll">
-  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-    <FaHeartbeat className="text-2xl text-white" />
-  </div>
-  <h4 className="font-bold text-gray-800">Healthcare</h4>
-  <p className="text-sm text-gray-600">Medical, Pharma</p>
-</div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaChartLine className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Banking & Finance</h4>
-              <p className="text-sm text-gray-600">BFSI, Insurance</p>
-            </div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaIndustry className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Manufacturing</h4>
-              <p className="text-sm text-gray-600">Engineering, Logistics</p>
-            </div>
-            
-            <div className="text-center animate-on-scroll">
-              <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300">
-                <FaShoppingCart className="text-2xl text-white" />
-              </div>
-              <h4 className="font-bold text-gray-800">Retail & Hospitality</h4>
-              <p className="text-sm text-gray-600">E-commerce, BPO</p>
-            </div>
-            
-          </div>
-
-          {/* All Industries Available */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
-            <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Reach & Program Impact</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">15+</div>
-                <div className="text-sm text-gray-600">Industries Served</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">10,000+</div>
-                <div className="text-sm text-gray-600">Professionals Trained</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">500+</div>
-                <div className="text-sm text-gray-600">Corporate Programs</div>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold gradient-text">50+</div>
-                <div className="text-sm text-gray-600">Certified Trainers</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Why Choose Us */}
       <section className="py-20 bg-white">

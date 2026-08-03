@@ -65,7 +65,7 @@ const steps = [
     title: 'Expert Screening',
     description:
       'Our senior recruiters conduct in-depth screening to validate technical skills and ensure perfect alignment.',
-    icon: <FaUserPlus className="w-4 h-4 text-brand-orange-500" />,
+    icon: <FaUserPlus className="w-4 h-4 text-brand-blue-500" />,
   },
   {
     number: 5,
@@ -1306,9 +1306,9 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
           {/* Enhanced Section Header */}
           <div className="text-center mb-16 animate-on-scroll">
             <div className="inline-flex items-center px-5 py-2 bg-brand-blue-100 rounded-full text-brand-blue-600 font-bold text-sm mb-5 shadow-lg">
-              <FaIndustry className="mr-2" />
+              
               Industry Expertise
-              <FaTrophy className="ml-2 text-brand-orange-500" />
+            
             </div>
             <h2 className="text-3xl lg:text-4xl font-black mb-5">
               <span className="gradient-text">Expert</span> Across Multiple Domains
@@ -1341,118 +1341,115 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
        <CoreValuesSection/>
 
       {/* Enhanced About Section */}
-      <section id="about" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Enhanced Left Content */}
-            <div className="space-y-8 animate-on-scroll">
+    <section id="about" className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      {/* Enhanced Left Content */}
+      <div className="space-y-8 animate-on-scroll">
+        <div>
+          <div className="inline-flex items-center px-5 py-2 bg-brand-blue-100 rounded-full text-brand-blue-600 font-bold text-sm mb-5 shadow-lg">
+            <FaAward className="mr-2" />
+            About Arihant Staffing
+            <MdVerified className="ml-2 text-lg" />
+          </div>
+          <h2 className="text-3xl lg:text-4xl font-black mb-6">
+            Why <span className="gradient-text">Leading Companies</span> Trust Us
+          </h2>
+          <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
+            Led by two Co-Founders with 14+ years of industry expertise. We combine deep market knowledge with a consultative approach to deliver exceptional talent solutions.
+          </p>
+          <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
+            Our focus is on quality, speed, and precision across every engagement. Partner with us to build high-performing teams that drive lasting business success.
+          </p>
+        </div>
+
+        <div className="space-y-7">
+          {/* Enhanced Feature Items */}
+          {[
+            {
+              icon: <FaBriefcase className="text-white text-lg" />,
+              title: 'Deep Industry Expertise',
+              color: 'from-brand-blue-500 to-brand-blue-600'
+            },
+            {
+              icon: <FaUsers className="text-white text-lg" />,
+              title: 'Vast Talent Network',
+              color: 'from-brand-blue-500 to-brand-blue-600'
+            },
+            {
+              icon: <FaHandshake className="text-white text-lg" />,
+              title: 'Proven Reliability',
+              color: 'from-brand-blue-500 to-brand-blue-600'
+            }
+          ].map((feature, index) => (
+            <div 
+              key={index}
+              className="flex items-start space-x-5 animate-on-scroll hover:translate-x-2 transition-all duration-300"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className={`w-12 h-12 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110`}>
+                {feature.icon}
+              </div>
               <div>
-                <div className="inline-flex items-center px-5 py-2 bg-brand-blue-100 rounded-full text-brand-blue-600 font-bold text-sm mb-5 shadow-lg">
-                  <FaAward className="mr-2" />
-                  About Arihant Staffing
-                  <MdVerified className="ml-2 text-lg" />
-                </div>
-                <h2 className="text-3xl lg:text-4xl font-black mb-6">
-                  Why <span className="gradient-text">Leading Companies</span> Trust Us
-                </h2>
-                <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
-                    Led by two Co-Founders with 14+ years of industry expertise. We combine deep market knowledge with a consultative approach to deliver exceptional talent solutions.
-
-                </p>
-                <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
-                  Our focus is on quality, speed, and precision across every engagement.
-                  Partner with us to build high-performing teams that drive lasting business success.
-
+                <h3 className="text-lg font-bold mb-2 text-gray-800">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {feature.description}
                 </p>
               </div>
+            </div>
+          ))}
+        </div>
 
-              <div className="space-y-7">
-                {/* Enhanced Feature Items */}
-                {[
-                  {
-                    icon: <FaBriefcase className="text-white text-lg" />,
-                    title: 'Deep Industry Expertise',
-                    color: 'from-brand-blue-400 to-brand-blue-600'
-                  },
-                  {
-                    icon: <FaUsers className="text-white text-lg" />,
-                    title: 'Vast Talent Network',
-                    color: 'from-brand-orange-400 to-brand-orange-600'
-                  },
-                  {
-                    icon: <FaHandshake className="text-white text-lg" />,
-                    title: 'Proven Reliability',
-                    color: 'from-brand-blue-500 to-brand-blue-700'
-                  }
-                ].map((feature, index) => (
-                  <div 
-                    key={index}
-                    className="flex items-start space-x-5 animate-on-scroll hover:translate-x-2 transition-all duration-300"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    <div className={`w-12 h-12 bg-gradient-to-br ${feature.color} rounded-full flex items-center justify-center flex-shrink-0 shadow-lg transition-all duration-300 hover:scale-110`}>
-                      {feature.icon}
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold mb-2 text-gray-800">
-                        {feature.title}
-                      </h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        {feature.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+        {/* Enhanced Call to Action */}
+       
+      </div>
+
+      {/* Enhanced Right Content (Stats) */}
+      <div className="relative animate-on-scroll">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="space-y-6">
+            <div className="about-stat glass-card rounded-3xl p-7 text-center hover-lift">
+              <div className="text-3xl lg:text-4xl font-black gradient-text mb-2">
+                14+
               </div>
-
-              {/* Enhanced Call to Action */}
-             
+              <div className="text-gray-600 font-semibold text-sm">
+                Years Of Excellence
+              </div>
+              <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
             </div>
 
-            {/* Enhanced Right Content (Stats) */}
-            <div className="relative animate-on-scroll">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="space-y-6">
-                  <div className="about-stat glass-card rounded-3xl p-7 text-center hover-lift">
-                    <div className="text-3xl lg:text-4xl font-black gradient-text mb-2">
-                      14+
-                    </div>
-                    <div className="text-gray-600 font-semibold text-sm">
-                      Years Of Excellence
-                    </div>
-                    <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
-                  </div>
-
-                  <div className="about-stat glass-card rounded-3xl p-7 text-center hover-lift">
-                    <div className="text-3xl lg:text-4xl font-black gradient-text mb-2">
-                      50+
-                    </div>
-                    <div className="text-gray-600 font-semibold text-sm">
-                     Expert Team Members
-                    </div>
-                    <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
-                  </div>
-                </div>
-
-                <div className="space-y-6 mt-10">
-                  <div className="about-stat glass-card rounded-3xl p-7 text-center hover-lift">
-                    <div className="text-3xl lg:text-4xl font-black gradient-text mb-2">2M+</div>
-                    <div className="text-gray-600 font-semibold text-sm">
-                      Active Database
-                    </div>
-                    <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
-                  </div>
-                </div>
+            <div className="about-stat glass-card rounded-3xl p-7 text-center hover-lift">
+              <div className="text-3xl lg:text-4xl font-black gradient-text mb-2">
+                50+
               </div>
-
-              {/* Floating Award Badge */}
-              <div className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-brand-orange-400 to-brand-orange-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
-                <FaRocket className="text-white text-xl" />
+              <div className="text-gray-600 font-semibold text-sm">
+               Expert Team Members
               </div>
+              <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
+            </div>
+          </div>
+
+          <div className="space-y-6 mt-10">
+            <div className="about-stat glass-card rounded-3xl p-7 text-center hover-lift">
+              <div className="text-3xl lg:text-4xl font-black gradient-text mb-2">2M+</div>
+              <div className="text-gray-600 font-semibold text-sm">
+                Active Database
+              </div>
+              <div className="mt-3 w-12 h-1 bg-gradient-to-r from-brand-blue-400 to-brand-blue-400 rounded-full mx-auto"></div>
             </div>
           </div>
         </div>
-      </section>
+
+        {/* Floating Rocket Badge */}
+        <div className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+          <FaRocket className="text-white text-xl" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Results That Speak Volumes Section */}
       <section className="py-24 stats-section text-white relative overflow-hidden">

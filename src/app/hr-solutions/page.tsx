@@ -485,7 +485,7 @@ const HRSolutionsPage = () => {
   <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-md">
     <FaAward className="text-2xl text-white" />
   </div>
-  <h3 className="text-2xl font-bold mb-4 text-gray-800">14+ Years Experience</h3>
+  <h3 className="text-2xl font-bold mb-4 text-gray-800">6+ Years Experience</h3>
   <p className="text-gray-600">Decade-long expertise in HR management across diverse industries and company sizes.</p>
 </div>
             
@@ -493,7 +493,7 @@ const HRSolutionsPage = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <FaUsers className="text-2xl text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">1250+ Employees Managed</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">550+ Employees Managed</h3>
               <p className="text-gray-600">Successfully managing HR operations for hundreds of employees across multiple organizations.</p>
             </div>
             
@@ -718,29 +718,28 @@ const HRSolutionsPage = () => {
 </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-brand-blue-600 via-brand-orange-600 to-brand-blue-600 text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="animate-on-scroll">
-            <h2 className="text-4xl lg:text-6xl font-black mb-8">
-              Ready to Transform Your <span className="text-brand-orange-300">HR Operations?</span>
-            </h2>
-            <p className="text-xl mb-12 leading-relaxed opacity-90">
-              Let's discuss how our comprehensive HR solutions can streamline your operations, enhance employee satisfaction, and drive business growth. Schedule your free consultation today.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link href='contact'>
-              <button className="bg-white text-brand-blue-700 px-12 py-5 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-xl">
-                Get Free HR Consultation
-              </button>
-              </Link>
-             
-            </div>
-            
-            {/* Contact Info */}
-        
-          </div>
-        </div>
-      </section>
+    <section className="py-20 bg-gradient-to-br from-brand-blue-600 via-brand-blue-600 to-brand-blue-600 text-white">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <div className="animate-on-scroll">
+      <h2 className="text-4xl lg:text-6xl font-black mb-8">
+        Ready to Transform Your <span className="text-brand-orange-300">HR Operations?</span>
+      </h2>
+      <p className="text-xl mb-12 leading-relaxed opacity-90">
+        Let's discuss how our comprehensive HR solutions can streamline your operations, enhance employee satisfaction, and drive business growth. Schedule your free consultation today.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-6 justify-center">
+        <Link href='/contact'>
+          <button className="bg-white text-brand-blue-700 px-12 py-5 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-xl">
+            Get Free HR Consultation
+          </button>
+        </Link>
+      </div>
+      
+      {/* Contact Info */}
+
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
     <Footer/>
