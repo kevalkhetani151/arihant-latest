@@ -580,7 +580,7 @@ const AboutUs = () => {
             <div className="bg-white border border-gray-100 rounded-2xl p-6 sm:p-8 lg:p-12 shadow-sm">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black mb-4 sm:mb-6 text-brand-blue-600">Life at Artify TechSolution</h3>
+                  <h3 className="text-xl sm:text-2xl font-black mb-4 sm:mb-6 text-brand-blue-600">Life at Arihant staffing</h3>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex items-center space-x-2 sm:space-x-3">
                       <div className="w-6 h-6 sm:w-8 sm:h-8 bg-brand-blue-500 rounded-full flex items-center justify-center">

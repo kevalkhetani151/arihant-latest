@@ -143,59 +143,56 @@ export default function PremiumStaffingHero() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </Link>
-            <Link 
-              href="/services"
-              className="text-sm font-medium text-white/70 transition-colors hover:text-white"
-            >
-              Explore Services &rarr;
-            </Link>
+           
           </motion.div>
         </div>
       </main>
 
       {/* 4. TRUST STAMP - Original colors restored, layout kept sleek */}
       <motion.div 
-        className="absolute bottom-12 right-12 z-30 hidden md:block"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.8 }}
-        style={{ x: parallaxX, y: parallaxY }}
-      >
-        <div className="relative flex h-32 w-32 items-center justify-center opacity-90 transition-opacity hover:opacity-100">
-          <PulsingBorder
-            colors={["#2563eb", "#1d4ed8", "#f97316", "#fb923c", "#1e40af", "#fdba74", "#ffffff"]} // Restored original colors
-            colorBack="#00000000"
-            speed={1.5}
-            roundness={1}
-            thickness={0.08}
-            softness={0.2}
-            intensity={5}
-            spotsPerColor={5}
-            spotSize={0.1}
-            pulse={0.1}
-            smoke={0.5}
-            smokeSize={4}
-            scale={0.7}
-            rotation={0}
-            style={{ width: "80px", height: "80px", borderRadius: "50%" }}
-          />
+  className="absolute bottom-12 right-12 z-30 hidden md:block"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1.5, delay: 0.8 }}
+  style={{ x: parallaxX, y: parallaxY }}
+>
+  <div className="relative flex h-32 w-32 items-center justify-center opacity-90 transition-opacity hover:opacity-100">
+    <PulsingBorder
+      colors={["#2563eb", "#1d4ed8", "#f97316", "#fb923c", "#1e40af", "#fdba74", "#ffffff"]} // Restored original colors
+      colorBack="#00000000"
+      speed={1.5}
+      roundness={1}
+      thickness={0.08}
+      softness={0.2}
+      intensity={5}
+      spotsPerColor={5}
+      spotSize={0.1}
+      pulse={0.1}
+      smoke={0.5}
+      smokeSize={4}
+      scale={0.7}
+      rotation={0}
+      style={{ width: "80px", height: "80px", borderRadius: "50%" }}
+    />
 
-          <motion.svg
-            className="absolute inset-0 h-full w-full drop-shadow-lg"
-            viewBox="0 0 100 100"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 25, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-            style={{ transform: "scale(1.1)" }}
-          >
-            <defs>
-              <path id="textCircle" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" />
-            </defs>
-            <text className="fill-white/80 text-[10.5px] font-semibold uppercase tracking-[0.15em]">
-              
-            </text>
-          </motion.svg>
-        </div>
-      </motion.div>
+    <motion.svg
+      className="absolute inset-0 h-full w-full drop-shadow-lg"
+      viewBox="0 0 100 100"
+      animate={{ rotate: 360 }}
+      transition={{ duration: 25, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+      style={{ transform: "scale(1.1)" }}
+    >
+      <defs>
+        <path id="textCircle" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" />
+      </defs>
+      <text className="fill-white/80 text-[10.5px] font-semibold uppercase tracking-[0.15em]">
+        <textPath href="#textCircle" startOffset="0%">
+    Arihant Staffing • Arihant Staffing •
+  </textPath>
+      </text>
+    </motion.svg>
+  </div>
+</motion.div>
     </div>
   )
 }

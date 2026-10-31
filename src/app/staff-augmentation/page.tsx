@@ -525,7 +525,7 @@ const StaffAugmentation = () => {
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16">
       <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-        Why Choose <span className="text-brand-blue-600">Artify TechSolution?</span>
+        Why Choose <span className="text-brand-blue-600">Arihant staffing?</span>
       </h2>
       <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
         Our proven approach and extensive talent network make us the ideal partner for scaling your team efficiently.

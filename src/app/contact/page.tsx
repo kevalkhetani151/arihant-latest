@@ -156,22 +156,7 @@ const ContactUs = () => {
     }
   ];
 
-  const contactMethods = [
-    {
-      id: 'form',
-      title: 'Send Message',
-      subtitle: 'Detailed inquiry',
-      icon: FaPaperPlane,
-      description: 'Get a personalized response within 1 hour'
-    },
-    {
-      id: 'call',
-      title: 'Call Direct',
-      subtitle: 'Immediate response',
-      icon: FaPhone, 
-      description: 'Speak with an expert right now'
-    }
-  ];
+ 
 
   return (
     <div className="bg-gradient-to-br from-slate-50 via-brand-blue-50 to-brand-blue-50 min-h-screen text-gray-900 font-sans">
@@ -517,250 +502,204 @@ const ContactUs = () => {
       </section>
 
       {/* Contact Method Tabs */}
-      <section id="contact-methods" className="py-12 bg-white/70 backdrop-blur-sm">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {contactMethods.map((method) => (
-              <button
-                key={method.id}
-                onClick={() => setActiveTab(method.id)}
-                className={`tab-button p-6 rounded-2xl border-2 text-center transition-all hover-lift ${
-                  activeTab === method.id 
-                    ? 'active border-brand-blue-500 bg-brand-blue-50 text-brand-blue-700' 
-                    : 'border-gray-200 hover:border-brand-blue-300 bg-white'
-                }`}
-              >
-                <method.icon className={`text-3xl mx-auto mb-3 ${activeTab === method.id ? 'text-brand-blue-600' : 'text-gray-400'}`} />
-                <div className="font-bold text-lg mb-1">{method.title}</div>
-                <div className="text-sm text-gray-600 mb-2">{method.subtitle}</div>
-                <div className="text-xs text-gray-500">{method.description}</div>
-              </button>
-            ))}
+    
+      {/* Dynamic Content Based on Active Tab */}
+      {  (
+        <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-200">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* Section Header */}
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-slate-900 tracking-tight">
+        How Can We Help?
+      </h2>
+      <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        Our intelligent form ensures we gather the right information to provide you with the most relevant solutions.
+      </p>
+    </div>
+
+    {/* Form Card */}
+    <div className="bg-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl shadow-slate-200/50 border border-slate-100">
+      
+      {/* Success State */}
+      {submitSuccess && (
+        <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 mb-8 text-center animate-fade-in">
+          <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-emerald-500/30">
+            <FaCheckCircle className="text-3xl text-white" />
+          </div>
+          <h3 className="text-2xl font-bold text-emerald-900 mb-2">Message Sent Successfully!</h3>
+          <p className="text-emerald-700">We'll respond within 1 hour during business hours.</p>
+        </div>
+      )}
+
+      <form onSubmit={handleSubmit} ref={formRef} className="space-y-6">
+        
+        {/* Name Row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-1.5">
+            <label className="text-sm font-semibold text-slate-700">
+              First Name <span className="text-red-500">*</span>
+            </label>
+            <input 
+              type="text" 
+              name="firstName" 
+              value={formData.firstName}
+              onChange={handleInputChange}
+              className={`w-full px-4 py-3 bg-slate-50 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all ${
+                formErrors.firstName ? 'border-red-300 focus:ring-red-500' : 'border-slate-200'
+              }`}
+              placeholder="John" 
+            />
+            {formErrors.firstName && (
+              <p className="text-red-500 text-xs flex items-center gap-1 mt-1">
+                <FaExclamationTriangle /> {formErrors.firstName}
+              </p>
+            )}
+          </div>
+          
+          <div className="space-y-1.5">
+            <label className="text-sm font-semibold text-slate-700">
+              Last Name <span className="text-red-500">*</span>
+            </label>
+            <input 
+              type="text" 
+              name="lastName" 
+              value={formData.lastName}
+              onChange={handleInputChange}
+              className={`w-full px-4 py-3 bg-slate-50 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all ${
+                formErrors.lastName ? 'border-red-300 focus:ring-red-500' : 'border-slate-200'
+              }`}
+              placeholder="Doe" 
+            />
+            {formErrors.lastName && (
+              <p className="text-red-500 text-xs flex items-center gap-1 mt-1">
+                <FaExclamationTriangle /> {formErrors.lastName}
+              </p>
+            )}
           </div>
         </div>
-      </section>
-
-      {/* Dynamic Content Based on Active Tab */}
-      {activeTab === 'form' && (
-        <section className="py-16 bg-gradient-to-br from-gray-50 to-brand-blue-50">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-black mb-4 text-gray-900">
-               How Can We Help?
-              </h2>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Our intelligent form ensures we gather the right information to provide you with the most relevant solutions.
+        
+        {/* Contact Info Row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-1.5">
+            <label className="text-sm font-semibold text-slate-700">
+              Email Address <span className="text-red-500">*</span>
+            </label>
+            <input 
+              type="email" 
+              name="email" 
+              value={formData.email}
+              onChange={handleInputChange}
+              className={`w-full px-4 py-3 bg-slate-50 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all ${
+                formErrors.email ? 'border-red-300 focus:ring-red-500' : 'border-slate-200'
+              }`}
+              placeholder="john@company.com" 
+            />
+            {formErrors.email && (
+              <p className="text-red-500 text-xs flex items-center gap-1 mt-1">
+                <FaExclamationTriangle /> {formErrors.email}
               </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-              <div className="lg:col-span-2">
-                <div className="glass-card-strong rounded-3xl p-8 md:p-10 shadow-lg border border-white/60">
-                  {submitSuccess && (
-                    <div className="bg-brand-blue-50 border-2 border-brand-blue-200 rounded-2xl p-6 mb-8 text-center animate-fade-up visible">
-                      <div className="w-16 h-16 bg-brand-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <FaCheckCircle className="text-2xl text-white" />
-                      </div>
-                      <h3 className="text-2xl font-black text-brand-blue-800 mb-2">Message Sent Successfully!</h3>
-                      <p className="text-brand-blue-700">We'll respond within 1 hour during business hours.</p>
-                    </div>
-                  )}
-
-                  <form onSubmit={handleSubmit} ref={formRef} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-gray-800 font-semibold mb-2 text-sm">
-                          First Name <span className="text-brand-orange-500">*</span>
-                        </label>
-                        <input 
-                          type="text" 
-                          name="firstName" 
-                          value={formData.firstName}
-                          onChange={handleInputChange}
-                          className={`input-field w-full px-4 py-3 rounded-xl border-2 focus:outline-none ${
-                            formErrors.firstName ? 'error' : 'border-gray-200'
-                          }`}
-                          placeholder="John" 
-                        />
-                        {formErrors.firstName && (
-                          <div className="text-brand-orange-500 text-xs mt-2 flex items-center">
-                            <FaExclamationTriangle className="mr-1" />
-                            {formErrors.firstName}
-                          </div>
-                        )}
-                      </div>
-                      
-                      <div>
-                        <label className="block text-gray-800 font-semibold mb-2 text-sm">
-                          Last Name <span className="text-brand-orange-500">*</span>
-                        </label>
-                        <input 
-                          type="text" 
-                          name="lastName" 
-                          value={formData.lastName}
-                          onChange={handleInputChange}
-                          className={`input-field w-full px-4 py-3 rounded-xl border-2 focus:outline-none ${
-                            formErrors.lastName ? 'error' : 'border-gray-200'
-                          }`}
-                          placeholder="Doe" 
-                        />
-                        {formErrors.lastName && (
-                          <div className="text-brand-orange-500 text-xs mt-2 flex items-center">
-                            <FaExclamationTriangle className="mr-1" />
-                            {formErrors.lastName}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-gray-800 font-semibold mb-2 text-sm">
-                          <FaEnvelope className="inline mr-2 text-brand-blue-600" />
-                          Email Address <span className="text-brand-orange-500">*</span>
-                        </label>
-                        <input 
-                          type="email" 
-                          name="email" 
-                          value={formData.email}
-                          onChange={handleInputChange}
-                          className={`input-field w-full px-4 py-3 rounded-xl border-2 focus:outline-none ${
-                            formErrors.email ? 'error' : 'border-gray-200'
-                          }`}
-                          placeholder="john@company.com" 
-                        />
-                        {formErrors.email && (
-                          <div className="text-brand-orange-500 text-xs mt-2 flex items-center">
-                            <FaExclamationTriangle className="mr-1" />
-                            {formErrors.email}
-                          </div>
-                        )}
-                      </div>
-                      
-                      <div>
-                        <label className="block text-gray-800 font-semibold mb-2 text-sm">
-                          <FaPhone className="inline mr-2 text-brand-blue-600" />
-                          Phone Number
-                        </label>
-                        <input 
-                          type="tel" 
-                          name="phone" 
-                          value={formData.phone}
-                          onChange={handleInputChange}
-                          className="input-field w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:outline-none" 
-                          placeholder="+1 (555) 123-4567" 
-                        />
-                      </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-gray-800 font-semibold mb-2 text-sm">
-                          <FaBuilding className="inline mr-2 text-brand-blue-600" />
-                          Company
-                        </label>
-                        <input 
-                          type="text" 
-                          name="company" 
-                          value={formData.company}
-                          onChange={handleInputChange}
-                          className="input-field w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:outline-none" 
-                          placeholder="Your Company Name" 
-                        />
-                      </div>
-                      
-                      <div>
-                        <label className="block text-gray-800 font-semibold mb-2 text-sm">
-                          Job Title
-                        </label>
-                        <input 
-                          type="text" 
-                          name="jobTitle" 
-                          value={formData.jobTitle}
-                          onChange={handleInputChange}
-                          className="input-field w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:outline-none" 
-                          placeholder="Your Job Title" 
-                        />
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <label className="block text-gray-800 font-semibold mb-2 text-sm">
-                        Tell us more about your needs <span className="text-brand-orange-500">*</span>
-                      </label>
-                      <textarea 
-                        name="message" 
-                        rows="5" 
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        className={`input-field w-full px-4 py-3 rounded-xl border-2 focus:outline-none resize-none ${
-                          formErrors.message ? 'error' : 'border-gray-200'
-                        }`}
-                        placeholder="Describe your project, timeline, specific requirements, team size needed, or any challenges..."
-                      />
-                      <div className="flex justify-between text-xs text-gray-500 mt-2">
-                        <span>💡 The more details you provide, the better we can help</span>
-                        <span>{formData.message.length}/1000</span>
-                      </div>
-                      {formErrors.message && (
-                        <div className="text-brand-orange-500 text-xs mt-2 flex items-center">
-                          <FaExclamationTriangle className="mr-1" />
-                          {formErrors.message}
-                        </div>
-                      )}
-                    </div>
-                    
-                    <div className="pt-4">
-                      <button 
-                        type="submit" 
-                        disabled={isSubmitting}
-                        className="btn-primary gradient-primary text-white px-10 py-4 rounded-full font-bold text-lg w-full md:w-auto hover-lift shadow-xl flex items-center justify-center"
-                      >
-                        {isSubmitting ? (
-                          <>
-                            <FaSpinner className="mr-3 animate-spin" />
-                            Sending...
-                          </>
-                        ) : (
-                          <>
-                            <FaPaperPlane className="mr-3" />
-                            Send Message
-                          </>
-                        )}
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              
-              <div className="space-y-8">
-                <div className="glass-card rounded-3xl p-8 border border-white/60 sticky top-24">
-                  <h3 className="text-xl font-black mb-6 gradient-text flex items-center">
-                    <FaRocket className="mr-3 text-brand-blue-600" />
-                    Why Choose Arihant?
-                  </h3>
-                  <div className="space-y-4">
-                    {[
-                      { icon: FaShieldAlt, text: "99% Success Rate", desc: "Proven track record" },
-                      { icon: FaAward, text: "14+ Years Experience", desc: "Industry expertise" },
-                      { icon: FaUsers, text: "150+ Companies", desc: "Trusted worldwide" }
-                    ].map((item, index) => (
-                      <div key={index} className="flex items-center space-x-4 p-3 rounded-xl hover:bg-brand-blue-50 transition-all border border-transparent hover:border-brand-blue-100">
-                        <div className="w-12 h-12 bg-white shadow-sm rounded-full flex flex-shrink-0 items-center justify-center">
-                          <item.icon className="text-brand-blue-600 text-lg" />
-                        </div>
-                        <div>
-                          <div className="font-bold text-gray-800">{item.text}</div>
-                          <div className="text-xs text-gray-500 mt-0.5">{item.desc}</div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+            )}
           </div>
-        </section>
+          
+          <div className="space-y-1.5">
+            <label className="text-sm font-semibold text-slate-700">
+              Phone Number
+            </label>
+            <input 
+              type="tel" 
+              name="phone" 
+              value={formData.phone}
+              onChange={handleInputChange}
+              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all" 
+              placeholder="+1 (555) 123-4567" 
+            />
+          </div>
+        </div>
+        
+        {/* Company Info Row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-1.5">
+            <label className="text-sm font-semibold text-slate-700">
+              Company
+            </label>
+            <input 
+              type="text" 
+              name="company" 
+              value={formData.company}
+              onChange={handleInputChange}
+              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all" 
+              placeholder="Your Company Name" 
+            />
+          </div>
+          
+          <div className="space-y-1.5">
+            <label className="text-sm font-semibold text-slate-700">
+              Job Title
+            </label>
+            <input 
+              type="text" 
+              name="jobTitle" 
+              value={formData.jobTitle}
+              onChange={handleInputChange}
+              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all" 
+              placeholder="Your Job Title" 
+            />
+          </div>
+        </div>
+        
+        {/* Message Row */}
+        <div className="space-y-1.5">
+          <label className="text-sm font-semibold text-slate-700 flex justify-between">
+            <span>Tell us more about your needs <span className="text-red-500">*</span></span>
+            <span className="text-slate-400 font-normal">{formData.message.length}/1000</span>
+          </label>
+          <textarea 
+            name="message" 
+            rows="5" 
+            value={formData.message}
+            onChange={handleInputChange}
+            className={`w-full px-4 py-3 bg-slate-50 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all resize-none ${
+              formErrors.message ? 'border-red-300 focus:ring-red-500' : 'border-slate-200'
+            }`}
+            placeholder="Describe your project, timeline, specific requirements, team size needed, or any challenges..."
+          />
+          {formErrors.message ? (
+            <p className="text-red-500 text-xs flex items-center gap-1 mt-1">
+              <FaExclamationTriangle /> {formErrors.message}
+            </p>
+          ) : (
+            <p className="text-slate-500 text-xs mt-1">
+              💡 The more details you provide, the better we can help.
+            </p>
+          )}
+        </div>
+        
+        {/* Submit Button */}
+        <div className="pt-4">
+          <button 
+            type="submit" 
+            disabled={isSubmitting}
+            className="w-full md:w-auto flex items-center justify-center gap-3 bg-blue-600 text-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
+          >
+            {isSubmitting ? (
+              <>
+                <FaSpinner className="animate-spin" />
+                Sending...
+              </>
+            ) : (
+              <>
+                <FaPaperPlane />
+                Send Message
+              </>
+            )}
+          </button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</section>
       )}
 
       {activeTab === 'call' && (

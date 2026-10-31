@@ -910,42 +910,45 @@ const HeroSection = () => {
 
 
 
- export function CoreValuesSection() {
-   const values = [
+export function CoreValuesSection() {
+  const values = [
     {
       number: "01",
       category: "INTEGRITY",
       title: "Ethics",
-      description: "We believe strong partnerships are built on trust, transparency, and accountability. We maintain honest communication, ethical business practices, and clear commitments at every stage. We prioritize long-term relationships over short-term gains and believe in doing what's right for our clients, partners, and talent.",
+      description:
+        "We believe strong partnerships are built on trust, transparency, and accountability. We maintain honest communication, ethical business practices, and clear commitments at every stage. We prioritize long-term relationships over short-term gains and believe in doing what's right for our clients, partners, and talent.",
       standard: "100% Ethical & Transparent Partnerships",
-      badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200"
+      badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
     },
     {
       number: "02",
       category: "EXCELLENCE",
       title: "Quality",
-      description: "Excellence is reflected in every professional we present and every commitment we make. We focus on quality-driven recruitment, thorough talent evaluation, and consistent delivery standards to ensure our clients receive the right talent, the right expertise, and the right results.",
+      description:
+        "Excellence is reflected in every professional we present and every commitment we make. We focus on quality-driven recruitment, thorough talent evaluation, and consistent delivery standards to ensure our clients receive the right talent, the right expertise, and the right results.",
       standard: "Quality Without Compromise",
-      badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200"
+      badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
     },
     {
       number: "03",
       category: "FORESIGHT",
       title: "Proactive",
-      description: "We believe successful talent solutions start before the hiring need arises. By anticipating workforce demands, tracking evolving industry trends, and leveraging AI-enabled talent intelligence, we help clients and partners stay ahead of changing market needs. We identify opportunities early and address potential challenges before they impact business growth.",
+      description:
+        "We believe successful talent solutions start before the hiring need arises. By anticipating workforce demands, tracking evolving industry trends, and leveraging AI-enabled talent intelligence, we help clients and partners stay ahead of changing market needs. We identify opportunities early and address potential challenges before they impact business growth.",
       standard: "Anticipate. Adapt. Stay Ahead.",
-      badgeColor: "bg-violet-50 text-violet-700 border-violet-200"
+      badgeColor: "bg-violet-50 text-violet-700 border-violet-200",
     },
     {
       number: "04",
       category: "SPEED & CARE",
       title: "Responsiveness",
-      description: "We understand that timing matters in talent acquisition and business growth. From client requirements to candidate submissions and ongoing coordination, we prioritize prompt communication, proactive updates, and swift action. Our team stays accessible, responsive, and committed to keeping every stakeholder informed.",
+      description:
+        "We understand that timing matters in talent acquisition and business growth. From client requirements to candidate submissions and ongoing coordination, we prioritize prompt communication, proactive updates, and swift action. Our team stays accessible, responsive, and committed to keeping every stakeholder informed.",
       standard: "Prompt Response. Proactive Communication.",
-      badgeColor: "bg-blue-50 text-blue-700 border-blue-200"
-    }
+      badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+    },
   ];
-
 
   return (
     <section className="relative bg-slate-50/70 text-slate-800 py-24 px-6 md:px-12 lg:px-20 font-sans overflow-hidden">
@@ -954,45 +957,50 @@ const HeroSection = () => {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Header Section */}
-    <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-16 border-b border-slate-200 pb-12 px-4 md:px-8 lg:px-0">
-  
-  {/* Left Side: Badge & Headlines */}
-  <div className="flex flex-col max-w-3xl">
-    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200/80 mb-6 w-fit">
-      <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
-      <span className="text-xs uppercase tracking-wider text-indigo-700 font-bold">Our Core Values</span>
-    </div>
-    
-    <h2 className="flex flex-col gap-1 md:gap-2 leading-none">
-      <span className="text-xl md:text-2xl font-medium tracking-wide text-slate-500">
-        The Foundation of
-      </span>
-      <span className="text-5xl md:text-7xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 pb-2">
-        Everything We Do
-      </span>
-    </h2>
-  </div>
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-16 border-b border-slate-200 pb-12 px-4 md:px-8 lg:px-0">
+        
+        {/* Left Side: Badge & Headlines */}
+        <div className="flex flex-col max-w-4xl">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200/80 mb-6 w-fit">
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
+            <span className="text-xs uppercase tracking-wider text-indigo-700 font-bold">
+              Our Core Values
+            </span>
+          </div>
 
-  {/* Right Side: Description */}
-  <p className="text-slate-600 max-w-md text-base md:text-lg leading-relaxed lg:pb-3">
-    We don't view these values as decorative text. They are the non-negotiable standards behind every line of code, design, and conversation.
-  </p>
-  
-</div>
+          {/* UPDATED: Single Line Heading */}
+          <h2 className="flex flex-wrap items-baseline gap-x-3 md:gap-x-4 leading-none">
+            <span className="text-3xl md:text-4xl font-medium tracking-wide text-slate-500">
+              The Foundation of
+            </span>
+            <span className="text-4xl md:text-6xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 pb-2">
+              Everything We Do
+            </span>
+          </h2>
+        </div>
+
+        {/* Right Side: Description */}
+        <p className="text-slate-600 max-w-md text-base md:text-lg leading-relaxed lg:pb-3">
+          We don't view these values as decorative text. They are the non-negotiable standards behind every line of code, design, and conversation.
+        </p>
+      </div>
 
       {/* Editorial Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {values.map((item) => (
-          <div 
+          <div
             key={item.number}
             className="group relative p-8 md:p-10 bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-3xl transition-all duration-500 hover:-translate-y-1.5 hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-500/5"
           >
             {/* Top Indicator Line & Badge */}
             <div className="flex items-center justify-between mb-6">
               <span className="text-xs font-mono font-semibold tracking-wider text-slate-400">
-                {item.number} <span className="text-slate-300">/</span> {item.category}
+                {item.number} <span className="text-slate-300">/</span>{" "}
+                {item.category}
               </span>
-              <span className={`text-[11px] font-mono font-medium px-2.5 py-1 rounded-full border ${item.badgeColor}`}>
+              <span
+                className={`text-[11px] font-mono font-medium px-2.5 py-1 rounded-full border ${item.badgeColor}`}
+              >
                 Active Standard
               </span>
             </div>
