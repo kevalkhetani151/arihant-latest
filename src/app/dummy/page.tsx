@@ -1,35 +1,39 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { MeshGradient, PulsingBorder } from "@paper-design/shaders-react"
-import { motion } from "framer-motion"
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
 
 export default function PremiumStaffingHero() {
   const containerRef = useRef<HTMLDivElement>(null)
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  
+  const mouseX = useMotionValue(0)
+  const mouseY = useMotionValue(0)
 
-  // Subtle magnetic/parallax effect tracking for the trust badge
+  const springConfig = { damping: 40, stiffness: 100, mass: 0.5 }
+  const parallaxX = useSpring(useTransform(mouseX, [-0.5, 0.5], [-30, 30]), springConfig)
+  const parallaxY = useSpring(useTransform(mouseY, [-0.5, 0.5], [-30, 30]), springConfig)
+
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!containerRef.current) return
       const { left, top, width, height } = containerRef.current.getBoundingClientRect()
-      const x = (e.clientX - left) / width - 0.5
-      const y = (e.clientY - top) / height - 0.5
-      setMousePosition({ x, y })
+      mouseX.set((e.clientX - left) / width - 0.5)
+      mouseY.set((e.clientY - top) / height - 0.5)
     }
 
     window.addEventListener("mousemove", handleMouseMove)
     return () => window.removeEventListener("mousemove", handleMouseMove)
-  }, [])
+  }, [mouseX, mouseY])
 
   return (
     <div
       ref={containerRef}
-      className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-black"
+      className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-black font-sans selection:bg-blue-500/30"
     >
-      {/* PRESERVED ORIGINAL SVG FILTERS */}
-      <svg className="absolute inset-0 h-0 w-0">
+      {/* 1. ORIGINAL SVG FILTERS RESTORED */}
+      <svg className="absolute inset-0 h-0 w-0 pointer-events-none">
         <defs>
           <filter id="glass-effect" x="-50%" y="-50%" width="200%" height="200%">
             <feTurbulence baseFrequency="0.005" numOctaves="1" result="noise" />
@@ -53,90 +57,113 @@ export default function PremiumStaffingHero() {
         </defs>
       </svg>
 
-      {/* PRESERVED ORIGINAL BACKGROUND EFFECT */}
-      <MeshGradient
-        className="absolute inset-0 h-full w-full"
-        colors={["#000000", "#2563eb", "#1d4ed8", "#0f2f7a", "#f97316"]}
-        speed={0.3}
-        backgroundColor="#000000"
-      />
-      <MeshGradient
-        className="absolute inset-0 h-full w-full opacity-60"
-        colors={["#000000", "#ffffff", "#2563eb", "#f97316"]}
-        speed={0.2}
-        wireframe={true}
-        backgroundColor="transparent"
-      />
+      {/* 2. ORIGINAL BACKGROUND EFFECT RESTORED */}
+      <div className="absolute inset-0 z-0">
+        <MeshGradient
+          className="absolute inset-0 h-full w-full"
+          colors={["#000000", "#2563eb", "#1d4ed8", "#0f2f7a", "#f97316"]}
+          speed={0.3}
+          backgroundColor="#000000"
+        />
+        <MeshGradient
+          className="absolute inset-0 h-full w-full opacity-60"
+          colors={["#000000", "#ffffff", "#2563eb", "#f97316"]}
+          speed={0.2}
+          wireframe={true}
+          backgroundColor="transparent"
+        />
+        {/* Subtle vignette so the crisp text is easy to read against the bright mesh */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_#000000_100%)] opacity-40 pointer-events-none" />
+      </div>
 
-      {/* PREMIUM CONTENT LAYER */}
+      {/* 3. PREMIUM UI CONTENT */}
       <main className="pointer-events-none relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col justify-center px-6 md:px-12 lg:px-24">
-        <div className="pointer-events-auto max-w-3xl">
+        <div className="pointer-events-auto max-w-4xl">
           
-          {/* Refined Eyebrow Badge */}
-          
+          {/* Eyebrow */}
+          <motion.div
+            className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-black/20 px-3.5 py-1.5 backdrop-blur-md"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-blue-500"></span>
+            </span>
+            <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/90">
+              Premium Talent Discovery
+            </span>
+          </motion.div>
 
-          {/* Elevated Headline mixing Sans and Italic Serif */}
+          {/* Headline */}
           <motion.h1
-            className="mb-8 text-5xl font-bold leading-[1.05] tracking-tighter text-white drop-shadow-2xl md:text-7xl lg:text-[5.5rem]"
+            className="mb-8 text-5xl font-medium leading-[1.05] tracking-[-0.02em] text-white drop-shadow-xl md:text-7xl lg:text-[6rem]"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="block font-medium text-white/90">Where Companies</span>
+            <span className="block text-white">Where Companies</span>
             <span className="block">
               Meet Talent{" "}
               <motion.span
-                className="inline-block font-serif font-light italic"
-                animate={{
-                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                }}
-                transition={{
-                  duration: 8,
-                  repeat: Number.POSITIVE_INFINITY,
-                  ease: "linear",
-                }}
+                className="inline-block font-serif font-light italic text-white/80"
               >
                 That Delivers.
               </motion.span>
             </span>
           </motion.h1>
 
-          {/* Balanced Subtitle */}
+          {/* Subtitle */}
           <motion.p
-            className="mb-12 max-w-xl text-lg font-light leading-relaxed text-white/80 drop-shadow-md [text-wrap:balance] md:text-xl"
+            className="mb-12 max-w-2xl text-lg font-light leading-relaxed text-white/80 drop-shadow-md md:text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            Vantage Staffing connects ambitious companies with vetted, ready-to-work professionals — contract, contract-to-hire, or direct placement, matched in days instead of months.
+            Vantage Staffing combines intelligent AI-driven talent discovery with human expertise to connect ambitious businesses with exceptional, job-ready professionals. We make hiring smarter, faster, and more precise.
           </motion.p>
 
-          {/* Single Contact Us CTA Button */}
+          {/* Call To Action */}
           <motion.div
-            className="flex items-center"
+            className="flex flex-wrap items-center gap-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
-           
+            <Link 
+              href="/contact" 
+              className="group flex h-14 items-center justify-center gap-2 rounded-full bg-white px-8 text-sm font-semibold text-black transition-all hover:scale-105 active:scale-95"
+            >
+              Start Hiring
+              <svg 
+                className="h-4 w-4 text-black transition-transform duration-300 group-hover:translate-x-1" 
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+            <Link 
+              href="/services"
+              className="text-sm font-medium text-white/70 transition-colors hover:text-white"
+            >
+              Explore Services &rarr;
+            </Link>
           </motion.div>
         </div>
       </main>
 
-      {/* TRUST STAMP (Pulsing Border with Mouse Parallax) */}
+      {/* 4. TRUST STAMP - Original colors restored, layout kept sleek */}
       <motion.div 
-        className="absolute bottom-8 right-8 z-30 hidden md:bottom-16 md:right-16 md:block"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        style={{
-          x: mousePosition.x * -30, 
-          y: mousePosition.y * -30,
-        }}
+        className="absolute bottom-12 right-12 z-30 hidden md:block"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.8 }}
+        style={{ x: parallaxX, y: parallaxY }}
       >
-        <div className="relative flex h-32 w-32 items-center justify-center">
+        <div className="relative flex h-32 w-32 items-center justify-center opacity-90 transition-opacity hover:opacity-100">
           <PulsingBorder
-            colors={["#2563eb", "#1d4ed8", "#f97316", "#fb923c", "#1e40af", "#fdba74", "#ffffff"]}
+            colors={["#2563eb", "#1d4ed8", "#f97316", "#fb923c", "#1e40af", "#fdba74", "#ffffff"]} // Restored original colors
             colorBack="#00000000"
             speed={1.5}
             roundness={1}
@@ -150,31 +177,21 @@ export default function PremiumStaffingHero() {
             smokeSize={4}
             scale={0.7}
             rotation={0}
-            style={{
-              width: "80px",
-              height: "80px",
-              borderRadius: "50%",
-            }}
+            style={{ width: "80px", height: "80px", borderRadius: "50%" }}
           />
 
           <motion.svg
             className="absolute inset-0 h-full w-full drop-shadow-lg"
             viewBox="0 0 100 100"
             animate={{ rotate: 360 }}
-            transition={{
-              duration: 25,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "linear",
-            }}
+            transition={{ duration: 25, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
             style={{ transform: "scale(1.1)" }}
           >
             <defs>
               <path id="textCircle" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" />
             </defs>
-            <text className="fill-white/70 text-[10.5px] font-semibold uppercase tracking-[0.15em]">
-              <textPath href="#textCircle" startOffset="0%">
-                Arihant Staffing . 2020 • Premium Talent •
-              </textPath>
+            <text className="fill-white/80 text-[10.5px] font-semibold uppercase tracking-[0.15em]">
+              
             </text>
           </motion.svg>
         </div>

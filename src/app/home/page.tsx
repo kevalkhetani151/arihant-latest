@@ -911,40 +911,41 @@ const HeroSection = () => {
 
 
  export function CoreValuesSection() {
-  const values = [
+   const values = [
     {
       number: "01",
       category: "INTEGRITY",
       title: "Ethics",
-      description: "Radical transparency and honest partnership. We prioritize long-term trust over short-term gain, giving you straight answers even when they are tough to hear.",
-      standard: "100% Unbiased Advisory",
+      description: "We believe strong partnerships are built on trust, transparency, and accountability. We maintain honest communication, ethical business practices, and clear commitments at every stage. We prioritize long-term relationships over short-term gains and believe in doing what's right for our clients, partners, and talent.",
+      standard: "100% Ethical & Transparent Partnerships",
       badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200"
     },
     {
       number: "02",
       category: "EXCELLENCE",
       title: "Quality",
-      description: "Crafted without shortcuts. Every pixel, system architecture, and client touchpoint undergoes rigorous review to ensure lasting endurance and performance.",
-      standard: "Zero-Defect Delivery Model",
+      description: "Excellence is reflected in every professional we present and every commitment we make. We focus on quality-driven recruitment, thorough talent evaluation, and consistent delivery standards to ensure our clients receive the right talent, the right expertise, and the right results.",
+      standard: "Quality Without Compromise",
       badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200"
     },
     {
       number: "03",
       category: "FORESIGHT",
       title: "Proactive",
-      description: "We don't wait for roadblocks to appear. We continuously audit, anticipate future scale needs, and solve challenges before they ever touch your operations.",
-      standard: "Preemptive Risk Management",
+      description: "We believe successful talent solutions start before the hiring need arises. By anticipating workforce demands, tracking evolving industry trends, and leveraging AI-enabled talent intelligence, we help clients and partners stay ahead of changing market needs. We identify opportunities early and address potential challenges before they impact business growth.",
+      standard: "Anticipate. Adapt. Stay Ahead.",
       badgeColor: "bg-violet-50 text-violet-700 border-violet-200"
     },
     {
       number: "04",
       category: "SPEED & CARE",
       title: "Responsiveness",
-      description: "Communication is our priority. You never have to guess project status or wait days for an answer — direct access and swift action are guaranteed.",
-      standard: "< 15 Minute Incident Response",
+      description: "We understand that timing matters in talent acquisition and business growth. From client requirements to candidate submissions and ongoing coordination, we prioritize prompt communication, proactive updates, and swift action. Our team stays accessible, responsive, and committed to keeping every stakeholder informed.",
+      standard: "Prompt Response. Proactive Communication.",
       badgeColor: "bg-blue-50 text-blue-700 border-blue-200"
     }
   ];
+
 
   return (
     <section className="relative bg-slate-50/70 text-slate-800 py-24 px-6 md:px-12 lg:px-20 font-sans overflow-hidden">
@@ -953,20 +954,31 @@ const HeroSection = () => {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Header Section */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-16 border-b border-slate-200 pb-12">
-        <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200/80 mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
-            <span className="text-xs uppercase tracking-wider text-indigo-700 font-semibold">Our Core Values</span>
-          </div>
-          <h2 className="text-3xl md:text-5xl font-light tracking-tight text-slate-900 leading-tight">
-            The Foundation of <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 underline decoration-indigo-200 underline-offset-8">Everything We Do</span>
-          </h2>
-        </div>
-        <p className="text-slate-600 max-w-md text-sm md:text-base leading-relaxed">
-          We don't view these values as decorative text. They are the non-negotiable standards behind every line of code, design, and conversation.
-        </p>
-      </div>
+    <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-16 border-b border-slate-200 pb-12 px-4 md:px-8 lg:px-0">
+  
+  {/* Left Side: Badge & Headlines */}
+  <div className="flex flex-col max-w-3xl">
+    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200/80 mb-6 w-fit">
+      <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
+      <span className="text-xs uppercase tracking-wider text-indigo-700 font-bold">Our Core Values</span>
+    </div>
+    
+    <h2 className="flex flex-col gap-1 md:gap-2 leading-none">
+      <span className="text-xl md:text-2xl font-medium tracking-wide text-slate-500">
+        The Foundation of
+      </span>
+      <span className="text-5xl md:text-7xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 pb-2">
+        Everything We Do
+      </span>
+    </h2>
+  </div>
+
+  {/* Right Side: Description */}
+  <p className="text-slate-600 max-w-md text-base md:text-lg leading-relaxed lg:pb-3">
+    We don't view these values as decorative text. They are the non-negotiable standards behind every line of code, design, and conversation.
+  </p>
+  
+</div>
 
       {/* Editorial Grid */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
