@@ -13,7 +13,8 @@ import {
   Network,
   Laptop,
   GraduationCap,
-  Activity
+  Activity,
+  Globe2
 } from 'lucide-react';
 
 const Footer = () => {
@@ -46,10 +47,8 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex items-center space-x-4 pt-2">
               {[
-                { icon: Linkedin, label: 'LinkedIn', href: '#', hoverBg: 'hover:bg-blue-600' },
-                { icon: Twitter, label: 'Twitter', href: '#', hoverBg: 'hover:bg-sky-500' },
-                { icon: Facebook, label: 'Facebook', href: '#', hoverBg: 'hover:bg-blue-700' },
-                { icon: Instagram, label: 'Instagram', href: '#', hoverBg: 'hover:bg-pink-600' },
+                { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/arihantstaffing/posts/?feedView=all', hoverBg: 'hover:bg-blue-600' },
+
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -72,11 +71,13 @@ const Footer = () => {
             <ul className="space-y-4 text-sm">
               {[
                 { name: 'Staff Augmentation', href: '/staff-augmentation', icon: UserPlus },
+                 { name: 'Healthcare Solutions', href: '/healthcare', icon: Activity },
                 { name: 'HR Solutions', href: '/hr-solutions', icon: Users },
-                { name: 'RPO Solutions', href: '/rpo', icon: Network },
                 { name: 'IT Services & Consulting', href: '/web-development', icon: Laptop },
-                { name: 'Learning & Development', href: '/learning-development-solutions', icon: GraduationCap },
-                { name: 'Healthcare Solutions', href: '/healthcare', icon: Activity },
+                { name: 'RPO Solutions', href: '/rpo', icon: Network },
+                {name : 'Global Capability Center', href : '/gcc' , icon : Globe2}
+
+               
               ].map((service, idx) => (
                 <li key={idx}>
                   <Link
@@ -153,7 +154,7 @@ const Footer = () => {
 
         {/* Bottom Footer */}
         <div className="border-t border-gray-800/80 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Arihant Staffing Inc. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Arihant Staffing. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
             <Link href="/terms-of-service" className="hover:text-gray-300 transition-colors">Terms of Service</Link>

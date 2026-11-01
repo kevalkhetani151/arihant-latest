@@ -209,9 +209,9 @@ const RPOServicesPage = () => {
                 with Expert RPO
               </h1>
               
-              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed animate-on-scroll">
-                Accelerate your talent acquisition with our end-to-end RPO solutions. We provide dedicated teams, cutting-edge technology, and strategic expertise to scale your hiring and build high-performing organizations faster than ever.
-              </p>
+             <p className="text-justify text-gray-600 mb-6 leading-relaxed">
+  Accelerate your talent acquisition with our end-to-end RPO solutions. We provide dedicated teams, cutting-edge technology, and strategic expertise to scale your hiring and build high-performing organizations faster than ever.
+</p>
               
               <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
                 <button
@@ -361,8 +361,9 @@ const RPOServicesPage = () => {
           <FaFilter className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Selective RPO</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Targeted recruitment for specific roles, departments, or geographic locations with flexible engagement models and scalable solutions.</p>
-        <ul className="space-y-3 mb-6">
+<p className="text-justify text-gray-600 mb-6 leading-relaxed">
+  Targeted recruitment for specific roles, departments, or geographic locations with flexible engagement models and scalable solutions.
+</p>        <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
             <span className="text-gray-700">High-volume hiring campaigns</span>
@@ -388,8 +389,9 @@ const RPOServicesPage = () => {
           <FaCrown className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Executive Search RPO</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Senior-level executive recruitment with comprehensive assessment, market intelligence, competitive analysis, and succession planning support.</p>
-        <ul className="space-y-3 mb-6">
+<p className="text-justify text-gray-600 mb-6 leading-relaxed">
+  Senior-level executive recruitment with comprehensive assessment, market intelligence, competitive analysis, and succession planning support.
+</p>        <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
             <span className="text-gray-700">C-suite & VP level searches</span>
@@ -415,8 +417,9 @@ const RPOServicesPage = () => {
           <FaRobot className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">AI-Powered RPO</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Next-generation recruitment leveraging AI-driven sourcing, automated screening, predictive analytics, and machine learning for optimal candidate matching.</p>
-        <ul className="space-y-3 mb-6">
+<p className="text-justify text-gray-600 mb-6 leading-relaxed">
+  Next-generation recruitment leveraging AI-driven sourcing, automated screening, predictive analytics, and machine learning for optimal candidate matching.
+</p>        <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
             <span className="text-gray-700">AI candidate matching algorithms</span>
@@ -442,7 +445,9 @@ const RPOServicesPage = () => {
           <FaGlobe className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Global RPO</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Multi-country recruitment with local market expertise, compliance management, cultural alignment, and standardized global processes for international expansion.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">
+  Multi-country recruitment with local market expertise, compliance management, cultural alignment, and standardized global processes for international expansion.
+</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -469,8 +474,9 @@ const RPOServicesPage = () => {
           <FaPuzzlePiece className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Hybrid RPO Model</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Flexible combination of internal recruiting teams and external RPO support for optimal cost-effectiveness, enhanced control, and scalable operations.</p>
-        <ul className="space-y-3 mb-6">
+<p className="text-justify text-gray-600 mb-6 leading-relaxed">
+  Flexible combination of internal recruiting teams and external RPO support for optimal cost-effectiveness, enhanced control, and scalable operations.
+</p>        <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
             <span className="text-gray-700">Blended team approach</span>
@@ -495,8 +501,18 @@ const RPOServicesPage = () => {
 </section>
 
       {/* Industry Coverage */}
-   <section className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
+   <section className="relative py-20 bg-white overflow-hidden z-0">
+  
+  {/* --- Premium Minimal Background Layer --- */}
+  <div className="absolute inset-0 pointer-events-none -z-10 flex justify-center">
+    {/* Subtle, fading technical grid */}
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+    {/* Ultra-faint ambient glow to add depth without adding color */}
+    <div className="absolute top-[-10%] left-[20%] w-[500px] h-[500px] bg-brand-blue-50/50 rounded-full blur-[120px] mix-blend-multiply"></div>
+  </div>
+  {/* ---------------------------------------- */}
+
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
     <div className="text-center mb-16">
       <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
         <span className="gradient-text">Industry-Specific</span> RPO Expertise
@@ -507,7 +523,7 @@ const RPOServicesPage = () => {
     </div>
 
     {/* Popular Industries */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
             
         {/* Technology */}
         <div className="text-center animate-on-scroll">

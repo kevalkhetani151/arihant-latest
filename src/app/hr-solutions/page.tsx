@@ -186,7 +186,7 @@ const HRSolutionsPage = () => {
                 with Expert Solutions
               </h1>
               
-              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed animate-on-scroll">
+              <p className="text-justify text-gray-600 mb-6 leading-relaxed">
                 Comprehensive human resource management solutions that streamline your HR processes, enhance employee engagement, and drive organizational growth through strategic people management.
               </p>
               
@@ -307,7 +307,7 @@ const HRSolutionsPage = () => {
           <FaSearch className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Talent Acquisition & Recruitment</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">End-to-end recruitment services from job posting to successful placement with comprehensive candidate screening and assessment.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">End-to-end recruitment services from job posting to successful placement with comprehensive candidate screening and assessment.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -334,7 +334,7 @@ const HRSolutionsPage = () => {
           <FaChartLine className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Performance Management</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Comprehensive performance evaluation systems with goal setting, regular reviews, and employee development programs.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Comprehensive performance evaluation systems with goal setting, regular reviews, and employee development programs.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -361,7 +361,7 @@ const HRSolutionsPage = () => {
           <FaHandshake className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Employee Relations</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Building positive workplace relationships through effective communication, conflict resolution, and employee engagement programs.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Building positive workplace relationships through effective communication, conflict resolution, and employee engagement programs.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -388,7 +388,7 @@ const HRSolutionsPage = () => {
           <FaShieldAlt className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Compliance & Policy Management</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Ensure legal compliance with labor laws and regulations while developing comprehensive HR policies and procedures.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Ensure legal compliance with labor laws and regulations while developing comprehensive HR policies and procedures.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -415,7 +415,7 @@ const HRSolutionsPage = () => {
           <FaCalculator className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Payroll & Benefits Management</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Accurate payroll processing and comprehensive benefits administration to ensure employee satisfaction and compliance.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Accurate payroll processing and comprehensive benefits administration to ensure employee satisfaction and compliance.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -442,7 +442,7 @@ const HRSolutionsPage = () => {
           <FaGraduationCap className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Training & Development</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Comprehensive learning and development programs to enhance employee skills and drive organizational growth.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Comprehensive learning and development programs to enhance employee skills and drive organizational growth.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -600,122 +600,128 @@ const HRSolutionsPage = () => {
       </section>
 
       {/* Industries We Serve */}
- <section className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl lg:text-5xl font-black mb-6 animate-on-scroll text-gray-800">
-        Industries We <span className="text-brand-blue-600">Serve</span>
-      </h2>
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-on-scroll">
-        Our staff augmentation solutions are tailored to meet the unique needs of various industries.
-      </p>
-    </div>
-
-   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+<section className="relative py-20 bg-white overflow-hidden z-0">
       
-  {/* Technology */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaLaptopCode className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Technology</h4>
-  </div>
-  
-  {/* BFSI */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaUniversity className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">BFSI</h4>
-  </div>
+      {/* --- Premium Minimal Background Layer --- */}
+      <div className="absolute inset-0 pointer-events-none -z-10 flex justify-center">
+        {/* Subtle, fading technical grid */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+        {/* Ultra-faint ambient glow to add depth without adding color */}
+        <div className="absolute top-[-10%] left-[20%] w-[500px] h-[500px] bg-brand-blue-50/50 rounded-full blur-[120px] mix-blend-multiply"></div>
+      </div>
+      {/* ---------------------------------------- */}
 
-  {/* FMCG */}
- 
-  
-  {/* Healthcare */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaHeartbeat className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Healthcare</h4>
-  </div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-black mb-6 animate-on-scroll text-gray-800">
+            Industries We <span className="text-brand-blue-600">Serve</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-on-scroll">
+            Our staff augmentation solutions are tailored to meet the unique needs of various industries.
+          </p>
+        </div>
 
-  {/* Pharma */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaFlask className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Pharma & Life Sciences</h4>
-  </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            
+          {/* Technology */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaLaptopCode className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Technology</h4>
+          </div>
+          
+          {/* BFSI */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaUniversity className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">BFSI</h4>
+          </div>
 
-  {/* Engineering */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaCogs className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Engineering & R&D</h4>
-  </div>
-  
-  {/* Manufacturing */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaIndustry className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Manufacturing</h4>
-  </div>
-  
-  {/* Ed-Tech */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaGraduationCap className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Ed-Tech</h4>
-  </div>
-  
-  {/* E-commerce */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaShoppingCart className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Retail & E-commerce</h4>
-  </div>
+          {/* Healthcare */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaHeartbeat className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Healthcare</h4>
+          </div>
 
-  {/* Retail */}
-  
+          {/* Pharma */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaFlask className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Pharma & Life Sciences</h4>
+          </div>
 
-  {/* Real Estate */}
-  
+          {/* Engineering */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaCogs className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Engineering & R&D</h4>
+          </div>
+          
+          {/* Manufacturing */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaIndustry className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Manufacturing</h4>
+          </div>
+          
+          {/* Ed-Tech */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaGraduationCap className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Ed-Tech</h4>
+          </div>
+          
+          {/* E-commerce */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaShoppingCart className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Retail & E-commerce</h4>
+          </div>
 
-  {/* Logistics */}
-  <div className="text-center animate-on-scroll">
-    <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-      <FaTruck className="text-2xl text-white" />
-    </div>
-    <h4 className="font-semibold text-gray-800">Logistics & Supply Chain</h4>
-  </div>
-  <div className="text-center animate-on-scroll">
-  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-    <FaBroadcastTower className="text-2xl text-white" />
-  </div>
-  <h4 className="font-semibold text-gray-800">Telecom</h4>
-</div>
+          {/* Logistics */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaTruck className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Logistics & Supply Chain</h4>
+          </div>
 
-<div className="text-center animate-on-scroll">
-  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-    <FaBolt className="text-2xl text-white" />
-  </div>
-  <h4 className="font-semibold text-gray-800">Energy & Utilities</h4>
-</div>
-<div className="text-center animate-on-scroll">
-  <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
-    <FaCar className="text-2xl text-white" />
-  </div>
-  <h4 className="font-semibold text-gray-800">Automotive</h4>
-</div>
-  
-</div>
-  </div>
-</section>
+          {/* Telecom */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaBroadcastTower className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Telecom</h4>
+          </div>
+
+          {/* Energy & Utilities */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaBolt className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Energy & Utilities</h4>
+          </div>
+
+          {/* Automotive */}
+          <div className="text-center animate-on-scroll">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md">
+              <FaCar className="text-2xl text-white" />
+            </div>
+            <h4 className="font-semibold text-gray-800">Automotive</h4>
+          </div>
+            
+        </div>
+      </div>
+    </section>
 
       {/* CTA Section */}
     <section className="py-20 bg-gradient-to-br from-brand-blue-600 via-brand-blue-600 to-brand-blue-600 text-white">

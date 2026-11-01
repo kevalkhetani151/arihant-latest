@@ -951,81 +951,84 @@ export function CoreValuesSection() {
   ];
 
   return (
-    <section className="relative bg-slate-50/70 text-slate-800 py-24 px-6 md:px-12 lg:px-20 font-sans overflow-hidden">
-      {/* Background Ambient Glows */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
+  <section className="relative bg-white text-slate-800 py-24 px-6 md:px-12 lg:px-20 font-sans overflow-hidden">
+  {/* Background Ambient Glows (Unified to brand-blue) */}
+  <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-blue-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
+  <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-blue-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-      {/* Header Section */}
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-16 border-b border-slate-200 pb-12 px-4 md:px-8 lg:px-0">
-        
-        {/* Left Side: Badge & Headlines */}
-        <div className="flex flex-col max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-200/80 mb-6 w-fit">
-            <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse"></span>
-            <span className="text-xs uppercase tracking-wider text-indigo-700 font-bold">
-              Our Core Values
-            </span>
-          </div>
+  {/* Header Section */}
+  <div className="max-w-[1320px] mx-auto mb-16 border-b border-slate-200 pb-12 px-4 md:px-8 lg:px-0">
+    {/* Badge (Unified to brand-blue) */}
+    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-blue-50 border border-brand-blue-200/80 mb-7">
+      <span className="w-1.5 h-1.5 rounded-full bg-brand-blue-600 animate-pulse" />
+      <span className="text-xs uppercase tracking-[0.16em] text-brand-blue-600 font-bold">
+        Our Core Values
+      </span>
+    </div>
 
-          {/* UPDATED: Single Line Heading */}
-          <h2 className="flex flex-wrap items-baseline gap-x-3 md:gap-x-4 leading-none">
-            <span className="text-3xl md:text-4xl font-medium tracking-wide text-slate-500">
-              The Foundation of
-            </span>
-            <span className="text-4xl md:text-6xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 pb-2">
-              Everything We Do
-            </span>
-          </h2>
+    {/* Heading */}
+    <h2 className="flex flex-wrap items-baseline gap-x-3 md:gap-x-4 leading-[1.3] mb-6">
+      <span className="text-2xl md:text-4xl font-medium tracking-tight text-brand-blue-600">
+        The Foundation of
+      </span>
+
+      <span className="text-4xl md:text-6xl font-extrabold tracking-[-0.045em] text-brand-blue-600 pb-3">
+        Everything We Do
+      </span>
+    </h2>
+
+    {/* Description */}
+    <p className="max-w-2xl text-slate-600 text-base md:text-lg leading-8">
+      We don't view these values as decorative text. They are the non-negotiable
+      standards behind every line of code, design, and conversation.
+    </p>
+  </div>
+
+  {/* Editorial Grid */}
+  <div className="max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    {values.map((item) => (
+      <div
+        key={item.number}
+        className="group relative p-8 md:p-10 bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-3xl transition-all duration-500 hover:-translate-y-1.5 hover:border-brand-blue-300 hover:shadow-xl hover:shadow-brand-blue-500/10"
+      >
+        {/* Top Indicator Line & Badge */}
+        <div className="flex items-center justify-between mb-6">
+          {/* Numbers/Categories unified to brand-blue */}
+          <span className="text-xs font-mono font-semibold tracking-wider text-brand-blue-600">
+            {item.number} <span className="text-brand-blue-300">/</span>{" "}
+            {item.category}
+          </span>
+
+          {/* Badge unified to brand-blue */}
+          <span className="text-[11px] font-mono font-medium px-2.5 py-1 rounded-full border border-brand-blue-200 bg-brand-blue-50 text-brand-blue-600">
+            Active Standard
+          </span>
         </div>
 
-        {/* Right Side: Description */}
-        <p className="text-slate-600 max-w-md text-base md:text-lg leading-relaxed lg:pb-3">
-          We don't view these values as decorative text. They are the non-negotiable standards behind every line of code, design, and conversation.
+        {/* Title & Description */}
+        <h3 className="text-2xl font-semibold text-brand-blue-600 mb-3">
+          {item.title}
+        </h3>
+
+        <p className="max-w-full text-justify text-slate-600 text-sm md:text-base leading-relaxed mb-8">
+          {item.description}
         </p>
+
+        {/* Bottom Standard Bar */}
+        <div className="flex items-center justify-between border-t border-slate-100 pt-5 mt-auto">
+          {/* Label unified to brand-blue */}
+          <span className="text-xs font-mono uppercase tracking-wider text-brand-blue-600 font-medium">
+            Standard:
+          </span>
+
+          <span className="text-xs font-mono font-semibold text-brand-blue-600 bg-brand-blue-50 border border-brand-blue-100 px-3 py-1 rounded-md">
+            {item.standard}
+          </span>
+        </div>
       </div>
-
-      {/* Editorial Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        {values.map((item) => (
-          <div
-            key={item.number}
-            className="group relative p-8 md:p-10 bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-3xl transition-all duration-500 hover:-translate-y-1.5 hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-500/5"
-          >
-            {/* Top Indicator Line & Badge */}
-            <div className="flex items-center justify-between mb-6">
-              <span className="text-xs font-mono font-semibold tracking-wider text-slate-400">
-                {item.number} <span className="text-slate-300">/</span>{" "}
-                {item.category}
-              </span>
-              <span
-                className={`text-[11px] font-mono font-medium px-2.5 py-1 rounded-full border ${item.badgeColor}`}
-              >
-                Active Standard
-              </span>
-            </div>
-
-            {/* Title & Description */}
-            <h3 className="text-2xl font-semibold text-slate-900 mb-3 group-hover:text-indigo-600 transition-colors duration-300">
-              {item.title}
-            </h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed mb-8">
-              {item.description}
-            </p>
-
-            {/* Bottom Standard Bar */}
-            <div className="flex items-center justify-between border-t border-slate-100 pt-5 mt-auto">
-              <span className="text-xs font-mono uppercase tracking-wider text-slate-400 font-medium">
-                Standard:
-              </span>
-              <span className="text-xs font-mono font-semibold text-slate-700 bg-slate-100/80 px-3 py-1 rounded-md">
-                {item.standard}
-              </span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+    ))}
+  </div>
+</section>
   );
 }
 
@@ -1321,7 +1324,7 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
   </div>
 </section>
       {/* Enhanced Industries Section */}
-      <section id="industries" className="py-24 bg-gradient-to-br from-brand-blue-50 to-brand-blue-50">
+      <section id="industries" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           {/* Enhanced Section Header */}
           <div className="text-center mb-16 animate-on-scroll">
@@ -1370,17 +1373,18 @@ export default function CompleteBannerComponent({ backgroundRef, textRef }) {
           <div className="inline-flex items-center px-5 py-2 bg-brand-blue-100 rounded-full text-brand-blue-600 font-bold text-sm mb-5 shadow-lg">
             <FaAward className="mr-2" />
             About Arihant Staffing
-            <MdVerified className="ml-2 text-lg" />
+           
           </div>
           <h2 className="text-3xl lg:text-4xl font-black mb-6">
             Why <span className="gradient-text">Leading Companies</span> Trust Us
           </h2>
-          <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
-            Led by two Co-Founders with 14+ years of industry expertise. We combine deep market knowledge with a consultative approach to deliver exceptional talent solutions.
-          </p>
-          <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
-            Our focus is on quality, speed, and precision across every engagement. Partner with us to build high-performing teams that drive lasting business success.
-          </p>
+         <p className="text-justify text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
+  Led by two Co-Founders with 14+ years of industry expertise. We combine deep market knowledge with a consultative approach to deliver exceptional talent solutions.
+</p>
+
+<p className="text-justify text-base lg:text-lg text-gray-600 leading-relaxed mb-5">
+  Our focus is on quality, speed, and precision across every engagement. Partner with us to build high-performing teams that drive lasting business success.
+</p>
         </div>
 
         <div className="space-y-7">

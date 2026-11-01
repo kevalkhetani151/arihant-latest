@@ -103,26 +103,26 @@ export default function PremiumStaffingHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="block text-white">Where Companies</span>
+            <span className="block text-white">People</span>
             <span className="block">
-              Meet Talent{" "}
+            Potential
               <motion.span
                 className="inline-block font-serif font-light italic text-white/80"
               >
-                That Delivers.
+               Performance.
               </motion.span>
             </span>
           </motion.h1>
 
           {/* Subtitle */}
-          <motion.p
-            className="mb-12 max-w-2xl text-lg font-light leading-relaxed text-white/80 drop-shadow-md md:text-xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          >
-            Vantage Staffing combines intelligent AI-driven talent discovery with human expertise to connect ambitious businesses with exceptional, job-ready professionals. We make hiring smarter, faster, and more precise.
-          </motion.p>
+         <motion.p
+  className="mb-12 max-w-2xl text-justify text-lg font-light leading-relaxed text-white/80 drop-shadow-md md:text-xl"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+>
+  We help organizations build exceptional teams by connecting them with skilled professionals across technology, engineering, healthcare, life sciences, and business functions.
+</motion.p>
 
           {/* Call To Action */}
           <motion.div
@@ -185,11 +185,16 @@ export default function PremiumStaffingHero() {
       <defs>
         <path id="textCircle" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" />
       </defs>
-      <text className="fill-white/80 text-[10.5px] font-semibold uppercase tracking-[0.15em]">
-        <textPath href="#textCircle" startOffset="0%">
-    Arihant Staffing • Arihant Staffing •
+    <text className="fill-white/95 text-[10px] font-bold uppercase tracking-[0.24em]">
+  <textPath
+    href="#textCircle"
+    startOffset="0%"
+    textLength="226"
+    lengthAdjust="spacing"
+  >
+    ✦ ARIHANT STAFFING  ✦ 2020{"\u00A0\u00A0"}
   </textPath>
-      </text>
+</text>
     </motion.svg>
   </div>
 </motion.div>

@@ -223,9 +223,9 @@ const GCCServicesPage = () => {
                 with Full Ownership
               </h1>
               
-              <p className="text-base lg:text-lg text-gray-600 leading-relaxed animate-on-scroll">
-               Build a fully owned Global Capability Center (GCC) with dedicated teams, scalable operations, and complete strategic control. From market assessment and entity setup to talent acquisition and ongoing operations, we help you establish a future-ready global center.
-              </p>
+            <p className="text-justify text-base lg:text-lg text-gray-600 leading-relaxed animate-on-scroll">
+  Build a fully owned Global Capability Center (GCC) with dedicated teams, scalable operations, and complete strategic control. From market assessment and entity setup to talent acquisition and ongoing operations, we help you establish a future-ready global center.
+</p>
               
               <div className="flex flex-col sm:flex-row gap-3 animate-on-scroll">
                 <button
@@ -289,12 +289,12 @@ const GCCServicesPage = () => {
         Average GCC Launch
       </div>
       <div className="text-sm text-gray-600">
-        Operational team setup in under 90 days
+        Operational team setup in  90 days
       </div>
     </div>
   </div>
   <div className="text-brand-blue-500 font-bold text-lg">
-    &lt; 90 Days
+   90 Days
   </div>
 </div>
 
@@ -360,7 +360,9 @@ const GCCServicesPage = () => {
           <FaUsersCog className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">End-to-End GCC Setup</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">We provide end-to-end Global Capability Center setup, including business case development, location strategy, legal entity formation, infrastructure planning, talent acquisition, governance, compliance, and operational readiness.</p>
+       <p className="text-justify text-gray-600 mb-6 leading-relaxed">
+  We provide end-to-end Global Capability Center setup, including business case development, location strategy, legal entity formation, infrastructure planning, talent acquisition, governance, compliance, and operational readiness.
+</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -387,7 +389,9 @@ const GCCServicesPage = () => {
           <FaFilter className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Function-Specific GCC Build</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Targeted capability pods for engineering, finance, analytics, or customer operations, with flexible team sizing and a scalable ramp-up plan.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">
+  Targeted capability pods for engineering, finance, analytics, or customer operations, with flexible team sizing and a scalable ramp-up plan.
+</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -414,7 +418,7 @@ const GCCServicesPage = () => {
           <FaCrown className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Leadership & Governance</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Site leadership hiring and governance design, including reporting structures, board-level visibility, and a clear escalation framework for HQ.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Site leadership hiring and governance design, including reporting structures, board-level visibility, and a clear escalation framework for HQ.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -441,7 +445,7 @@ const GCCServicesPage = () => {
           <FaRobot className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">AI-Enabled GCC Operations</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Modern centers built with automation, AI-assisted workflows, and analytics dashboards baked in from day one, not bolted on later.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Modern centers built with automation, AI-assisted workflows, and analytics dashboards baked in from day one, not bolted on later.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -468,7 +472,7 @@ const GCCServicesPage = () => {
           <FaGlobe className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Multi-Country GCC Expansion</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Multi-geography capability hubs supported by local compliance expertise, cultural onboarding, and standardized processes across every site.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Multi-geography capability hubs supported by local compliance expertise, cultural onboarding, and standardized processes across every site.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -495,7 +499,7 @@ const GCCServicesPage = () => {
           <FaPuzzlePiece className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Hybrid Ownership Model</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">A phased path from managed build-operate to full HQ ownership, so you get momentum early and control on your own timeline.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">A phased path from managed build-operate to full HQ ownership, so you get momentum early and control on your own timeline.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -521,62 +525,72 @@ const GCCServicesPage = () => {
 </section>
 
       {/* Industry Coverage */}
-   <section className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-            <span className="gradient-text">Industry-Specific</span> GCC Expertise
-          </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
-            We build Global Capability Centers across multiple industries, bringing deep domain knowledge to every function we stand up so your center speaks the language of your business from day one.
-          </p>
-        </div>
+   <section className="relative py-20 bg-white overflow-hidden z-0">
+  
+  {/* --- Premium Minimal Background Layer --- */}
+  <div className="absolute inset-0 pointer-events-none -z-10 flex justify-center">
+    {/* Subtle, fading technical grid */}
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+    {/* Ultra-faint ambient glow to add depth without adding color */}
+    <div className="absolute top-[-10%] left-[20%] w-[500px] h-[500px] bg-brand-blue-50/50 rounded-full blur-[120px] mix-blend-multiply"></div>
+  </div>
+  {/* ---------------------------------------- */}
 
-        {/* All Industries Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 mb-12">
-          {industries.map((industry, index) => {
-            const Icon = industry.icon;
-            return (
-              <div key={index} className="text-center animate-on-scroll group cursor-pointer">
-                <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md group-hover:shadow-lg">
-                  <Icon className="text-2xl text-white" />
-                </div>
-                <h4 className="font-bold text-gray-800 transition-colors duration-200 group-hover:text-brand-blue-600">
-                  {industry.name}
-                </h4>
-                <p className="text-sm text-gray-500 mt-1">{industry.subtitle}</p>
-              </div>
-            );
-          })}
-        </div>
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
+    
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
+        <span className="gradient-text">Industry-Specific</span> GCC Expertise
+      </h2>
+      <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
+        We build Global Capability Centers across multiple industries, bringing deep domain knowledge to every function we stand up so your center speaks the language of your business from day one.
+      </p>
+    </div>
 
-        {/* Success Metrics (Optional / Commented Out) */}
-        {/* <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
-          <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Industry Coverage & Success Metrics</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <div className="text-2xl font-bold gradient-text">4,000+</div>
-              <div className="text-sm text-gray-600">Tech Professionals Onboarded</div>
+    {/* All Industries Grid */}
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 mb-12">
+      {industries.map((industry, index) => {
+        const Icon = industry.icon;
+        return (
+          <div key={index} className="text-center animate-on-scroll group cursor-pointer">
+            <div className="w-16 h-16 bg-gradient-to-br from-brand-blue-500 to-brand-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 shadow-md group-hover:shadow-lg">
+              <Icon className="text-2xl text-white" />
             </div>
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <div className="text-2xl font-bold gradient-text">2,500+</div>
-              <div className="text-sm text-gray-600">Healthcare Specialists</div>
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <div className="text-2xl font-bold gradient-text">2,200+</div>
-              <div className="text-sm text-gray-600">Finance Professionals</div>
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <div className="text-2xl font-bold gradient-text">50+</div>
-              <div className="text-sm text-gray-600">Capability Centers Launched</div>
-            </div>
+            <h4 className="font-bold text-gray-800 transition-colors duration-200 group-hover:text-brand-blue-600">
+              {industry.name}
+            </h4>
+            <p className="text-sm text-gray-500 mt-1">{industry.subtitle}</p>
           </div>
-        </div> */}
-        
+        );
+      })}
+    </div>
+
+    {/* Success Metrics (Optional / Commented Out) */}
+    {/* <div className="bg-white rounded-3xl shadow-xl p-8 animate-on-scroll">
+      <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">Comprehensive Industry Coverage & Success Metrics</h3>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="text-2xl font-bold gradient-text">4,000+</div>
+          <div className="text-sm text-gray-600">Tech Professionals Onboarded</div>
+        </div>
+        <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="text-2xl font-bold gradient-text">2,500+</div>
+          <div className="text-sm text-gray-600">Healthcare Specialists</div>
+        </div>
+        <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="text-2xl font-bold gradient-text">2,200+</div>
+          <div className="text-sm text-gray-600">Finance Professionals</div>
+        </div>
+        <div className="p-4 bg-gray-50 rounded-lg">
+          <div className="text-2xl font-bold gradient-text">50+</div>
+          <div className="text-sm text-gray-600">Capability Centers Launched</div>
+        </div>
       </div>
-    </section>
+    </div> */}
+    
+  </div>
+</section>
 
       {/* Why Choose Our GCC Services */}
       <section className="py-20 bg-white">

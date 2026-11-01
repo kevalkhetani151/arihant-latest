@@ -207,9 +207,9 @@ const LearningDevelopmentPage = () => {
                 Building Future Leaders.
               </h1>
               
-              <p className="text-base lg:text-lg text-gray-600 leading-relaxed animate-on-scroll">
-                We help organizations, professionals, and students unlock their potential through customized learning experiences, leadership development, coaching, and workforce readiness programs. Our practical, industry-focused training enables individuals and teams to perform with confidence in today's evolving business environment.
-              </p>
+             <p className="text-justify text-base lg:text-lg text-gray-600 leading-relaxed animate-on-scroll">
+  We help organizations, professionals, and students unlock their potential through customized learning experiences, leadership development, coaching, and workforce readiness programs. Our practical, industry-focused training enables individuals and teams to perform with confidence in today's evolving business environment.
+</p>
               
               <div className="flex flex-col sm:flex-row gap-3 animate-on-scroll">
                <button
@@ -319,7 +319,7 @@ const LearningDevelopmentPage = () => {
           <FaUsersCog className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Corporate Learning & Development</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">We partner with startups, SMEs, and multinational organizations to build high-performing teams through customized training solutions.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">We partner with startups, SMEs, and multinational organizations to build high-performing teams through customized training solutions.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -346,7 +346,7 @@ const LearningDevelopmentPage = () => {
           <FaTrophy className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Sales & Customer Excellence</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Equip your sales and service teams with practical skills that drive measurable business outcomes and stronger customer relationships.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Equip your sales and service teams with practical skills that drive measurable business outcomes and stronger customer relationships.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -373,7 +373,7 @@ const LearningDevelopmentPage = () => {
           <FaUserPlus className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Hiring & Talent Development</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Helping organizations attract, develop, and retain exceptional talent through structured hiring and growth frameworks.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Helping organizations attract, develop, and retain exceptional talent through structured hiring and growth frameworks.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -400,7 +400,7 @@ const LearningDevelopmentPage = () => {
           <FaIndustry className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Industry-Specific Training</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Customized learning solutions built around the real-world demands of your sector, from compliance to customer-facing skills.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Customized learning solutions built around the real-world demands of your sector, from compliance to customer-facing skills.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -427,7 +427,7 @@ const LearningDevelopmentPage = () => {
           <FaLaptopCode className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Professional Skills Development</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Future-ready skills that keep today's workforce sharp, adaptable, and ready to solve real business problems.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Future-ready skills that keep today's workforce sharp, adaptable, and ready to solve real business problems.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />
@@ -454,7 +454,7 @@ const LearningDevelopmentPage = () => {
           <FaGraduationCap className="text-3xl text-white" />
         </div>
         <h3 className="text-2xl font-bold mb-4 text-gray-800">Student Career Development</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">Bridging the gap between education and employment with hands-on preparation for the world of work.</p>
+        <p className="text-justify text-gray-600 mb-6 leading-relaxed">Bridging the gap between education and employment with hands-on preparation for the world of work.</p>
         <ul className="space-y-3 mb-6">
           <li className="flex items-start space-x-3">
             <FaCheckCircle className="text-brand-blue-500 mt-1 flex-shrink-0" />

@@ -16,7 +16,17 @@ import {
   FaCheckCircle,
   FaExclamationTriangle,
   FaGlobeAmericas,
-  FaBriefcase
+  FaBriefcase,
+  FaSearch,
+  FaBolt,
+  FaUserTie,
+  FaClipboardCheck,
+  FaChartLine,
+  FaLaptopCode,
+  FaMapMarkerAlt,
+  FaSlidersH,
+  FaHandshake,
+  FaStar
 } from 'react-icons/fa';
 import Header from '../header/page';
 import Footer from '../footer/page';
@@ -138,23 +148,94 @@ const ContactUs = () => {
   };
 
   // Data
-  const faqData = [
-    {
-      question: "How quickly can you fill our staffing requirements?",
-      answer: "Our AI-powered matching system identifies qualified candidates within 24-48 hours for most positions. For specialized roles, we typically deliver shortlisted candidates within 3-5 business days.",
-      icon: FaClock
-    },
-    {
-      question: "What industries do you specialize in?",
-      answer: "We serve Technology, Healthcare, Finance, Manufacturing, Retail, and Professional Services with specialized recruiters for each industry.",
-      icon: FaBuilding
-    },
-    {
-      question: "Do you provide international staffing solutions?",
-      answer: "Yes, we operate across 25+ countries with local expertise, handling visa processes, work permits, and compliance requirements.",
-      icon: FaGlobeAmericas
-    }
-  ];
+ const faqData = [
+  {
+    question: "What types of staffing services do you offer?",
+    answer:
+      "We provide permanent hiring, contract staffing, temporary staffing, staff augmentation, and recruitment process outsourcing to meet different business needs.",
+    icon: FaUsers,
+  },
+  {
+    question: "How do you find the right candidates?",
+    answer:
+      "We understand your job requirements, search our talent network, review candidate skills, and shortlist people who match your needs.",
+    icon: FaSearch,
+  },
+  {
+    question: "Can you hire candidates for urgent requirements?",
+    answer:
+      "Yes, we support urgent hiring needs and work closely with your team to find suitable candidates as quickly as possible.",
+    icon: FaBolt,
+  },
+  {
+    question: "Do you provide permanent and contract hiring?",
+    answer:
+      "Yes, we help businesses hire full-time employees as well as contract professionals for short-term and long-term projects.",
+    icon: FaUserTie,
+  },
+  {
+    question: "How do you check candidate qualifications?",
+    answer:
+      "We review resumes, experience, skills, and other relevant details to help ensure candidates meet your job requirements.",
+    icon: FaClipboardCheck,
+  },
+  {
+    question: "Can you support small and growing businesses?",
+    answer:
+      "Yes, we work with startups, small businesses, and large companies to provide staffing solutions based on their hiring needs.",
+    icon: FaChartLine,
+  },
+  {
+    question: "Do you provide IT and non-IT staffing?",
+    answer:
+      "Yes, we recruit for both IT and non-IT roles across different departments, industries, and experience levels.",
+    icon: FaLaptopCode,
+  },
+  {
+    question: "Can we hire candidates for multiple locations?",
+    answer:
+      "Yes, we support hiring across different cities and locations based on your business requirements.",
+    icon: FaMapMarkerAlt,
+  },
+  {
+    question: "Do you offer customized recruitment solutions?",
+    answer:
+      "Yes, we create recruitment plans based on your company size, hiring goals, job roles, and business requirements.",
+    icon: FaSlidersH,
+  },
+  {
+    question: "How can we get started with your services?",
+    answer:
+      "Simply contact our team and share your staffing requirements. We will discuss your needs and suggest a suitable hiring solution.",
+    icon: FaHandshake,
+  },
+  {
+    question: "Why should we choose your staffing services?",
+    answer:
+      "We focus on understanding your requirements, finding suitable talent, and providing reliable support throughout the hiring process.",
+    icon: FaStar,
+  },
+
+  // Your existing FAQs
+  {
+    question: "How quickly can you fill our staffing requirements?",
+    answer:
+      "Our team works to identify qualified candidates within 24-48 hours for many positions. Specialized roles may take 3-5 business days or longer, depending on the requirements.",
+    icon: FaClock,
+  },
+  {
+    question: "What industries do you specialize in?",
+    answer:
+      "We serve Technology, Healthcare, Finance, Manufacturing, Retail, and Professional Services with recruiters who understand different industry needs.",
+    icon: FaBuilding,
+  },
+  {
+    question: "Do you provide international staffing solutions?",
+    answer:
+      "Yes, we support international staffing requirements and help businesses understand local hiring, work permit, and compliance needs, depending on the country.",
+    icon: FaGlobeAmericas,
+  },
+];
 
  
 
@@ -436,69 +517,101 @@ const ContactUs = () => {
           <div className="shape"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-          <div className="flex flex-col items-center justify-center text-center space-y-8 max-w-4xl mx-auto">
-            
-            <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight text-gray-800">
-                <span className="block text-animate-2">Your Trusted </span>
-                <span className="gradient-text-warm block typewriter-text inline-block">Workforce</span>
-                <span className="block text-animate-3" style={{animationDelay: '1.2s'}}>Solutions Partner</span>
-              </h1>
-            </div>
-            
-            <div className="text-animate-4 max-w-3xl mx-auto space-y-4">
-              <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-medium">
-                Whether you're hiring top talent or searching for your next career opportunity, our staffing specialists are ready to help. Contact us today.
-              </p>
-              <p className="text-base sm:text-lg text-gray-500 leading-relaxed">
-                We help organizations build high-performing teams by connecting them with exceptional talent across Technology, Healthcare, Finance, Engineering, Manufacturing, and Professional Services.
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 text-animate-5 justify-center w-full">
-              <button 
-                onClick={() => setActiveTab('call')}
-                className="group btn-primary gradient-warm text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center space-x-2 sm:space-x-3 w-full sm:w-auto"
-              >
-                <FaUsers className="text-sm sm:text-lg group-hover:animate-bounce" />
-                <span>Request Talent</span>
-                <FaArrowRight className="text-xs sm:text-sm opacity-70 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button 
-                onClick={() => setActiveTab('form')}
-                className="group glass-morphism text-brand-orange-700 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 sm:space-x-3 backdrop-blur-xl border border-brand-orange-200 hover:border-brand-orange-300 w-full sm:w-auto"
-              >
-                <FaBriefcase className="text-sm sm:text-lg group-hover:text-brand-orange-800 transition-colors" />
-                <span>Schedule a Consultation</span>
-              </button>
-            </div>
-            
-          
-          </div>
-        </div>
+      
+<div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
+  <div className="flex flex-col items-center justify-center text-center space-y-8 max-w-5xl mx-auto">
+
+    {/* Hero Heading */}
+    <div className="space-y-3">
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight tracking-tight text-gray-800">
+        <span className="block text-animate-2">
+          Your Trusted
+        </span>
+
+        <span className="gradient-text-warm block">
+          Workforce
+        </span>
+
+        <span
+          className="block text-animate-3"
+          style={{ animationDelay: "1.2s" }}
+        >
+          Solutions Partner
+        </span>
+      </h1>
+    </div>
+
+    {/* Hero Description */}
+    <div className="text-animate-4 max-w-4xl mx-auto space-y-4">
+      <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-medium">
+        Whether you're hiring top talent or exploring your next career
+        opportunity, our staffing specialists are here to help. Let's
+        build your future together.
+      </p>
+
+      <p className="text-base sm:text-lg text-gray-500 leading-relaxed max-w-3xl mx-auto">
+        We connect businesses with exceptional professionals across
+        Technology, Healthcare, Finance, Engineering, Manufacturing,
+        and Professional Services to build stronger, high-performing teams.
+      </p>
+    </div>
+
+    {/* CTA Buttons */}
+    <div className="flex flex-col sm:flex-row gap-4 text-animate-5 justify-center items-center w-full">
+
+      <button
+        onClick={() => setActiveTab("call")}
+        className="group btn-primary gradient-warm text-white px-7 sm:px-9 py-3.5 sm:py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 w-full sm:w-auto"
+      >
+        <FaUsers className="text-base sm:text-lg group-hover:animate-bounce" />
+        <span>Request Talent</span>
+        <FaArrowRight className="text-sm opacity-80 group-hover:translate-x-1 transition-transform" />
+      </button>
+
+      <button
+        onClick={() => setActiveTab("form")}
+        className="group bg-white text-brand-orange-700 px-7 sm:px-9 py-3.5 sm:py-4 rounded-full font-bold hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3 border border-brand-orange-200 hover:border-brand-orange-400 hover:bg-orange-50 w-full sm:w-auto"
+      >
+        <FaBriefcase className="text-base sm:text-lg group-hover:text-brand-orange-800 transition-colors" />
+        <span>Schedule a Consultation</span>
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
 
         {/* Floating Action Elements (Updated for two options) */}
-        <div className="absolute top-1/2 right-8 transform -translate-y-1/2 hidden xl:flex flex-col space-y-4">
-          <button 
-            onClick={() => setActiveTab('call')}
-            className="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 group relative"
-          >
-            <FaPhone className="text-brand-orange-600 group-hover:text-brand-orange-700 transition-colors" />
-            <div className="absolute -left-20 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-              Call Now
-            </div>
-          </button>
-          <button 
-            onClick={() => setActiveTab('form')}
-            className="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 group relative"
-          >
-            <FaEnvelope className="text-brand-orange-600 group-hover:text-brand-orange-700 transition-colors" />
-            <div className="absolute -left-24 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-              Send Email
-            </div>
-          </button>
-        </div>
+       <div className="absolute top-1/2 right-8 transform -translate-y-1/2 hidden xl:flex flex-col space-y-4">
+
+  {/* Call Now */}
+  <a
+    href="tel:+917487960042"
+    className="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 group relative"
+    aria-label="Call Arihant Staffing"
+  >
+    <FaPhone className="text-brand-orange-600 group-hover:text-brand-orange-700 transition-colors" />
+
+    <div className="absolute -left-28 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+      +91 7487-960042
+    </div>
+  </a>
+
+  {/* Send Email */}
+  <a
+    href="mailto:info@arihantstaffing.com"
+    className="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 group relative"
+    aria-label="Email Arihant Staffing"
+  >
+    <FaEnvelope className="text-brand-orange-600 group-hover:text-brand-orange-700 transition-colors" />
+
+    <div className="absolute -left-56 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+      info@arihantstaffing.com
+    </div>
+  </a>
+
+</div>
       </section>
 
       {/* Contact Method Tabs */}
@@ -702,111 +815,75 @@ const ContactUs = () => {
 </section>
       )}
 
-      {activeTab === 'call' && (
-       <section className="py-20 bg-gradient-to-br from-brand-blue-50 to-brand-blue-100">
-  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <div className="glass-card-strong rounded-3xl p-12 shadow-xl border border-white/60">
-      <div className="w-24 h-24 gradient-primary rounded-full flex items-center justify-center mx-auto mb-8 animate-pulse-glow shadow-lg shadow-brand-blue-500/20">
-        <FaPhone className="text-4xl text-white" />
-      </div>
-
-      <h2 className="text-4xl font-black mb-4 text-gray-800">
-        Ready to Talk?
-      </h2>
-
-      <p className="text-lg text-gray-600 mb-10 max-w-xl mx-auto">
-        Our experts are ready to discuss your software development, AI automation,
-        web applications, and digital solutions. Let's schedule a free consultation.
-      </p>
-
-      <div className="mb-10">
-        <div className="text-xl font-bold text-brand-blue-600 mb-2 uppercase tracking-wide text-sm">
-          India Office
-        </div>
-
-        <a
-          href="tel:+917487960042"
-          className="text-4xl md:text-5xl font-black text-gray-800 hover:text-brand-blue-600 transition-colors block mb-2"
-        >
-          +91 7487-960042
-        </a>
-
-        <div className="text-gray-500 font-medium">
-          Mon - Sat: 9:00 AM - 7:00 PM IST
-        </div>
-      </div>
-
-      <div className="bg-white/60 backdrop-blur border border-brand-blue-200 rounded-2xl p-4 mb-10 inline-block px-8">
-        <div className="flex items-center justify-center space-x-3 text-brand-blue-700">
-          <div className="w-3 h-3 bg-brand-blue-500 rounded-full animate-pulse"></div>
-          <span className="font-semibold text-sm">
-            Our team is available to assist you
-          </span>
-        </div>
-      </div>
-
-      <div>
-        <a
-          href="tel:+917487960042"
-          className="inline-flex items-center btn-primary gradient-primary text-white px-12 py-4 rounded-full font-bold text-lg shadow-xl hover-lift"
-        >
-          <FaPhone className="mr-3" />
-          Call Now
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-      )}
+     
 
       {/* FAQ Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div 
-            className={`text-center mb-16 animate-fade-up ${isVisible['faq'] ? 'visible' : ''}`}
-            data-animate="faq"
-          >
-            <h2 className="text-3xl md:text-5xl font-black mb-4 text-gray-900">
-              Frequently Asked <span className="gradient-text">Questions</span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              Get instant answers to common questions.
-            </p>
-          </div>
+     
 
-          <div className="space-y-4">
-            {faqData.map((faq, index) => (
-              <div 
-                key={index}
-                className="glass-card rounded-2xl shadow-sm hover-lift border border-gray-100"
-              >
-                <button
-                  onClick={() => toggleFaq(index)}
-                  className="flex items-center justify-between w-full p-6 text-left focus:outline-none"
-                >
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-brand-blue-50 rounded-full flex flex-shrink-0 items-center justify-center">
-                      <faq.icon className="text-brand-blue-600 text-lg" />
-                    </div>
-                    <div className="font-bold text-lg text-gray-800">{faq.question}</div>
-                  </div>
-                  <FaChevronDown 
-                    className={`text-gray-400 transition-transform duration-300 ${
-                      openFaq === index ? 'transform rotate-180 text-brand-blue-600' : ''
-                    }`} 
-                  />
-                </button>
-                
-                <div className={`faq-content ${openFaq === index ? 'open' : ''}`}>
-                  <div className="px-6 pb-6 pt-0 pl-22 ml-16">
-                    <p className="text-gray-600 leading-relaxed bg-gray-50/50 p-4 rounded-xl border border-gray-100/50">{faq.answer}</p>
-                  </div>
-                </div>
+<section className="py-20 bg-white">
+  <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div
+      className={`text-center mb-12 animate-fade-up ${
+        isVisible["faq"] ? "visible" : ""
+      }`}
+      data-animate="faq"
+    >
+      <h2 className="text-3xl md:text-5xl font-black mb-4 text-gray-900">
+        Frequently Asked <span className="gradient-text">Questions</span>
+      </h2>
+
+      <p className="text-lg text-gray-600">
+        Get instant answers to common questions.
+      </p>
+    </div>
+
+    <div className="w-full md:w-[70%] mx-auto space-y-3">
+      {faqData.map((faq, index) => (
+        <div
+          key={index}
+          className="bg-white w-full rounded-xl border border-gray-200 hover:border-blue-200 transition-colors duration-300"
+        >
+          <button
+            type="button"
+            onClick={() => toggleFaq(index)}
+            aria-expanded={openFaq === index}
+            className="flex items-center justify-between w-full px-5 py-3.5 text-left focus:outline-none"
+          >
+            <div className="flex items-center space-x-3 min-w-0">
+              <div className="w-9 h-9 bg-brand-blue-50 rounded-full flex flex-shrink-0 items-center justify-center">
+                <faq.icon className="text-brand-blue-600 text-base" />
               </div>
-            ))}
+
+              <div className="font-bold text-base md:text-lg text-gray-800">
+                {faq.question}
+              </div>
+            </div>
+
+            <FaChevronDown
+              className={`text-gray-400 flex-shrink-0 ml-3 transition-transform duration-300 ${
+                openFaq === index
+                  ? "transform rotate-180 text-brand-blue-600"
+                  : ""
+              }`}
+            />
+          </button>
+
+          <div className={`faq-content ${openFaq === index ? "open" : ""}`}>
+            <div className="px-5 pb-4 pt-0 pl-16">
+              <p className="text-gray-600 text-sm leading-relaxed bg-gray-50/50 p-3 rounded-lg border border-gray-100/50">
+                {faq.answer}
+              </p>
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+
 
       {/* Office Locations */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-brand-blue-50">
