@@ -883,14 +883,7 @@ const ITSolutionsPage = () => {
             <p className="text-xl mb-12 leading-relaxed opacity-90">
               Transform your business with our cutting-edge IT solutions and strategic technology consulting. Let's build the future of your organization together.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="bg-white text-brand-blue-700 px-12 py-5 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-xl">
-                Get Free IT Consultation
-              </button>
-              <button className="border-2 border-white/30 px-12 py-5 rounded-full font-bold hover:bg-white/10 transition-colors duration-300">
-                Download Technology Guide
-              </button>
-            </div>
+            
             
             {/* Contact Info */}
           
