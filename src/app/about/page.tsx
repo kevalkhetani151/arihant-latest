@@ -521,7 +521,7 @@ const AboutUs = () => {
                 <div className="w-12 h-0.5 bg-gray-100 mx-auto mb-5 group-hover:bg-brand-blue-200 transition-colors duration-300"></div>
                 
                 <p className="text-gray-600 leading-relaxed text-sm flex-grow mb-6">
-                  Technology innovator and AI pioneer with 15+ years creating next-generation HR solutions. Architect of our revolutionary matching algorithms.
+                  Technology innovator and AI pioneer with 14+ years creating next-generation HR solutions. Architect of our revolutionary matching algorithms.
                 </p>
               </div>
             </div>

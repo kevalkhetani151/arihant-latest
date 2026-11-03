@@ -241,7 +241,7 @@ export default function PremiumContactForm() {
             Need immediate assistance? Contact us at{" "}
             <a
               href="mailto:info@arihantstaffing.com"
-              className="font-semibold text-blue-600 hover:underline"
+              className="font-semibold text-brand-blue-600 hover:underline"
             >
               info@arihantstaffing.com
             </a>
@@ -266,13 +266,13 @@ export default function PremiumContactForm() {
 
         {/* Form heading */}
         <div className="mb-10">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand-blue-600">
             Get In Touch
           </p>
 
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Let's Build Your{" "}
-            <span className="text-blue-600">Dream Team.</span>
+            <span className="text-brand-blue-600">Dream Team.</span>
           </h2>
 
           <p className="max-w-2xl text-sm leading-7 text-slate-500">
@@ -540,7 +540,7 @@ export default function PremiumContactForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="flex w-full items-center justify-center gap-3 rounded-xl bg-blue-600 px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0 sm:w-auto"
+              className="flex w-full items-center justify-center gap-3 rounded-xl bg-brand-blue-600  px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0 sm:w-auto"
             >
               {isSubmitting ? (
                 <>
