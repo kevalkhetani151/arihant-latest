@@ -941,7 +941,7 @@ export function CoreValuesSection() {
     },
     {
       number: "04",
-      category: "SPEED & CARE",
+      category: "Agility & Responsiveness",
       title: "Responsiveness",
       description:
         "We understand that timing matters in talent acquisition and business growth. From client requirements to candidate submissions and ongoing coordination, we prioritize prompt communication, proactive updates, and swift action. Our team stays accessible, responsive, and committed to keeping every stakeholder informed.",

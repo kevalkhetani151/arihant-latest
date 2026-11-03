@@ -263,7 +263,7 @@ Whether you're a healthcare professional seeking your next opportunity or a heal
                         
                       </div>
                     </div>
-                    <div className="text-brand-blue-500 font-bold text-lg">15+</div>
+                    <div className="text-brand-blue-500 font-bold text-lg">15 Days</div>
                   </div>
                   
                   <div className="flex items-center justify-between p-4 bg-gradient-to-r from-brand-blue-50 to-brand-orange-50 rounded-xl border border-brand-blue-100 animate-float" style={{animationDelay: '1s'}}>

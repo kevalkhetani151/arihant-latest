@@ -30,6 +30,7 @@ import {
 } from 'react-icons/fa';
 import Header from '../header/page';
 import Footer from '../footer/page';
+import ContactForm from './contactform';
 
 const ContactUs = () => {
   // State Management
@@ -617,203 +618,7 @@ const ContactUs = () => {
       {/* Contact Method Tabs */}
     
       {/* Dynamic Content Based on Active Tab */}
-      {  (
-        <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-200">
-  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    {/* Section Header */}
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-slate-900 tracking-tight">
-        How Can We Help?
-      </h2>
-      <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-        Our intelligent form ensures we gather the right information to provide you with the most relevant solutions.
-      </p>
-    </div>
-
-    {/* Form Card */}
-    <div className="bg-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl shadow-slate-200/50 border border-slate-100">
-      
-      {/* Success State */}
-      {submitSuccess && (
-        <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 mb-8 text-center animate-fade-in">
-          <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-emerald-500/30">
-            <FaCheckCircle className="text-3xl text-white" />
-          </div>
-          <h3 className="text-2xl font-bold text-emerald-900 mb-2">Message Sent Successfully!</h3>
-          <p className="text-emerald-700">We'll respond within 1 hour during business hours.</p>
-        </div>
-      )}
-
-      <form onSubmit={handleSubmit} ref={formRef} className="space-y-6">
-        
-        {/* Name Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="space-y-1.5">
-            <label className="text-sm font-semibold text-slate-700">
-              First Name <span className="text-red-500">*</span>
-            </label>
-            <input 
-              type="text" 
-              name="firstName" 
-              value={formData.firstName}
-              onChange={handleInputChange}
-              className={`w-full px-4 py-3 bg-slate-50 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all ${
-                formErrors.firstName ? 'border-red-300 focus:ring-red-500' : 'border-slate-200'
-              }`}
-              placeholder="John" 
-            />
-            {formErrors.firstName && (
-              <p className="text-red-500 text-xs flex items-center gap-1 mt-1">
-                <FaExclamationTriangle /> {formErrors.firstName}
-              </p>
-            )}
-          </div>
-          
-          <div className="space-y-1.5">
-            <label className="text-sm font-semibold text-slate-700">
-              Last Name <span className="text-red-500">*</span>
-            </label>
-            <input 
-              type="text" 
-              name="lastName" 
-              value={formData.lastName}
-              onChange={handleInputChange}
-              className={`w-full px-4 py-3 bg-slate-50 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all ${
-                formErrors.lastName ? 'border-red-300 focus:ring-red-500' : 'border-slate-200'
-              }`}
-              placeholder="Doe" 
-            />
-            {formErrors.lastName && (
-              <p className="text-red-500 text-xs flex items-center gap-1 mt-1">
-                <FaExclamationTriangle /> {formErrors.lastName}
-              </p>
-            )}
-          </div>
-        </div>
-        
-        {/* Contact Info Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="space-y-1.5">
-            <label className="text-sm font-semibold text-slate-700">
-              Email Address <span className="text-red-500">*</span>
-            </label>
-            <input 
-              type="email" 
-              name="email" 
-              value={formData.email}
-              onChange={handleInputChange}
-              className={`w-full px-4 py-3 bg-slate-50 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all ${
-                formErrors.email ? 'border-red-300 focus:ring-red-500' : 'border-slate-200'
-              }`}
-              placeholder="john@company.com" 
-            />
-            {formErrors.email && (
-              <p className="text-red-500 text-xs flex items-center gap-1 mt-1">
-                <FaExclamationTriangle /> {formErrors.email}
-              </p>
-            )}
-          </div>
-          
-          <div className="space-y-1.5">
-            <label className="text-sm font-semibold text-slate-700">
-              Phone Number
-            </label>
-            <input 
-              type="tel" 
-              name="phone" 
-              value={formData.phone}
-              onChange={handleInputChange}
-              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all" 
-              placeholder="+1 (555) 123-4567" 
-            />
-          </div>
-        </div>
-        
-        {/* Company Info Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="space-y-1.5">
-            <label className="text-sm font-semibold text-slate-700">
-              Company
-            </label>
-            <input 
-              type="text" 
-              name="company" 
-              value={formData.company}
-              onChange={handleInputChange}
-              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all" 
-              placeholder="Your Company Name" 
-            />
-          </div>
-          
-          <div className="space-y-1.5">
-            <label className="text-sm font-semibold text-slate-700">
-              Job Title
-            </label>
-            <input 
-              type="text" 
-              name="jobTitle" 
-              value={formData.jobTitle}
-              onChange={handleInputChange}
-              className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all" 
-              placeholder="Your Job Title" 
-            />
-          </div>
-        </div>
-        
-        {/* Message Row */}
-        <div className="space-y-1.5">
-          <label className="text-sm font-semibold text-slate-700 flex justify-between">
-            <span>Tell us more about your needs <span className="text-red-500">*</span></span>
-            <span className="text-slate-400 font-normal">{formData.message.length}/1000</span>
-          </label>
-          <textarea 
-            name="message" 
-            rows="5" 
-            value={formData.message}
-            onChange={handleInputChange}
-            className={`w-full px-4 py-3 bg-slate-50 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all resize-none ${
-              formErrors.message ? 'border-red-300 focus:ring-red-500' : 'border-slate-200'
-            }`}
-            placeholder="Describe your project, timeline, specific requirements, team size needed, or any challenges..."
-          />
-          {formErrors.message ? (
-            <p className="text-red-500 text-xs flex items-center gap-1 mt-1">
-              <FaExclamationTriangle /> {formErrors.message}
-            </p>
-          ) : (
-            <p className="text-slate-500 text-xs mt-1">
-              💡 The more details you provide, the better we can help.
-            </p>
-          )}
-        </div>
-        
-        {/* Submit Button */}
-        <div className="pt-4">
-          <button 
-            type="submit" 
-            disabled={isSubmitting}
-            className="w-full md:w-auto flex items-center justify-center gap-3 bg-blue-600 text-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
-          >
-            {isSubmitting ? (
-              <>
-                <FaSpinner className="animate-spin" />
-                Sending...
-              </>
-            ) : (
-              <>
-                <FaPaperPlane />
-                Send Message
-              </>
-            )}
-          </button>
-        </div>
-        
-      </form>
-    </div>
-  </div>
-</section>
-      )}
+     <ContactForm/>
 
      
 
@@ -887,67 +692,71 @@ const ContactUs = () => {
 
       {/* Office Locations */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-brand-blue-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black mb-4 text-gray-900">
-              Our Global <span className="gradient-text">Presence</span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              Strategic locations worldwide ensure we're always close to our clients.
-            </p>
-          </div>
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-5xl font-black mb-4 text-gray-900">
+        Our Global <span className="text-brand-blue-600">Presence</span>
+      </h2>
+      <p className="text-lg text-gray-600">
+        Strategic locations worldwide ensure we're always close to our clients.
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-         <div className="glass-card rounded-3xl p-10 text-center hover-lift border border-white/60 bg-white/40">
-  <div className="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-brand-blue-500/20">
-    <FaBuilding className="text-2xl text-white" />
-  </div>
-
-  <h4 className="font-black text-gray-900 text-2xl mb-4">
-    USA Headquarter
-  </h4>
-
-  <div className="space-y-1 text-gray-600 mb-6">
-    <p className="font-medium text-gray-800 "><b>Sheridan, Wyoming, USA</b></p>
-    <p>1309 Coffeen Avenue</p>
-    <p>STE 1200</p>
-    <p>Sheridan, WY 82801</p>
-  </div>
-
-  <a
-    href="tel:+14696069505"
-    className="inline-block text-brand-blue-600 font-bold hover:text-brand-blue-700 bg-brand-blue-50 px-6 py-2 rounded-full transition-colors"
-  >
-    +1 (469) 606-9505
-  </a>
-</div>
-            
-          <div className="glass-card rounded-3xl p-10 text-center hover-lift border border-white/60 bg-white/40">
-  <div className="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-brand-blue-500/20">
-    <FaBuilding className="text-2xl text-white" />
-  </div>
-
-  <h4 className="font-black text-gray-900 text-2xl mb-4">
-    India Operations
-  </h4>
-
-  <div className="space-y-1 text-gray-600 mb-6">
-    <p className="font-medium text-gray-800"><b>Vadodara, Gujarat, India</b></p>
-    <p>207 Lotus Elite, T B Sanatorium</p>
-    <p>Near Old Gotri Jakat Naka</p>
-    <p>Gotri, Vadodara, Gujarat - 390021</p>
-  </div>
-
-  <a
-    href="tel:+917487960042"
-    className="inline-block text-brand-orange-600 font-bold hover:text-brand-orange-700 bg-brand-orange-50 px-6 py-2 rounded-full transition-colors"
-  >
-    +91 7487-960042
-  </a>
-</div>
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      
+      {/* USA Card */}
+      <div className="glass-card rounded-3xl p-10 text-center hover-lift border border-white/60 bg-white/40">
+        <div className="w-16 h-16 bg-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-brand-blue-600/20">
+          <FaBuilding className="text-2xl text-white" />
         </div>
-      </section>
+
+        <h4 className="font-black text-gray-900 text-2xl mb-4">
+          USA Headquarter
+        </h4>
+
+        <div className="space-y-1 text-gray-600 mb-6">
+          <p className="font-medium text-gray-800 "><b>Sheridan, Wyoming, USA</b></p>
+          <p>1309 Coffeen Avenue</p>
+          <p>STE 1200</p>
+          <p>Sheridan, WY 82801</p>
+        </div>
+
+        <a
+          href="tel:+14696069505"
+          className="inline-block text-brand-blue-600 font-bold hover:text-brand-blue-600/80 bg-brand-blue-50 px-6 py-2 rounded-full transition-colors"
+        >
+          +1 (469) 606-9505
+        </a>
+      </div>
+      
+      {/* India Card */}
+      <div className="glass-card rounded-3xl p-10 text-center hover-lift border border-white/60 bg-white/40">
+        <div className="w-16 h-16 bg-brand-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-brand-blue-600/20">
+          <FaBuilding className="text-2xl text-white" />
+        </div>
+
+        <h4 className="font-black text-gray-900 text-2xl mb-4">
+          India Operations
+        </h4>
+
+        <div className="space-y-1 text-gray-600 mb-6">
+          <p className="font-medium text-gray-800"><b>Vadodara, Gujarat, India</b></p>
+          <p>207 Lotus Elite, T B Sanatorium</p>
+          <p>Near Old Gotri Jakat Naka</p>
+          <p>Gotri, Vadodara, Gujarat - 390021</p>
+        </div>
+
+        <a
+          href="tel:+917487960042"
+          className="inline-block text-brand-blue-600 font-bold hover:text-brand-blue-600/80 bg-brand-blue-50 px-6 py-2 rounded-full transition-colors"
+        >
+          +91 7487-960042
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
       <Footer />
     </div>

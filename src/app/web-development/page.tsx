@@ -618,7 +618,7 @@ const ITSolutionsPage = () => {
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16">
       <h2 className="text-4xl lg:text-6xl font-black mb-6 animate-on-scroll text-gray-800">
-        Why Choose <span className="text-brand-blue-600">chSolution?</span>
+        Why Choose <span className="text-brand-blue-600">Solution?</span>
       </h2>
       <p className="text-xl text-gray-600 max-w-4xl mx-auto animate-on-scroll">
         Our expertise, innovation, and commitment to excellence make us the preferred IT partner for businesses seeking digital transformation.

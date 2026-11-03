@@ -488,14 +488,14 @@ const AboutUs = () => {
                 {/* Typography */}
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">Nishant Panchamiya</h3>
                 <p className="text-brand-blue-600 font-bold text-xs sm:text-sm uppercase tracking-wider mb-5">
-                  Chief Executive Officer
+                  Founder & Chief Executive Officer
                 </p>
                 
                 {/* Divider Line */}
                 <div className="w-12 h-0.5 bg-gray-100 mx-auto mb-5 group-hover:bg-brand-blue-200 transition-colors duration-300"></div>
                 
                 <p className="text-gray-600 leading-relaxed text-sm flex-grow mb-6">
-                  Visionary leader with 15+ years transforming the staffing industry. Pioneer of AI-driven talent solutions and advocate for workplace innovation.
+                  Visionary leader with 14+ years transforming the staffing industry. Pioneer of AI-driven talent solutions and advocate for workplace innovation.
                 </p>
               </div>
 
@@ -514,7 +514,7 @@ const AboutUs = () => {
                 {/* Typography */}
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">Dhaval Panchamiya</h3>
                 <p className="text-brand-blue-600 font-bold text-xs sm:text-sm uppercase tracking-wider mb-5">
-                  Director Of Recruiting Operations
+                  Director Of Recruiting Operations & Co-founder
                 </p>
                 
                 {/* Divider Line */}
